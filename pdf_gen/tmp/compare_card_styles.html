@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --accent: #E19D1B;
+    --accent-dark: #B47E17;
+    --card-border: #DED1B8;
+    --card-bg: #F9ECD1;
+    --text-head: #111111;
+    --text-body: #373737;
+  }
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: #F4F4F6;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  h2 { font-size: 16px; margin: 0 0 10px 0; color: #333; }
+  
+  /* CURRENT SLOP (Asymmetric border-left with radius) */
+  .current-slop {
+    background: #FFFFFF;
+    border: 1px solid var(--card-border);
+    border-left: 5px solid var(--accent);
+    border-radius: 12px;
+    padding: 14px 18px;
+  }
+
+  /* OPTION A: Inset rounded accent pill (Floating cleanly inside) */
+  .opt-a {
+    background: #FFFFFF;
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 14px 18px 14px 14px;
+    display: flex;
+    gap: 14px;
+    align-items: stretch;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  }
+  .opt-a-pill {
+    width: 4px;
+    border-radius: 4px;
+    background: var(--accent);
+    flex-shrink: 0;
+  }
+
+  /* OPTION B: Clean flush edge stripe (overflow hidden on card) */
+  .opt-b {
+    background: #FFFFFF;
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  }
+  .opt-b-stripe {
+    width: 5px;
+    background: var(--accent);
+    flex-shrink: 0;
+  }
+  .opt-b-content {
+    padding: 14px 18px;
+    flex: 1;
+  }
+
+  /* OPTION C: Pure Minimalist Executive Card (Clean border, top badge/kicker, no left stripe) */
+  .opt-c {
+    background: #FFFFFF;
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 14px 18px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  }
+
+  /* OPTION D: Top Accent Border (Subtle 3px top line, uniform sides) */
+  .opt-d {
+    background: #FFFFFF;
+    border: 1px solid var(--card-border);
+    border-top: 3px solid var(--accent);
+    border-radius: 10px;
+    padding: 14px 18px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  }
+
+  /* OPTION E: Inset Left Accent Bar using pseudo-element (offset from curved corners) */
+  .opt-e {
+    background: #FFFFFF;
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 14px 18px 14px 22px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  }
+  .opt-e::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 14px;
+    bottom: 14px;
+    width: 3.5px;
+    border-radius: 3px;
+    background: var(--accent);
+  }
+
+  .pill-tag {
+    font-size: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: var(--card-bg);
+    color: var(--accent-dark);
+    padding: 3px 8px;
+    border-radius: 12px;
+    border: 1px solid var(--card-border);
+  }
+  .card-title {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--text-head);
+    margin-bottom: 4px;
+  }
+  .card-body {
+    font-size: 10px;
+    line-height: 1.5;
+    color: var(--text-body);
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <h2>Current Slop vs Design Alternatives for Page 14 / Page 9 / Page 5 Cards</h2>
+</div>
+
+<div class="row">
+  <div>
+    <div style="font-size: 12px; font-weight: 700; margin-bottom: 6px; color: #c00;">Current (The Slop)</div>
+    <div class="current-slop">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+        <div class="card-title">Prof. Dr. Hossam El-Din Mostafa</div>
+        <span class="pill-tag">Dean of AI</span>
+      </div>
+      <p class="card-body">We express our deepest gratitude to the Dean for his visionary leadership and continuous patronage.</p>
+    </div>
+  </div>
+
+  <div>
+    <div style="font-size: 12px; font-weight: 700; margin-bottom: 6px; color: #007;">Option A: Inset Rounded Accent Pill</div>
+    <div class="opt-a">
+      <div class="opt-a-pill"></div>
+      <div style="flex: 1;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <div class="card-title">Prof. Dr. Hossam El-Din Mostafa</div>
+          <span class="pill-tag">Dean of AI</span>
+        </div>
+        <p class="card-body">We express our deepest gratitude to the Dean for his visionary leadership and continuous patronage.</p>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div style="font-size: 12px; font-weight: 700; margin-bottom: 6px; color: #007;">Option B: Clean Flush Stripe (overflow:hidden)</div>
+    <div class="opt-b">
+      <div class="opt-b-stripe"></div>
+      <div class="opt-b-content">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <div class="card-title">Prof. Dr. Hossam El-Din Mostafa</div>
+          <span class="pill-tag">Dean of AI</span>
+        </div>
+        <p class="card-body">We express our deepest gratitude to the Dean for his visionary leadership and continuous patronage.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div>
+    <div style="font-size: 12px; font-weight: 700; margin-bottom: 6px; color: #007;">Option C: Pure Clean Minimalist (No side bar)</div>
+    <div class="opt-c">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+        <div class="card-title">Prof. Dr. Hossam El-Din Mostafa</div>
+        <span class="pill-tag">Dean of AI</span>
+      </div>
+      <p class="card-body">We express our deepest gratitude to the Dean for his visionary leadership and continuous patronage.</p>
+    </div>
+  </div>
+
+  <div>
+    <div style="font-size: 12px; font-weight: 700; margin-bottom: 6px; color: #007;">Option D: Subtle Top Accent Border (3px)</div>
+    <div class="opt-d">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+        <div class="card-title">Prof. Dr. Hossam El-Din Mostafa</div>
+        <span class="pill-tag">Dean of AI</span>
+      </div>
+      <p class="card-body">We express our deepest gratitude to the Dean for his visionary leadership and continuous patronage.</p>
+    </div>
+  </div>
+
+  <div>
+    <div style="font-size: 12px; font-weight: 700; margin-bottom: 6px; color: #007;">Option E: Inset Left Accent Bar (Floating inside left)</div>
+    <div class="opt-e">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+        <div class="card-title">Prof. Dr. Hossam El-Din Mostafa</div>
+        <span class="pill-tag">Dean of AI</span>
+      </div>
+      <p class="card-body">We express our deepest gratitude to the Dean for his visionary leadership and continuous patronage.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

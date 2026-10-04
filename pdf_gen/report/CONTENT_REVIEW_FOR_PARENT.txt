@@ -1,0 +1,36 @@
+REPORT CONTENT REVIEW
+
+Source: report/ICPC-HUE-Community-Progress-Report-August-September-2026.md
+Structure: title/date; executive overview + four key figures; DCC 2026 story; ECPC preparation/participation; 2026/27 season launch; committee roles; leadership/recruitment; platform/mentoring; partnerships; intro day; 7-phase roadmap (46 milestones); conclusion + 4 next actions.
+
+Narrative strengths:
+- Clear arc from DCC preparation -> ECPC experience -> systems built for the next season.
+- Strong quantified anchors: 43K+ Facebook views, 100+ DCC contestants, 4 committees, 5 communities/partners, 12 qualification problems, 3+ solved by most teams, 4 solved by lead team, ninth place DCC qualifier.
+- Shows community as organizer + competitor + platform builder, not only a student club.
+- Roadmap and next actions make the report action-oriented.
+
+Weak points / factual cleanup:
+- Text has a typo/double space: “community activities,  The following day”.
+- The source had “16 teams” but current draft excludes it due to ambiguity; confirm whether teams prepared/participated/qualified before using.
+- “5 partner communities” in key figures and “5 communities” in DCC are not the same claim; explicitly label DCC participating communities vs ongoing strategic partners (partnership section names 3).
+- DCC list names 5 communities; partnerships list 3; avoid implying 5 ongoing partners.
+- Roadmap CSV has Warm up Contest listed as 2026-01-29; markdown corrects to Jan 29 2027 with a footnote. Update CSV/source too so no inconsistency.
+- “Approximately one month before ECPC” and “results exceeded expectations” are qualitative; if possible add dates, number of HUE teams/participants, and objective result/rank.
+- “Most teams solved at least three” needs denominator; lead team “came within one problem of advancing” needs official cutoff/source if used.
+- Intro day is future/planned; distinguish completed outcomes from upcoming commitments throughout.
+- Platform claims (mentor dashboard, daily logs) should be marked “prepared/ready” vs live usage and include adoption numbers if available.
+- Some paragraphs are long and repeat “community”; reduce prose for slide-style output.
+
+Recommended Gamma-style narrative (8–10 cards/slides, one idea each):
+1 Cover: ICPC HUE / Community Progress Report / Aug–Sep 2026, one strong event image.
+2 “From preparation to an operating system”: 1-sentence thesis + 4 large stats (43K+, 100+, 4, 2026/27).
+3 “DCC made practice real”: online -> offline two-step visual, 5 communities, 100+ contestants, HUE ninth place; use DCC photo.
+4 “ECPC: what the teams achieved”: trip/qualification timeline; 12 problems, most teams 3+, lead 4; use team photo; carefully label evidence.
+5 “The lesson became a model”: show 4 committees (instructors, mentors, media, operations) as four role cards.
+6 “Leadership scales through people”: top-five-team interview pipeline + Hire Up recruitment + no forced committee placement.
+7 “One platform closes the loop”: student daily log -> mentor review -> targeted feedback -> contest readiness; use simple flow diagram.
+8 “The network expanded”: DCC and partner communities, separate 5 DCC participants from 3 strategic relationships; show logos/names only when confirmed.
+9 “Road to ICPC 2026/27”: replace 46-row table with 7 phase bands and milestone dots; put full timeline in appendix.
+10 Closing: 4 next actions + one clear outcome statement: earlier preparation, consistent follow-up, stronger partners, more teams to ECPC.
+
+Design translation: use one visual per card, short headline as takeaway, 3–4 metrics max, body copy <= ~60 words/card; move names/credits and full lesson-level schedule to appendix. Keep warm dark-brown + orange/gold palette already present in current PDF; use photos from report/dcc and report/ecpc_qulifcatio as evidence strips rather than decorative mosaics.

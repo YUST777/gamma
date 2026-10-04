@@ -1,0 +1,1161 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>ICPC HUE Community Report — Season 2025/2026</title>
+  <style>
+    @page { size: A4 portrait; margin: 0; }
+
+    :root {
+      --accent: #E19D1B;
+      --accent-dark: #A8720F;
+      --card: #FBF3E3;
+      --border: #E8DCC4;
+      --head: #141414;
+      --body: #383838;
+      --muted: #7A7A7A;
+      --line: #ECECEC;
+      --font-head: 'Lato', 'Noto Sans', sans-serif;
+      --font-body: 'Noto Sans', 'Lato', sans-serif;
+    }
+
+    * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+    body {
+      margin: 0; padding: 0;
+      font-family: var(--font-body);
+      color: var(--body);
+      font-size: 11px;
+      line-height: 1.8;
+      background: #F0EDE6;
+    }
+    @media print { body { background: transparent; } }
+
+    .page {
+      width: 210mm; height: 297mm;
+      background: #fff;
+      padding: 13mm 15mm 11mm 15mm;
+      position: relative;
+      page-break-after: always;
+      overflow: hidden;
+      display: flex; flex-direction: column;
+    }
+    .page:last-child { page-break-after: auto; }
+    
+    /* latin fragments (urls, names of contests) keep LTR order */
+    .ltr { direction: ltr; unicode-bidi: isolate; display: inline-block; }
+
+    /* header / footer */
+    .top {
+      display: flex; justify-content: space-between; align-items: center;
+      padding-bottom: 8px; border-bottom: 1px solid var(--line); margin-bottom: 14px;
+    }
+    .brand { display: flex; align-items: center; gap: 8px; }
+    .brand img { height: 28px; }
+    .brand-txt { font-family: var(--font-head); font-size: 9px; font-weight: 700; color: var(--head); line-height: 1.4; }
+    .brand-txt span { color: var(--accent-dark); font-weight: 600; }
+    .pill {
+      background: var(--card); border: 1px solid var(--border); border-radius: 20px;
+      padding: 2px 10px; font-size: 8.5px; font-weight: 700; color: var(--accent-dark);
+      font-family: var(--font-head);
+    }
+    .foot {
+      margin-top: auto; padding-top: 6px; border-top: 1px solid var(--line);
+      display: flex; justify-content: space-between; font-size: 8px; color: var(--muted);
+    }
+
+    /* titles */
+    .kicker {
+      display: flex; align-items: center; gap: 8px;
+      font-family: var(--font-head); font-size: 9.5px; font-weight: 700; color: var(--accent-dark);
+    }
+    .kicker::before { content: ""; width: 20px; height: 3px; background: var(--accent); border-radius: 2px; }
+    h1 {
+      font-family: var(--font-head); font-size: 23px; font-weight: 800; color: var(--head);
+      margin: 2px 0 4px 0; line-height: 1.5;
+    }
+    h2 {
+      font-family: var(--font-head); font-size: 13px; font-weight: 700; color: var(--head);
+      margin: 0 0 4px 0; line-height: 1.5;
+    }
+    .lead { font-size: 11px; color: #4A4A4A; margin: 0 0 12px 0; }
+    p { margin: 0 0 6px 0; }
+
+    /* cards & grids */
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 11px 14px; }
+    .card-w { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 11px 14px; }
+    .card-dark { background: #1A1A1A; color: #EEE; border-radius: 12px; padding: 12px 15px; }
+    .card-dark h2 { color: var(--accent); }
+    .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+    .g3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 10px; }
+    .g4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 9px; margin-bottom: 10px; }
+
+    .stat { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 9px 11px; }
+    .stat b {
+      display: block; font-family: var(--font-head); font-size: 21px; font-weight: 800;
+      color: var(--head); line-height: 1.3; direction: ltr; text-align: right;
+    }
+    .stat span { font-size: 9px; color: var(--accent-dark); font-weight: 700; display: block; line-height: 1.5; }
+    .stat small { font-size: 8.5px; color: var(--muted); display: block; line-height: 1.5; }
+
+    ul.clean { margin: 0; padding: 0 16px 0 0; }
+    ul.clean li { margin-bottom: 3px; }
+    ul.clean li::marker { color: var(--accent); }
+
+    /* path / flow */
+    .flow { display: flex; align-items: stretch; gap: 6px; margin: 4px 0 10px 0; }
+    .flow .st {
+      flex: 1; text-align: center; background: #fff; border: 1px solid var(--border); border-radius: 10px;
+      padding: 6px 4px; font-size: 8.5px; color: var(--muted); line-height: 1.5;
+    }
+    .flow .st b { display: block; font-family: var(--font-head); font-size: 12px; color: var(--head); }
+    .flow .st.on { background: var(--accent); border-color: var(--accent-dark); color: #222; }
+    .flow .arr { align-self: center; color: var(--accent-dark); font-size: 13px; font-weight: 800; }
+
+    /* timeline */
+    .tl { position: relative; margin: 0; padding: 0; list-style: none; }
+    .tl::before { content: ""; position: absolute; right: 74px; top: 4px; bottom: 4px; width: 2px; background: var(--border); }
+    .tl li { display: flex; gap: 14px; margin-bottom: 7px; position: relative; }
+    .tl .d {
+      width: 66px; flex-shrink: 0; font-family: var(--font-head); font-size: 8.8px; font-weight: 700;
+      color: var(--accent-dark); line-height: 1.5; padding-top: 1px;
+    }
+    .tl li::after {
+      content: ""; position: absolute; right: 70px; top: 5px; width: 10px; height: 10px;
+      border-radius: 50%; background: #fff; border: 2px solid var(--accent);
+    }
+    .tl li.hl::after { background: var(--accent); }
+    .tl .c { flex: 1; padding-right: 8px; font-size: 9.8px; line-height: 1.65; }
+    .tl .c b { font-family: var(--font-head); color: var(--head); font-size: 10.3px; }
+
+    /* photos */
+    .ph { border-radius: 10px; overflow: hidden; border: 1px solid var(--border); background: #F4EADA; }
+    .ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .cap { font-size: 8.3px; color: var(--muted); margin-top: 2px; line-height: 1.5; }
+
+    /* table */
+    table.t { width: 100%; border-collapse: separate; border-spacing: 0; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; font-size: 9.3px; }
+    table.t th { background: var(--card); color: var(--head); font-family: var(--font-head); font-weight: 700; text-align: right; padding: 5px 9px; border-bottom: 1px solid var(--border); }
+    table.t td { padding: 4.5px 9px; border-bottom: 1px solid #F0E8DA; vertical-align: top; line-height: 1.6; }
+    table.t tr:last-child td { border-bottom: none; }
+    table.t tr:nth-child(even) td { background: #FDFAF5; }
+    table.t td.n { white-space: nowrap; font-weight: 600; color: var(--accent-dark); }
+
+    /* requests */
+    .req { display: flex; gap: 9px; align-items: flex-start; background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 7px 10px; }
+    .req .i {
+      width: 22px; height: 22px; flex-shrink: 0; border-radius: 6px; background: var(--accent);
+      color: #111; font-family: var(--font-head); font-weight: 800; font-size: 11px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .req b { font-family: var(--font-head); color: var(--head); font-size: 10.2px; display: block; line-height: 1.5; }
+    .req div { font-size: 9.3px; line-height: 1.6; }
+
+    .note { font-size: 8.3px; color: var(--muted); line-height: 1.6; }
+    .code {
+      direction: ltr; text-align: left; font-family: 'DejaVu Sans Mono', monospace; font-size: 8.8px;
+      background: #1A1A1A; color: #F2D9A6; border-radius: 8px; padding: 7px 10px; line-height: 1.55; margin-top: 6px;
+    }
+    .s { font-size: 10.3px; line-height: 1.8; }
+    .ct { font-family: var(--font-head); color: var(--head); font-size: 11px; font-weight: 700; display: block; line-height: 1.6; margin-bottom: 2px; }
+    .sec { margin: 4px 0 6px 0; }
+    .num { font-family: var(--font-head); font-weight: 800; color: var(--accent-dark); }
+    .zf > :not(.top):not(.foot) { zoom: 1.16; }
+    .zg > :not(.top):not(.foot) { zoom: 1.1; }
+    .ledger .sheet-table td { padding: 4.6px 5px; }
+    .zj > :not(.top):not(.foot) { zoom: 1.42; }
+    .tl.loose li { margin-bottom: 13px; }
+    .sess table.t td { padding: 6.2px 9px; }
+    .zh > :not(.top):not(.foot) { zoom: 1.32; }
+    .zi > :not(.top):not(.foot) { zoom: 1.24; }
+    .shot { border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
+    .shot img { width: 100%; display: block; }
+    /* spreadsheet ledger (copied from the 2025-2027 report, RTL) */
+    .sheet-card { background: #fff; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+    .sheet-title-bar { background: #FAF6EE; color: var(--accent-dark); font-family: var(--font-head); font-weight: 800; font-size: 9px; padding: 4px 8px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+    .sheet-table { width: 100%; border-collapse: collapse; font-size: 8.6px; line-height: 1.45; }
+    .sheet-table th { background: #F5F1E8; color: #7A7062; font-weight: 700; font-size: 8px; padding: 3px 5px; border-bottom: 1px solid #DFD8CC; border-left: 1px solid #DFD8CC; text-align: right; }
+    .sheet-table th:last-child { border-left: none; text-align: left; }
+    .sheet-table td { padding: 2.6px 5px; border-bottom: 1px solid #ECE7DE; border-left: 1px solid #ECE7DE; color: var(--body); vertical-align: middle; }
+    .sheet-table td:last-child { border-left: none; }
+    .sheet-table td.col-idx { font-family: 'DejaVu Sans Mono', monospace; font-size: 7.6px; font-weight: 700; color: #8C8275; background: #F7F4EC; text-align: center; width: 20px; }
+    .sheet-table td.col-date { font-size: 8px; color: #6B6255; text-align: left; white-space: nowrap; }
+    .sheet-table tr:nth-child(even) td:not(.col-idx) { background: #FAF8F4; }
+    .sheet-table tr.row-contest td { background: #FEF7E8 !important; color: #8C5D08 !important; font-weight: 700; }
+    .sheet-table tr.row-contest td.col-idx { background: #FDE8B5 !important; color: #784E04 !important; }
+    .sheet-table tr.row-break td { background: #F3F0EA !important; color: #8A8175 !important; font-style: italic; }
+    .tag-accent { display: inline-block; background: var(--accent); color: #000; font-weight: 700; font-size: 8.5px; padding: 1px 6px; border-radius: 4px; margin-right: 4px; }
+    .pl { font-family: var(--font-head); font-weight: 700; color: var(--accent-dark); }
+    .ok { font-family: var(--font-head); font-weight: 700; color: #2E7D4F; }
+    /* ---- LTR overrides for the English edition ---- */
+    body { line-height: 1.6; }
+    .s { line-height: 1.6; }
+    .stat b { text-align: left; }
+    ul.clean { padding: 0 0 0 16px; }
+    .tl::before { right: auto; left: 74px; }
+    .tl li::after { right: auto; left: 70px; }
+    .tl .c { padding-right: 0; padding-left: 8px; }
+    table.t th { text-align: left; }
+    .sheet-table th { text-align: left; border-left: none; border-right: 1px solid #DFD8CC; }
+    .sheet-table th:last-child { border-right: none; text-align: right; }
+    .sheet-table td { border-left: none; border-right: 1px solid #ECE7DE; }
+    .sheet-table td:last-child { border-right: none; }
+    .sheet-table td.col-date { text-align: right; }
+    .tag-accent { margin-right: 0; margin-left: 4px; }
+    h1 { letter-spacing: -0.01em; line-height: 1.25; }
+  </style>
+</head>
+<body>
+<section class="page" style="padding:0; background:#0A0A0A;">
+  <div style="position:absolute; inset:0;">
+    <img src="../../report/ecpc_qulifcatio/photo_2026-09-23_12-32-07.jpg" alt="Horus University delegation at the ECPC qualifiers in Alexandria"
+         style="width:100%; height:100%; object-fit:cover; object-position:center 35%; filter:brightness(0.72);">
+  </div>
+  <div style="position:absolute; top:0; left:0; right:0; height:25%; background:linear-gradient(to bottom, rgba(0,0,0,.6), transparent);"></div>
+  <div style="position:absolute; bottom:0; left:0; right:0; height:62%; background:linear-gradient(to top, rgba(0,0,0,.93) 0%, rgba(0,0,0,.6) 55%, transparent 100%);"></div>
+
+  <div style="position:absolute; top:0; left:0; right:0; display:flex; justify-content:space-between; align-items:center; padding:16px 22px;">
+    <div style="display:flex; align-items:center; gap:9px;">
+      <img src="../../report/assets/horus_logo.png" style="height:30px; filter:brightness(1.3);" alt="Horus University logo">
+      <div style="font-family:var(--font-head); font-size:9px; font-weight:700; color:rgba(255,255,255,.88); line-height:1.5;">
+        Horus University — Egypt<br><span style="color:#E19D1B;">Faculty of Artificial Intelligence</span>
+      </div>
+    </div>
+    <div style="font-family:var(--font-head); font-size:8.5px; font-weight:700; color:#E19D1B; border:1px solid rgba(225,157,27,.45); background:rgba(225,157,27,.15); border-radius:20px; padding:3px 12px;">
+      October 2026
+    </div>
+  </div>
+
+  <div style="position:absolute; bottom:0; left:0; right:0; padding:0 26px 20px 26px;">
+    <div class="kicker" style="color:#E19D1B; margin-bottom:6px;">A Report to the Academic Supervisor</div>
+    <h1 style="color:#fff; font-size:31px; line-height:1.45; margin:0 0 4px 0;">
+      The <span class="ltr">ICPC HUE</span> Community<br>Season 2025/2026 Highlights
+    </h1>
+    <p style="font-size:12px; color:rgba(255,255,255,.78); margin:0 0 16px 0; max-width:470px;">
+      A student community that trains Horus University students in competitive programming and prepares them for the global <span class="ltr">ICPC</span>.
+      In one season: 16 teams at the <span class="ltr">ECPC</span> qualifiers, the first competitive programming contest hosted in the Damietta region, and a full training platform built by our students. Here is what we need to continue.
+    </p>
+
+    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:16px;">
+      <div style="background:rgba(225,157,27,.16); border:1px solid rgba(225,157,27,.45); border-radius:10px; padding:7px 10px;">
+        <div style="font-family:var(--font-head); font-size:19px; font-weight:800; color:#F0B52A; line-height:1.3;">16</div>
+        <div style="font-size:8.5px; color:rgba(255,255,255,.75); line-height:1.5;">teams represented Horus at <span class="ltr">ECPC</span></div>
+      </div>
+      <div style="background:rgba(225,157,27,.16); border:1px solid rgba(225,157,27,.45); border-radius:10px; padding:7px 10px;">
+        <div style="font-family:var(--font-head); font-size:19px; font-weight:800; color:#F0B52A; line-height:1.3;">+800</div>
+        <div style="font-size:8.5px; color:rgba(255,255,255,.75); line-height:1.5;">students registered on <span class="ltr">icpchue.com</span></div>
+      </div>
+      <div style="background:rgba(225,157,27,.16); border:1px solid rgba(225,157,27,.45); border-radius:10px; padding:7px 10px;">
+        <div style="font-family:var(--font-head); font-size:19px; font-weight:800; color:#F0B52A; line-height:1.3;">650</div>
+        <div style="font-size:8.5px; color:rgba(255,255,255,.75); line-height:1.5;">problems across 3 levels</div>
+      </div>
+      <div style="background:rgba(225,157,27,.16); border:1px solid rgba(225,157,27,.45); border-radius:10px; padding:7px 10px;">
+        <div style="font-family:var(--font-head); font-size:19px; font-weight:800; color:#F0B52A; line-height:1.3;">+290</div>
+        <div style="font-size:8.5px; color:rgba(255,255,255,.75); line-height:1.5;">software updates to the platform</div>
+      </div>
+    </div>
+
+    <div style="border-top:1px solid rgba(255,255,255,.15); padding-top:9px; display:flex; justify-content:space-between; font-size:8.3px; color:rgba(255,255,255,.5);">
+      <span>Horus University delegation at the <span class="ltr">ECPC</span> qualifiers — Arab Academy for Science and Technology, Alexandria, August 2026</span>
+      <span>Page 1 of 19</span>
+    </div>
+  </div>
+</section>
+
+<section class="page zi">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt"><span class="ltr">ICPC HUE</span> Community<br><span>Horus University — Egypt</span></div></div>
+    <div class="pill">01 · Who We Are</div>
+  </div>
+
+  <div class="kicker">About the Community</div>
+  <h1>Who we are, and why this work deserves support</h1>
+  <p class="lead">
+    <span class="ltr">ICPC HUE</span> is a student community founded in the Faculty of AI that serves all faculties of Horus University.
+    We train students over a full season (one academic year) to compete in the <span class="ltr">ICPC</span>.</p>
+  <p class="s">The idea is not new: after <span class="ltr">ECPC</span> in Egypt asked every university to form a student team to train its students, almost every participating university now has a community like ours. We are Horus University's community, active since November 2025, and we want Horus to hold a permanent place among these universities.
+  </p>
+
+
+  <h2>What is the ICPC?</h2>
+  <p class="s">The largest and oldest university programming contest in the world. Students compete in teams of 3 from the same university, sharing one computer, to solve a set of programming problems in 5 hours. The team that solves the most problems in the least time wins. Teams advance through these stages:</p>
+  <div class="flow">
+    <div class="st"><b>University Qualifiers</b>Teams from the same university compete first</div>
+    <div class="arr">→</div>
+    <div class="st on"><b class="ltr">ECPC</b>The Egyptian contest, held each August</div>
+    <div class="arr">→</div>
+    <div class="st"><b class="ltr">ACPC</b>Arab countries and Africa</div>
+    <div class="arr">→</div>
+    <div class="st"><b>World Finals</b><span class="ltr">ICPC World Finals</span></div>
+  </div>
+
+  <div class="card" style="margin-bottom:10px;">
+    <h2>What do we study? <span class="ltr">Problem Solving</span></h2>
+    <div style="display:flex; gap:14px; align-items:center;">
+      <div style="flex:1.3;">
+        <p class="s">We take a logic problem and turn it into a correct, fast program. A simple example: you have 4 sticks of different lengths. Can you form a square with them?
+          Given the lengths <b>8 6 11 12</b>, the answer is no, because the sides are unequal. Given <b>8 8 8 8</b>, the answer is yes.</p>
+        <p class="s" style="margin:0;">As students progress, problems get harder and require algorithms and data structures such as <span class="ltr">STL</span>, binary search, dynamic programming and graphs, and the solution must run in a fraction of a second on huge inputs.</p>
+      </div>
+      <div style="flex:1;">
+        <div class="code" style="font-size:9.5px; margin:0;">// Input: 8 8 8 8<br>read a, b, c, d<br>print(a == b &amp;&amp; b == c &amp;&amp; c == d)<br>// Output: true</div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Why does it matter?</h2>
+  <div class="g2" style="margin-bottom:0;">
+    <div class="card-w">
+      <span class="ct">For the student</span>
+      <ul class="clean s">
+        <li><b>A filter for employers:</b> the contest shows who truly codes well and understands hard topics.</li>
+        <li><b>A path to a job:</b> interviews at companies such as <span class="ltr">Noon</span> and the global <span class="ltr">FAANG</span> companies are built on <span class="ltr">Problem Solving</span> questions, which are hard to pass without training.</li>
+        <li><b>A stronger CV:</b> competing and working in committees is real experience for the <span class="ltr">CV</span>.</li>
+      </ul>
+    </div>
+    <div class="card-w">
+      <span class="ct">For the university</span>
+      <ul class="clean s">
+        <li><b>Horus in the results:</b> the university's name appears in the contest rankings alongside every university in Egypt.</li>
+        <li><b>In-demand graduates:</b> students with a strong foundation in programming and logical thinking, which the job market seeks.</li>
+        <li><b>Sustainable activity:</b> today's contestants become tomorrow's instructors, passing experience from one cohort to the next.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="foot"><span>The <span class="ltr">ICPC HUE</span> Community — Horus University</span><span>Page 2 of 19</span></div>
+</section>
+
+<section class="page zf">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt"><span class="ltr">ICPC HUE</span> Community<br><span>Horus University — Egypt</span></div></div>
+    <div class="pill">02 · How We Work</div>
+  </div>
+
+  <div class="kicker">A fixed system repeated every season</div>
+  <h1>How we train, and how we organize ourselves</h1>
+  <p class="lead">We follow the same plan every year: a student starts from zero and ends up on a team ready for the <span class="ltr">ECPC</span> qualifiers.</p>
+
+  <h2>The weekly training cycle</h2>
+  <div class="flow" style="margin-bottom:6px;">
+    <div class="st on"><b>Teaching session</b>Online or offline</div>
+    <div class="arr">→</div>
+    <div class="st"><b>Problem sheet</b>On the platform after each session</div>
+    <div class="arr">→</div>
+    <div class="st"><b>Mentor follow-up</b>Daily log and weekly review</div>
+    <div class="arr">→</div>
+    <div class="st"><b><span class="ltr">Up Solve</span></b>We solve the hard ones together and share experience</div>
+  </div>
+  <p class="s">Sessions can reach two per week at busy times. Training runs through the first and second terms and the summer. Topics change by stage and student level, with regular practice contests followed by team-formation contests.</p>
+
+  <div class="g2">
+    <div class="card">
+      <h2>Our goals</h2>
+      <ul class="clean s">
+        <li>Train our registered students all season so they reach the contest ready.</li>
+        <li>Help them access job opportunities and build a CV through our activities.</li>
+        <li>Build training tools for Horus University not available at other universities.</li>
+        <li>Increase the number of Horus teams reaching the advanced <span class="ltr">ECPC</span> stages each year.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Training levels</h2>
+      <ul class="clean s">
+        <li><b>Level 0:</b> programming language basics for complete beginners.</li>
+        <li><b>Level 1:</b> intro to competitive programming: <span class="ltr">STL</span>, binary search and two pointers.</li>
+        <li><b>Level 2:</b> advanced contest-level algorithms and data structures.</li>
+        <li>Students are grouped by level and progress.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>4 committees, each member chooses their own</h2>
+  <p class="s">No member is assigned to a committee. Each student picks the role that fits their skills, so they stay more committed.</p>
+  <div class="g2" style="gap:8px;">
+    <div class="card-w"><span class="ct">1 · Instructors</span><div class="s">They teach the weekly sessions, solve problems step by step and prepare the sheets. They need deep understanding, academic integrity and patience with beginners.</div></div>
+    <div class="card-w"><span class="ct">2 · Mentors</span><div class="s">Each mentor follows a small group closely, contacts students who fall behind, and tracks their progress and status so they keep solving.</div></div>
+    <div class="card-w"><span class="ct">3 · Media</span><div class="s">Presentations, videos (<span class="ltr">Premiere</span> and <span class="ltr">After Effects</span>) and posts that document student achievements and attract new members.</div></div>
+    <div class="card-w"><span class="ct">4 · Organizing Committee</span><div class="s">Booking labs with university administration, running offline events and contests, and handling printing and supplies. It currently has 11 members.</div></div>
+  </div>
+
+  <div class="card-dark" style="margin-bottom:0;">
+    <h2>How we formed the committees: in two phases</h2>
+    <div class="g2" style="margin:0; gap:14px;">
+      <div class="s" style="color:#DDD;"><b style="color:#F0B52A;">Phase 1: the technical core.</b> We interviewed the top 5 teams from the <span class="ltr">ECPC</span> qualifiers (4 from AI and one from Engineering). Each candidate studied a topic such as <span class="ltr">STL</span> in 5 days and then taught it to the community, supervised by Eng. Fatma Magdy, Eng. Sara Lotfy and Eng. Raafat Mohamed.</div>
+      <div class="s" style="color:#DDD;"><b style="color:#F0B52A;">Phase 2: the “<span class="ltr">Hire Up</span>” campaign.</b> We opened applications to all Horus students via <span class="ltr">icpchue.com/job</span> for Media and Organizing, and received 50 applicants.</div>
+    </div>
+  </div>
+
+  <div class="foot"><span>Source: community report, September 2026</span><span>Page 3 of 19</span></div>
+</section>
+
+<section class="page zi">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt"><span class="ltr">ICPC HUE</span> Community<br><span>Horus University — Egypt</span></div></div>
+    <div class="pill">03 · Season Highlights (1/2)</div>
+  </div>
+
+  <div class="kicker">November 2025 – March 2026</div>
+  <h1>What we achieved last season: the beginning</h1>
+  <p class="lead">Key milestones in order, from our first announcement in November 2025 to Orientation Day in March 2026.</p>
+
+  <div class="g4">
+    <div class="stat"><b>+500</b><span>students enrolled in training</span><small>during the season</small></div>
+    <div class="stat"><b>21</b><span>students completed training</span><small>by season end, in 7 teams</small></div>
+    <div class="stat"><b>16</b><span>teams represented Horus</span><small>at the ECPC 2026 qualifiers</small></div>
+    <div class="stat"><b>+22</b><span>hours of recorded sessions</span><small>available on the platform</small></div>
+  </div>
+
+  <ul class="tl loose" style="margin-top:8px;">
+    <li class="hl"><div class="d">26 – 28 Nov 2025</div><div class="c"><b>Community launch and registration:</b> the first competitive programming community in the Faculty of AI. Over 300 students registered in the first days, and the platform launched on 28 Nov.</div></li>
+    <li><div class="d">7 Dec</div><div class="c"><b>Live opening session</b> with over 160 students; we closed the form after requests passed 250.</div></li>
+    <li class="hl"><div class="d">8 – 12 Dec</div><div class="c"><b>Admission camp:</b> kickoff session (8 Dec on Telegram), Conditions and <span class="ltr">Control Flow</span> (9), <span class="ltr">IF / ELSE &amp; SWITCH</span> (10), review and problem solving (11), and the admission exam (12 Dec).</div></li>
+    <li><div class="d">14 Dec</div><div class="c"><b>Platform walkthrough video</b> after the latest update, showing students how to use it.</div></li>
+    <li><div class="d">20 – 26 Dec</div><div class="c"><b>Winter camp:</b> session on 20 Dec, first sheet and a submission guide video (24 Dec), the leaderboard went live, and recordings of all four sessions uploaded to the platform (26 Dec).</div></li>
+    <li class="hl"><div class="d">1 – 2 Jan 2026</div><div class="c"><b><span class="ltr">Programming 1</span> camp:</b> a full course review and a live problem-solving stream, with the recording uploaded before the faculty exam on 3 Jan.</div></li>
+    <li><div class="d">3 Jan</div><div class="c"><b>Official launch of the learning platform</b> with an intro video: instant judge, side-by-side input and output, session library and leaderboards.</div></li>
+    <li><div class="d">26 Jan</div><div class="c"><b>Team returned after exams</b> and announced the winter break camp.</div></li>
+    <li class="hl"><div class="d">February 2026</div><div class="c"><b>Team officially registered</b> with Student Affairs under the supervision of Dr. Basma Mostafa and Dr. Yasser El-Awady. The 650-problem curriculum was completed, the <span class="ltr">Verdict Helper</span> extension launched (9 Feb), and we registered <span class="ltr">icpchue.com</span> (25 Feb).</div></li>
+    <li><div class="d">Until 6 Mar</div><div class="c"><b>17 hours of live streams</b> in Level 0: data types, loops, arrays and functions.</div></li>
+    <li class="hl"><div class="d">12 March 2026</div><div class="c"><b>Orientation Day</b> in Hall H403, Faculty of AI, our first official offline event (details on page 7).</div></li>
+  </ul>
+
+  <div class="foot"><span>Sources: posts on <span class="ltr">facebook.com/icpchue</span>, previous community reports and the platform development log</span><span>Page 4 of 19</span></div>
+</section>
+
+<section class="page zf">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt"><span class="ltr">ICPC HUE</span> Community<br><span>Horus University — Egypt</span></div></div>
+    <div class="pill">04 · Season Highlights (2/2)</div>
+  </div>
+
+  <div class="kicker">March – October 2026</div>
+  <h1>What we achieved last season: from training to competition</h1>
+  <p class="lead">From team formation to the <span class="ltr">ECPC</span> qualifiers, then preparing for the new season.</p>
+
+  <ul class="tl" style="margin-top:4px;">
+    <li><div class="d">14 – 15 Mar</div><div class="c"><b>One-step registration</b> at <span class="ltr">icpchue.com/register</span> replacing the form, and the start of the <b>T-shirt challenge</b> for the leaderboard's top spot.</div></li>
+    <li><div class="d">2 – 4 Apr</div><div class="c"><b>Explaining the <span class="ltr">ECPC</span></b>: its stages, rules and fees; honoring Mostafa Kamal as March champion (3 Apr); and a live Q&amp;A stream (4 Apr).</div></li>
+    <li class="hl"><div class="d">7 Apr</div><div class="c"><b>First <span class="ltr">ICPC HUE</span> contest</b> for team formation in Lab E425, Faculty of Engineering: Ibrahim Matar, then Ahmed Waleed, then Noha Kamal.</div></li>
+    <li><div class="d">10 Apr</div><div class="c"><b>Live <span class="ltr">Functions</span> session,</b> and the <span class="ltr">Functions</span> and <span class="ltr">Recursion</span> sessions uploaded to the platform.</div></li>
+    <li class="hl"><div class="d">14 – 30 Apr</div><div class="c"><b>Second team-formation contest</b> in Hall A209 (14 Apr); <span class="ltr">ECPC</span> registration closed on 30 Apr with 7 teams: 4 from Level 1 and 3 from Level 2.</div></li>
+    <li><div class="d">May 2026</div><div class="c"><b>Beginner track sessions completed:</b> data and conditions, loops, arrays, strings, functions and recursion.</div></li>
+    <li class="hl"><div class="d">12 May</div><div class="c"><b><span class="ltr">ECPC</span> local qualifiers at the faculty</b> under the patronage of Prof. Dr. Ibrahim Saber, Chairman of the University Board of Trustees, with 6 teams.</div></li>
+    <li><div class="d">Summer 2026</div><div class="c"><b>Level 1 training</b> with <span class="ltr">Time Complexity</span> and <span class="ltr">STL 1</span> sessions on the platform, and a month of intensive review of advanced topics before the qualifiers.</div></li>
+    <li class="hl"><div class="d">26 Jul – 9 Aug</div><div class="c"><b>Hosting the <span class="ltr">DCC</span> contest</b> organized by <span class="ltr">ACPC DU</span>: registration until 29 Jul, online round 31 Jul, final at the faculty 6 Aug, winners announced 9 Aug.</div></li>
+    <li class="hl"><div class="d">17 – 25 Aug</div><div class="c"><b><span class="ltr">ECPC</span> qualifiers:</b> our teams announced (17), travel to Alexandria (18), 16 teams represented Horus for the first time (24), and the qualifiers trip post (25).</div></li>
+    <li><div class="d">23 – 27 Aug</div><div class="c"><b>Arabic FAQ page</b> about the <span class="ltr">ICPC</span> on the platform, and the volunteer portal <span class="ltr">icpchue.com/job</span>.</div></li>
+    <li><div class="d">September 2026</div><div class="c"><b>New season preparation:</b> interviews with the top 5 teams to select instructors and mentors, the mentor dashboard (2 Sep), the daily study log (8 Sep), and moving sessions to YouTube.</div></li>
+    <li><div class="d">23 – 24 Sep</div><div class="c"><b>Honoring the 2025/2026 Board,</b> and the “<span class="ltr">Hire Up</span>” campaign to join the 2027 season team, which received 50 applicants.</div></li>
+    <li class="hl"><div class="d">2 October 2026</div><div class="c"><b>Level 0 registration opened</b> for the new season on the platform.</div></li>
+  </ul>
+
+  <div class="foot"><span>Sources: posts on <span class="ltr">facebook.com/icpchue</span>, previous community reports and the platform development log</span><span>Page 5 of 19</span></div>
+</section>
+
+<section class="page zf sess">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt"><span class="ltr">ICPC HUE</span> Community<br><span>Horus University — Egypt</span></div></div>
+    <div class="pill">05 · Sessions</div>
+  </div>
+
+  <div class="kicker">December 2025 – August 2026</div>
+  <h1>The 14 sessions we taught this season</h1>
+  <p class="lead">Each session with the day it was taught and its content. Dates come from Telegram channel and Facebook page announcements, and the recording's publish date on the platform.</p>
+
+  <div class="g4">
+    <div class="stat"><b>14</b><span>taught sessions</span><small>from 8 Dec 2025 to Aug 2026</small></div>
+    <div class="stat"><b>12</b><span>recorded sessions</span><small>on the platform across 3 camps</small></div>
+    <div class="stat"><b>+17</b><span>hours of live stream</span><small>for Level 0 up to 6 Mar 2026</small></div>
+    <div class="stat"><b>+22</b><span>hours of recorded teaching</span><small>available to students anytime</small></div>
+  </div>
+
+  <table class="t" style="margin-bottom:8px;">
+    <tr><th style="width:4%;">#</th><th style="width:19%;">Day</th><th style="width:22%;">Session</th><th>Content</th></tr>
+    <tr><td class="n">1</td><td class="n">Mon 8 Dec 2025</td><td><b class="ltr">Data Types &amp; I/O</b></td><td>First session of the admission camp: input/output, arithmetic operations and data types. Live stream at 10 PM.</td></tr>
+    <tr><td class="n">2</td><td class="n">Tue 9 Dec</td><td><b class="ltr">Condition &amp; Control Flow</b></td><td><span class="ltr">if / else</span>, comparisons and <span class="ltr">logical operators</span>, and <span class="ltr">switch / break / continue</span>, with contest applications.</td></tr>
+    <tr><td class="n">3</td><td class="n">Wed 10 Dec</td><td><b class="ltr">IF / ELSE &amp; SWITCH</b></td><td>How a program makes decisions and picks the right path, and <span class="ltr">switch case</span> for multiple cases.</td></tr>
+    <tr><td class="n">4</td><td class="n">Thu 11 Dec</td><td><b class="ltr">Revision + Problem Solving</b></td><td>Review of the first 3 sessions and 3 <span class="ltr">Codeforces</span> problems, before the admission exam on Fri 12 Dec.</td></tr>
+    <tr><td class="n">5</td><td class="n">Sat 20 Dec</td><td><b class="ltr">Time &amp; Space Complexity</b></td><td>First session of the winter camp: 6 problems from <span class="ltr">Sheet 1</span> and <span class="ltr">Sheet 2</span>, plus complexity and choosing the faster solution.</td></tr>
+    <tr><td class="n">6</td><td class="n">Thu 1 Jan 2026</td><td><b class="ltr">Programming 1: Full Revision</b></td><td>The full <span class="ltr">Programming 1</span> syllabus in one recorded session, before the faculty exam on 3 Jan.</td></tr>
+    <tr><td class="n">7</td><td class="n">Thu 1 Jan (evening)</td><td><b class="ltr">Programming 1: Exam Training</b></td><td>Live stream solving questions: exam ideas and the pitfalls students face while writing code.</td></tr>
+    <tr><td class="n">8</td><td class="n">Fri 2 Jan</td><td><b><span class="ltr">Exam Training</span> (cont.)</b></td><td>Live stream at 1 PM continuing the previous day's stream, one day before the exam.</td></tr>
+    <tr><td class="n">9</td><td class="n">Fri 10 Apr</td><td><b class="ltr">Functions</b></td><td>Half an hour of <span class="ltr">ECPC</span> Q&amp;A, then <span class="ltr">Functions</span> with a review of earlier topics. Live stream at 8:30 PM.</td></tr>
+    <tr><td class="n">10</td><td class="n">Apr (posted 29 Apr)</td><td><b class="ltr">Recursion</b></td><td>Recursion, the <span class="ltr">base case</span>, and solving problems the <span class="ltr">recursive</span> way.</td></tr>
+    <tr><td class="n">11</td><td class="n">May 2026</td><td><b class="ltr">Arrays &amp; Ad-Hocs</b></td><td><span class="ltr">1D</span> and <span class="ltr">2D</span> arrays, and how to approach <span class="ltr">ad-hoc</span> problems.</td></tr>
+    <tr><td class="n">12</td><td class="n">May 2026</td><td><b class="ltr">Complexity</b></td><td><span class="ltr">Big-O</span>, and estimating a solution's running time from the <span class="ltr">constraints</span> before writing it.</td></tr>
+    <tr><td class="n">13</td><td class="n">May 2026</td><td><b class="ltr">Contest #3</b></td><td>A live contest under time pressure, followed by a solution review with students.</td></tr>
+    <tr><td class="n">14</td><td class="n">Aug (posted 3 Aug)</td><td><b class="ltr">STL 1</b></td><td>First Level 1 session: <span class="ltr">vector</span>, <span class="ltr">pair</span>, <span class="ltr">set</span> and <span class="ltr">map</span>, in preparation for the <span class="ltr">ECPC</span> qualifiers.</td></tr>
+  </table>
+
+  <div class="card" style="margin-bottom:0;">
+    <p class="s" style="margin:0;"><b>In addition:</b> Level 0 live streams for the new cohort in Feb and Mar 2026 on the training group (data types, loops, arrays, functions), and an <span class="ltr">ECPC</span> Q&amp;A live stream on 4 Apr. Sessions 11, 12 and 13 were taught on the training group and published on the platform before June 2026.</p>
+  </div>
+
+  <div class="foot"><span>Sources: <span class="ltr">t.me/ICPCHUE</span> channel, <span class="ltr">facebook.com/icpchue</span> page, and the platform development log</span><span>Page 6 of 19</span></div>
+</section>
+
+<section class="page zf">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt"><span class="ltr">ICPC HUE</span> Community<br><span>Horus University — Egypt</span></div></div>
+    <div class="pill">06 · On-Campus Events</div>
+  </div>
+
+  <div class="kicker">On the ground</div>
+  <h1>Orientation Day, team-formation contests and the local qualifiers</h1>
+  <p class="lead">Three offline milestones at Horus University that turned online training into a real community and ready teams.</p>
+
+  <div class="card" style="margin-bottom:9px;">
+    <h2>1 · Orientation Day · Thu 12 Mar 2026 · 12 – 2 PM · Hall H403</h2>
+    <div style="display:flex; gap:10px;">
+      <div style="flex:1.1;">
+        <p class="s">Our first official offline event at the Faculty of AI. We explained what <span class="ltr">ICPC HUE</span> is and how students use <span class="ltr">Codeforces</span> and our platform, with stories and advice from <span class="ltr">ACPC DU</span> champions:</p>
+        <p class="s" style="font-weight:600; color:var(--head); margin-bottom:4px;">Eng. Assem Gado · Eng. Hossam Hassan · Eng. Belal El-Babli · Eng. Omar Badr · Eng. Abdo Selim</p>
+        <p class="s" style="margin:0;">Sponsored by Dr. Basma Mostafa and Dr. Yasser El-Awady, supervised by Eng. Fatma Magdy and Eng. Raafat Mohamed, and organized by the <span class="ltr">AXIS</span> team. Community T-shirts and platform achievement stickers were handed out.</p>
+      </div>
+      <div style="flex:1;">
+        <div class="ph" style="height:38mm;"><img src="../../report/assets/events/orientation_group.jpg" alt="Group photo at Orientation Day"></div>
+        <div class="cap">Attendees and speakers at the close of Orientation Day.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-w" style="margin-bottom:9px;">
+    <h2>2 · Team-Formation Contests · Tue 7 and 14 Apr 2026</h2>
+    <div style="display:flex; gap:10px;">
+      <div style="flex:1;">
+        <div class="ph" style="height:34mm;"><img src="../../report/assets/events/contest1_lab.jpg" alt="Students in the contest lab"></div>
+        <div class="cap">The first <span class="ltr">ICPC HUE</span> contest, Lab E425, Faculty of Engineering.</div>
+      </div>
+      <div style="flex:1.1;">
+        <p class="s">Two 3-hour contests open to all university students: individuals found teammates and existing teams tested their chemistry. The first was in Lab E425, the second in Hall A209.</p>
+        <table class="t">
+          <tr><td class="n">1st place</td><td>Ibrahim Matar</td></tr>
+          <tr><td class="n">2nd place</td><td>Ahmed Waleed</td></tr>
+          <tr><td class="n">3rd place</td><td>Noha Kamal</td></tr>
+        </table>
+        <p class="note" style="margin:4px 0 0 0;">They were preceded by a live stream answering <span class="ltr">ECPC</span> questions (4 Apr); official registration closed on 30 Apr.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:0;">
+    <h2>3 · Local <span class="ltr">ECPC</span> Qualifiers · Tue 12 May 2026</h2>
+    <div style="display:flex; gap:10px;">
+      <div style="flex:1.1;">
+        <p class="s">Held at the Faculty of AI <b>under the patronage of Prof. Dr. Ibrahim Saber, Chairman of the University Board of Trustees</b>, with the support and guidance of Prof. Dr. Hossam El-Din Mostafa, Dean of the Faculty, and supervised by Dr. Basma Mostafa, Cybersecurity Program Coordinator, and Dr. Yasser El-Awady, Robotics and Intelligent Systems Program Coordinator.</p>
+        <p class="s" style="margin:0;"><b>6 teams</b> of 3 students competed, supported by Eng. Anas Al-Harigi and Eng. Abdo Selim, <span class="ltr">ACPC</span> Damietta coordinators.</p>
+      </div>
+      <div style="flex:1;">
+        <div class="ph" style="height:36mm;"><img src="../../report/assets/events/localq_group.jpg" alt="Local qualifiers photo with faculty members"></div>
+        <div class="cap">Participants with faculty members at the local qualifiers.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot"><span>Source: our page's posts (8 and 31 Mar; 6, 9 and 12 Apr; 15 May 2026)</span><span>Page 7 of 19</span></div>
+</section>
+
+<section class="page zf">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt"><span class="ltr">ICPC HUE</span> Community<br><span>Horus University — Egypt</span></div></div>
+    <div class="pill">07 · DCC Contest &amp; Partnerships</div>
+  </div>
+
+  <div class="kicker">The first competitive programming contest in the Damietta region</div>
+  <h1><span class="ltr">DCC</span> 2026: the real start of competitive programming in Damietta</h1>
+  <p class="lead"><span class="ltr">DCC</span> (Damietta Competitive Contest) is the first competitive programming contest in the Damietta region. It was fully designed and run by <span class="ltr">ACPC Club</span> Damietta University (<span class="ltr">ACPC DU</span>) and hosted by Horus University at the Faculty of AI; our community helped with media, contest-day management and the website. The goal: a first real step for competitive programming in the region, and preparing students for <span class="ltr">ECPC</span>.</p>
+
+  <div class="ph" style="height:58mm; margin-bottom:3px;"><img src="../../report/assets/events/dcc_group.jpg" alt="Group photo of DCC contestants" style="object-position:center 40%;"></div>
+  <div class="cap" style="margin-bottom:8px;">Over 100 contestants from 5 communities at the <span class="ltr">DCC</span> final, hosted by the Faculty of AI at Horus University.</div>
+
+  <div class="g4">
+    <div class="stat" style="padding:6px 9px;"><b style="font-size:18px;">5</b><span>university communities</span><small>MNU · HUE · DELTA · DU · NDETI</small></div>
+    <div class="stat" style="padding:6px 9px;"><b style="font-size:18px;">+100</b><span>contestants</span></div>
+    <div class="stat" style="padding:6px 9px;"><b style="font-size:18px;">9,000</b><span>EGP in prizes</span><small>for the top 5 teams, and CSkilled coupons for all</small></div>
+    <div class="stat" style="padding:6px 9px;"><b style="font-size:18px;">9th</b><span>our team's rank</span><small>in the online round</small></div>
+  </div>
+
+  <div style="display:flex; gap:10px; margin-bottom:9px;">
+    <div style="flex:1.15;">
+      <table class="t">
+        <tr><td class="n">26 Jul</td><td>Registration opened on <span class="ltr">dcchub.xyz</span> with a teaser campaign built on the "Millennium Gem" story.</td></tr>
+        <tr><td class="n">29 Jul</td><td>Registration closed.</td></tr>
+        <tr><td class="n">31 Jul</td><td>First round, online.</td></tr>
+        <tr><td class="n">6 Aug</td><td>Offline, face-to-face final at the Faculty of AI, Horus University.</td></tr>
+        <tr><td class="n">Prizes</td><td>3,000, then 2,100, 1,500, 1,200 and 1,200 EGP.</td></tr>
+      </table>
+      <p class="note" style="margin:5px 0 0 0;"><b>Our role:</b> hosting the contest at the faculty, media coverage, helping manage contest day, and developing the official website <span class="ltr">dcchub.xyz</span> (Yousef Mohamed). Hosting was supported by Prof. Dr. Hossam El-Din Mostafa, Dean of the Faculty, supervised by Dr. Basma Mostafa and Dr. Yasser El-Awady, with Eng. Fatma Magdy, Eng. Sara Lotfy and Eng. Raafat Mohamed.</p>
+    </div>
+    <div style="flex:1;">
+      <div class="ph" style="height:40mm;"><img src="../../report/assets/events/dcc_winners.jpg" alt="Honoring the DCC winners"></div>
+      <div class="cap">Honoring the winning teams at the <span class="ltr">DCC</span> final.</div>
+    </div>
+  </div>
+
+  <h2>Partnerships with other university communities</h2>
+  <div class="g3" style="margin-bottom:0;">
+    <div class="card" style="display:flex; gap:9px; align-items:flex-start;"><img src="../../report/assets/logo_damietta_cropped.png" alt="" style="width:32px; height:32px; object-fit:contain; border-radius:6px; background:#fff;"><div><span class="ct">ACPC Club Damietta University</span><div class="s">Organizers of <span class="ltr">DCC</span>; joined us at Orientation Day and the local qualifiers.</div></div></div>
+    <div class="card" style="display:flex; gap:9px; align-items:flex-start;"><img src="../../report/assets/logo_psu_cropped.jpg" alt="" style="width:32px; height:32px; object-fit:contain; border-radius:6px; background:#fff;"><div><span class="ct">ICPC Port Said University</span><div class="s">A community with an <span class="ltr">ECPC</span> bronze-medal team; supports our advanced teams with experience.</div></div></div>
+    <div class="card" style="display:flex; gap:9px; align-items:flex-start;"><img src="../../report/assets/logo_assiut_cropped.png" alt="" style="width:32px; height:32px; object-fit:contain; border-radius:6px; background:#fff;"><div><span class="ct">ICPC Assiut University</span><div class="s">One of Egypt's largest communities; helped with our roadmap and training instructors.</div></div></div>
+  </div>
+
+  <div class="foot"><span>Source: our page's posts (26 Jul; 5, 9 and 16 Aug 2026)</span><span>Page 8 of 19</span></div>
+</section>
+
+<section class="page zf">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt"><span class="ltr">ICPC HUE</span> Community<br><span>Horus University — Egypt</span></div></div>
+    <div class="pill">08 · ECPC Qualifiers</div>
+  </div>
+
+  <div class="kicker">Horus University's first participation</div>
+  <h1>16 teams at the <span class="ltr">ECPC</span> 2026 qualifiers in Alexandria</h1>
+  <p class="lead">For the first time, 16 teams represented Horus University at the <span class="ltr">ECPC</span> qualifiers at the Arab Academy for Science, Technology and Maritime Transport, including the teams <span class="ltr">ICPC HUE</span> trained all season.</p>
+
+  <div class="ph" style="height:56mm; margin-bottom:3px;"><img src="../../report/assets/events/ecpc_field.jpg" alt="Horus University delegation on the Arab Academy campus" style="object-position:center 55%;"></div>
+  <div class="cap" style="margin-bottom:8px;">The Horus University delegation with the university flag on the Arab Academy campus in Alexandria.</div>
+
+  <div style="display:grid; grid-template-columns:repeat(5,1fr); gap:6px; margin-bottom:3px;">
+    <div class="ph" style="height:30mm;"><img src="../../report/assets/events/team_card_1.jpg" alt="Team UNIT01"></div>
+    <div class="ph" style="height:30mm;"><img src="../../report/assets/events/team_card_2.jpg" alt="Team ENTROPY"></div>
+    <div class="ph" style="height:30mm;"><img src="../../report/assets/events/team_card_3.jpg" alt="Team TOUCH BUG"></div>
+    <div class="ph" style="height:30mm;"><img src="../../report/assets/events/team_card_4.jpg" alt="Team INFINITE LOOPS"></div>
+    <div class="ph" style="height:30mm;"><img src="../../report/assets/events/team_card_5.jpg" alt="Team A_S_M"></div>
+  </div>
+  <div class="cap" style="margin-bottom:8px;">Some of the team profile cards we published on 17 Aug: <span class="ltr">UNIT01 · ENTROPY · TOUCH BUG · INFINITE LOOPS · A_S_M</span>.</div>
+
+  <div style="display:flex; gap:10px; margin-bottom:9px;">
+    <div style="flex:1.25;">
+      <table class="t">
+        <tr><td class="n">A month before</td><td>Intensive review of advanced topics, and completing official registration.</td></tr>
+        <tr><td class="n">Preparation</td><td>We requested the bus, booked student housing in Alexandria, and organized the full trip schedule.</td></tr>
+        <tr><td class="n">18 Aug</td><td>Travel from Horus University to Alexandria, with group activities for the teams.</td></tr>
+        <tr><td class="n">Next day</td><td>Practice contest, testing the machines and contest environment, and collecting team T-shirts.</td></tr>
+        <tr><td class="n">Qualifier day</td><td>The official contest: 12 problems in 5 hours.</td></tr>
+      </table>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:4px;">
+      <div class="ph" style="height:27mm;"><img src="../../report/assets/events/ecpc_bus.jpg" alt="The delegation on the bus"></div>
+      <div class="ph" style="height:27mm;"><img src="../../report/assets/events/ecpc_team.jpg" alt="A Horus team inside the contest hall"></div>
+      <div class="cap" style="margin:0;">On the way to Alexandria, and one of our teams inside the contest hall.</div>
+    </div>
+  </div>
+
+  <div class="g3" style="margin-bottom:8px;">
+    <div class="stat"><b>12</b><span>problems in 5 hours</span></div>
+    <div class="stat"><b>3</b><span>problems solved by most of our teams</span></div>
+    <div class="stat" style="background:var(--accent); border-color:var(--accent-dark);"><b>4</b><span style="color:#222;">problems by our top team</span><small style="color:#333;">one problem short of qualifying</small></div>
+  </div>
+
+  <div class="card-dark" style="margin-bottom:0;">
+    <p class="s" style="color:#DDD; margin:0;"><b style="color:var(--accent);">What does the result mean?</b>
+      Most of our teams started competitive programming from scratch this season, and our top team came within one problem of qualifying for the next stage. This shows the curriculum works; the next step is to start 5-hour practice contests earlier so we qualify in 2027.</p>
+  </div>
+
+  <div class="foot"><span>Sources: our page's posts (17, 24 and 25 Aug 2026) and the September 2026 report</span><span>Page 9 of 19</span></div>
+</section>
+
+<section class="page zf">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt"><span class="ltr">ICPC HUE</span> Community<br><span>Horus University — Egypt</span></div></div>
+    <div class="pill">09 · Platform (1/4): Solving Environment</div>
+  </div>
+
+  <div class="kicker">Why did we need our own platform?</div>
+  <h1>The <span class="ltr">icpchue.com</span> platform: solving problems every student faced</h1>
+  <p class="lead">
+    <span class="pl">Problem:</span> In most communities, sessions are recorded and posted a week later. Students jump between YouTube, Telegram groups and the crowded <span class="ltr">Codeforces</span> site, and the instructor cannot tell who solved and who stopped.
+    <span class="ok">Solution:</span> One platform for explanations, problems, editor, judging and follow-up, built 100% by community students, with open-source code on <span class="ltr">GitHub</span>. We know of no other Egyptian university with its own training platform like this.
+  </p>
+
+  <div class="g4">
+    <div class="stat"><b>+800</b><span>registered students</span><small>from the Faculty of AI</small></div>
+    <div class="stat"><b>+50</b><span>daily active students</span><small>solving on the platform</small></div>
+    <div class="stat"><b>650</b><span>problems in 3 levels</span><small>a full one-season curriculum</small></div>
+    <div class="stat"><b>263</b><span>trainees in the mentor dashboard</span><small>154 of them active (October 2026)</small></div>
+  </div>
+
+  <div style="display:flex; gap:10px; margin-bottom:10px; align-items:center;">
+    <div style="flex:1.1;"><div class="shot"><img src="../../report/assets/site/dashboard.jpg" alt="Student dashboard"></div><div class="cap">Student dashboard: the first thing they see on login.</div></div>
+    <div style="flex:1;">
+      <h2>Student Dashboard</h2>
+      <ul class="clean s">
+        <li><span class="pl">Students lose track of where they stopped:</span> the current sheet, its progress and a "Continue solving" button at the top.</li>
+        <li><span class="pl">Dropping off goes unnoticed:</span> a 3-month submission heatmap and a daily streak counter.</li>
+        <li><span class="pl">Progress is scattered across sites:</span> platform solves and <span class="ltr">Codeforces</span> rating in one place.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Problem Page: everything on one screen</h2>
+  <div style="display:flex; gap:10px; margin-bottom:0;">
+    <div style="flex:1.1;"><div class="shot"><img src="../../report/assets/site/problem.jpg" alt="Problem-solving page"></div><div class="cap">"<span class="ltr">Area of a Circle</span>" from the first sheet: statement and examples on the right, editor on the left.</div></div>
+    <div style="flex:1;">
+      <ul class="clean s">
+        <li><span class="pl">Switching tabs breaks focus:</span> the statement and a <span class="ltr">VS Code</span>-grade editor on one screen, supporting <span class="ltr">C++</span>, <span class="ltr">Python</span>, <span class="ltr">Java</span> and <span class="ltr">C</span>.</li>
+        <li><span class="pl">Waiting in judge queues:</span> a <span class="ltr">Judge0</span> judge on the community server runs code instantly and returns <span class="ltr">AC / WA / TLE / RE</span>.</li>
+        <li><span class="pl">"Wrong Answer" with no explanation:</span> input, expected output and the student's output side by side, so they find the bug themselves.</li>
+        <li><span class="pl">Code lost between devices:</span> every attempt auto-saved to the student's account.</li>
+        <li><span class="pl">Beginners struggle with English:</span> in-page hints and explanations in Arabic.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="foot"><span><span class="ltr">ICPC HUE</span> Community — Horus University</span><span>Page 10 of 19</span></div>
+</section>
+
+<section class="page zf">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt"><span class="ltr">ICPC HUE</span> Community<br><span>Horus University — Egypt</span></div></div>
+    <div class="pill">10 · Platform (2/4): Curriculum and Sessions</div>
+  </div>
+
+  <div class="kicker">A clear path from the first line of code</div>
+  <h1>650 ordered problems, and every session in one place</h1>
+  <p class="lead">
+    <span class="pl">Problem:</span> New students don't know where to start or what to solve after each session. Online problems are many and unordered, so they quit within weeks.
+    <span class="ok">Solution:</span> A curriculum split into levels, each level into sheets, each sheet tied to a session, plus a roadmap showing where the student stands at any moment.
+  </p>
+
+  <div class="g2" style="gap:8px; margin-bottom:6px;">
+    <div><div class="shot"><img src="../../report/assets/site/dashboard_sheets.jpg" alt="Curriculum levels"></div><div class="cap">The three levels: Beginners, Level 1, and advanced Level 2.</div></div>
+    <div><div class="shot"><img src="../../report/assets/site/dashboard_sheets_level-0_sheet-a.jpg" alt="First sheet problems"></div><div class="cap">"Data Types and Conditions" sheet: 26 problems and the student's progress bar.</div></div>
+  </div>
+
+  <table class="t" style="margin-bottom:9px;">
+    <tr><th style="width:20%;">Level</th><th style="width:15%;">Problems</th><th>Topics (roadmap prepared with the Assiut <span class="ltr">ICPC</span> community)</th></tr>
+    <tr><td>Level 0: Beginners</td><td class="n">249 in 10 sheets</td><td>Data types and conditions, loops, arrays, strings, functions, math and geometry, recursion, and general problems at three difficulty tiers.</td></tr>
+    <tr><td>Level 1: Intermediate</td><td class="n">226 in 8 sheets</td><td>Time complexity, <span class="ltr">STL</span> containers and sorting, binary search and two pointers, sliding window, <span class="ltr">Bitmask</span>, number theory, and prefix sums.</td></tr>
+    <tr><td>Level 2: Advanced</td><td class="n">171 problems</td><td>Advanced contest-level data structures and algorithms.</td></tr>
+  </table>
+
+  <div class="g2" style="gap:8px; margin-bottom:8px;">
+    <div><div class="shot"><img src="../../report/assets/site/dashboard_roadmap.jpg" alt="Roadmap"></div><div class="cap">Roadmap: the student's progress in each topic.</div></div>
+    <div><div class="shot"><img src="../../report/assets/site/dashboard_sessions_level1_stl1.jpg" alt="STL session"></div><div class="cap"><span class="ltr">STL 1</span> session: the video inside the platform with a topic description.</div></div>
+  </div>
+
+  <div class="g2" style="gap:8px; margin-bottom:0;">
+    <div class="card" style="padding:9px 11px;"><span class="ct">Missed sessions used to be lost</span><div class="s">A student who missed a session waited a week for it to be posted in a group. Now <b>12 recorded sessions</b> across 3 camps live on the platform, each with its sheet on the same day.</div></div>
+    <div class="card" style="padding:9px 11px;"><span class="ct">Videos were heavy on weak connections</span><div class="s">In September 2026 we moved all sessions to YouTube (unlisted), played from inside the platform, so they load fast on any connection.</div></div>
+  </div>
+
+  <div class="foot"><span><span class="ltr">ICPC HUE</span> Community — Horus University</span><span>Page 11 of 19</span></div>
+</section>
+
+<section class="page zf">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt"><span class="ltr">ICPC HUE</span> Community<br><span>Horus University — Egypt</span></div></div>
+    <div class="pill">11 · Platform (3/4): Leaderboard and Achievements</div>
+  </div>
+
+  <div class="kicker">Keeping students going</div>
+  <h1>Leaderboard and achievements: training as a game</h1>
+  <p class="lead">
+    <span class="pl">Problem:</span> The hardest part of competitive programming is consistency. Over 500 students registered with us, only 21 made it to the qualifiers, and most who stopped lost motivation in the first weeks.
+    <span class="ok">Solution:</span> A full motivation layer: rankings that update with every problem, badges to earn, and real-world prizes.
+  </p>
+
+  <div class="shot" style="margin-bottom:3px;"><img src="../../report/assets/site/dashboard_leaderboard.jpg" alt="Leaderboard"></div>
+  <div class="cap" style="margin-bottom:8px;">Leaderboard: students ranked by accepted solves in training sheets, with a second tab for <span class="ltr">Codeforces</span> rating (names hidden).</div>
+
+  <div class="g2" style="gap:8px; margin-bottom:8px;">
+    <div><div class="shot"><img src="../../report/assets/site/dashboard_achievements.jpg" alt="Achievements"></div><div class="cap">Achievements: welcome badge, Level 0 completed, first sheet solved, and +500 rating.</div></div>
+    <div><div class="shot"><img src="../../report/assets/site/dashboard.jpg" alt="Daily streak and consistency heatmap"></div><div class="cap">Daily streak and consistency heatmap on the student dashboard.</div></div>
+  </div>
+
+  <div class="g2" style="gap:8px; margin-bottom:0;">
+    <div class="card" style="padding:9px 11px;"><span class="ct">Students don't know how they rank among peers</span><div class="s">Two leaderboards: platform sheets and global <span class="ltr">Codeforces</span> rating. Since 24 Dec 2025 we post the weekly leaders.</div></div>
+    <div class="card" style="padding:9px 11px;"><span class="ct">Competition without prizes fades fast</span><div class="s">Since 15 Mar 2026, first place wins an <span class="ltr">ICPC HUE</span> T-shirt. Mostafa Kamal, March's champion, won it (3 Apr).</div></div>
+    <div class="card" style="padding:9px 11px;"><span class="ct">Digital achievements go unseen</span><div class="s">Each achievement unlocked earns a laptop sticker; the first batch was handed out on Orientation Day, 12 Mar.</div></div>
+    <div class="card" style="padding:9px 11px;"><span class="ct">Dropping off starts with one day</span><div class="s">A streak counter and consistency heatmap reveal any gap, so students return before falling behind.</div></div>
+  </div>
+
+  <div class="foot"><span><span class="ltr">ICPC HUE</span> Community — Horus University</span><span>Page 12 of 19</span></div>
+</section>
+
+<section class="page zf">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt"><span class="ltr">ICPC HUE</span> Community<br><span>Horus University — Egypt</span></div></div>
+    <div class="pill">12 · Platform (4/4): Mentor System</div>
+  </div>
+
+  <div class="kicker">From "Did you solve it?" to data-driven follow-up</div>
+  <h1>Mentor Control Center: we know where every student stands</h1>
+  <p class="lead">
+    <span class="pl">Problem:</span> In the first season, mentors asked in the group "Did you solve it?", only noticed a student had stopped weeks later, and couldn't tell if a solution was original or copied.
+    <span class="ok">Solution:</span> In September 2026 we added a dashboard for mentors and instructors showing each student's real data: what they solved, when, how many attempts, and how much they studied.
+  </p>
+
+  <div class="g4">
+    <div class="stat"><b>263</b><span>registered trainees</span><small>in the mentor dashboard</small></div>
+    <div class="stat"><b>154</b><span>active</span><small>active this week</small></div>
+    <div class="stat"><b>109</b><span>inactive</span><small>absent 7+ days, so the mentor reaches out</small></div>
+    <div class="stat"><b>3</b><span>integrity flags</span><small>for manual review</small></div>
+  </div>
+
+  <div class="shot" style="margin-bottom:3px;"><img src="../../report/assets/site/dashboard_mentor.jpg" alt="Mentor Control Center"></div>
+  <div class="cap" style="margin-bottom:8px;">Mentor Control Center: search and filter by level and activity, with a card per trainee showing curriculum progress (names hidden).</div>
+
+  <div class="g2" style="gap:8px; margin-bottom:8px;">
+    <div><div class="shot"><img src="../../report/assets/site/dashboard_mentor_8251269.jpg" alt="Trainee profile"></div><div class="cap">Trainee profile: 185 problems solved, 371 submissions, 21 study hours, and a yearly activity heatmap.</div></div>
+    <div><div class="shot"><img src="../../report/assets/site/dashboard_discipline.jpg" alt="Daily study log"></div><div class="cap">Daily study log: the student records progress, and the mentor adds notes.</div></div>
+  </div>
+
+  <div class="g3" style="gap:8px; margin-bottom:0;">
+    <div class="card" style="padding:8px 11px;"><span class="ct">No one knew how much a student studied</span><div class="s">A daily log of study hours, work done and resources, started 8 Sep 2026; only the current day is editable.</div></div>
+    <div class="card" style="padding:8px 11px;"><span class="ct">Reviews were guesswork</span><div class="s">Instructors see each student's code and every attempt's verdict, so review sessions target the most frequent real mistakes.</div></div>
+    <div class="card" style="padding:8px 11px;"><span class="ct">Copied solutions</span><div class="s">Automatic flags for accepted solves under 15 seconds or heavy code pasting, so progress stays genuine.</div></div>
+  </div>
+
+  <div class="foot"><span><span class="ltr">ICPC HUE</span> Community — Horus University (student data hidden)</span><span>Page 13 of 19</span></div>
+</section>
+
+<section class="page zf">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt"><span class="ltr">ICPC HUE</span> Community<br><span>Horus University — Egypt</span></div></div>
+    <div class="pill">13 · Platform: Development and Tech Stack</div>
+  </div>
+
+  <div class="kicker">Continuous engineering work</div>
+  <h1>A platform that evolves weekly, on a professional tech stack</h1>
+  <p class="lead"><span class="pl">Problem:</span> A platform used daily by hundreds of students must not go down during contests, must not put their data at risk, and must change quickly as new needs arise. <span class="ok">Solution:</span> Continuous development since November 2025, driven by feedback from students, instructors and mentors, on a professional tech stack.</p>
+
+  <div class="g4">
+    <div class="stat"><b>+290</b><span>code updates</span><small>(commits) since the code was published in March 2026</small></div>
+    <div class="stat"><b>~49K</b><span>lines of code</span><small>TypeScript</small></div>
+    <div class="stat"><b>92</b><span>API endpoints</span><small>serving the platform</small></div>
+    <div class="stat"><b>1</b><span>published browser extension</span><small>Verdict Helper on the Chrome Web Store</small></div>
+  </div>
+
+  <div style="display:flex; gap:12px; margin-bottom:10px;">
+    <div style="flex:1.35;">
+      <h2>Platform Development Timeline</h2>
+      <table class="t">
+        <tr><td class="n">27–30 Nov 2025</td><td>Visual identity and a verified registration system.</td></tr>
+        <tr><td class="n">10 &amp; 25 Dec</td><td>Student dashboard, then our own code execution engine.</td></tr>
+        <tr><td class="n">5 &amp; 11 Jan 2026</td><td>Platform security and a new mobile-friendly interface.</td></tr>
+        <tr><td class="n">9 Feb</td><td>Version 3.0: the 650-problem curriculum and the <span class="ltr">Verdict Helper</span> extension launch.</td></tr>
+        <tr><td class="n">16 Mar</td><td>Platform open-sourced, then the new editor and analytics.</td></tr>
+        <tr><td class="n">22 Apr</td><td>Team registration system for <span class="ltr">ECPC</span>.</td></tr>
+        <tr><td class="n">June</td><td>Automatic sync of solved problems from <span class="ltr">Codeforces</span>.</td></tr>
+        <tr><td class="n">23 &amp; 27 Aug</td><td>Arabic FAQ page on <span class="ltr">ICPC</span>, and the <span class="ltr">/job</span> volunteer portal.</td></tr>
+        <tr><td class="n">2 – 22 Sep</td><td>Mentor dashboard and study log, the 12 sessions moved to YouTube, and our own judge on <span class="ltr">Azure</span>.</td></tr>
+        <tr><td class="n">2 Oct</td><td>New code-verified registration for Levels 0 and 1, season 2026/2027.</td></tr>
+      </table>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:8px;">
+      <h2 style="margin-bottom:0;">Reach and Visibility</h2>
+      <div class="card" style="padding:9px 11px;"><span class="ct">Platform traffic (Cloudflare, May 2026)</span><div class="s">4.13K visitors and 179K requests in 30 days, 1.24K visitors in 7 days, and 224 visitors in a single day.</div></div>
+      <div class="card" style="padding:9px 11px;"><span class="ct">Facebook (1 Feb – 1 May 2026)</span><div class="s">46.3K views, up 428.9%, with 70.1% from non-followers.</div></div>
+      <div class="card" style="padding:9px 11px;"><span class="ct">LinkedIn and YouTube (December 2025)</span><div class="s">Project updates reached 4,002 members with 6,789 impressions; videos got 1,910 views and over 10 hours of watch time.</div></div>
+      <div class="card-w" style="padding:9px 11px;"><span class="ct">Student data security</span><div class="s">Encrypted personal data, per-table permissions, protection against repeated attacks, university-email sign-up, and Terms and Privacy pages.</div></div>
+    </div>
+  </div>
+
+  <h2>Platform Tech Stack</h2>
+  <div class="g3" style="gap:8px; margin-bottom:0;">
+    <div class="card" style="padding:9px 11px;"><span class="ct">Frontend and backend</span><div class="s"><span class="ltr">Next.js</span> and <span class="ltr">TypeScript</span>, with a <span class="ltr">PostgreSQL</span> database on <span class="ltr">Supabase</span>, and an installable mobile web app.</div></div>
+    <div class="card" style="padding:9px 11px;"><span class="ct">Code execution and judging</span><div class="s">A <span class="ltr">Judge0</span> judge hosted on our own <span class="ltr">Azure</span> server, supporting <span class="ltr">C++17</span>, <span class="ltr">C</span>, <span class="ltr">Python</span> and <span class="ltr">Java</span>.</div></div>
+    <div class="card" style="padding:9px 11px;"><span class="ct">Codeforces integration</span><div class="s">Our own proxy service and the <span class="ltr">Verdict Helper</span> extension auto-sync solved problems and all attempts.</div></div>
+    <div class="card-w" style="padding:9px 11px;"><span class="ct">Security and performance</span><div class="s"><span class="ltr">Cloudflare</span> protection, <span class="ltr">SSL</span> encryption for all data, and error logging to catch issues as they happen.</div></div>
+    <div class="card-w" style="padding:9px 11px;"><span class="ct">Open source</span><div class="s">The full code is on <span class="ltr">GitHub</span> under <span class="ltr">AGPL-3.0</span>; any student can review or contribute.</div></div>
+    <div class="card-dark" style="padding:9px 11px;"><span class="ct" style="color:#F0B52A;">Ready to scale</span><div class="s" style="color:#DDD;">Designed to serve other universities; our next goal is to offer it to all Egyptian universities under the Horus name.</div></div>
+  </div>
+
+  <div class="foot"><span>Sources: platform development log, Cloudflare, Facebook and LinkedIn analytics, and the platform's GitHub repository</span><span>Page 14 of 19</span></div>
+</section>
+
+<section class="page zf">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt"><span class="ltr">ICPC HUE</span> Community<br><span>Horus University — Egypt</span></div></div>
+    <div class="pill">14 · Season Roadmap</div>
+  </div>
+
+  <div class="kicker">Annual Roadmap</div>
+  <h1>The <span class="ltr">ICPC</span> Path 2026/2027: Season Phases</h1>
+  <p class="lead">A 7-phase curriculum taking students from programming basics to team selection and competing in <span class="ltr">ECPC</span>.</p>
+
+  <div style="background:#fff; border-radius:12px; padding:4px 0; margin:2px 0 12px 0; text-align:center;">
+    <img src="../../report/assets/roadmap_curve_cropped.jpg" alt="The seven phases of the ICPC path" style="height:330px; max-width:100%; object-fit:contain; display:block; margin:0 auto;">
+  </div>
+
+  <table class="t">
+    <tr><th style="width:26%;">Phase</th><th style="width:26%;">Period</th><th>Technical Content and Key Milestones</th></tr>
+    <tr><td><b>Phase 1: Outreach &amp; Orientation</b></td><td class="n">29 Aug – 9 Oct 2026</td><td>University marketing campaign, application form, interviews, orientation day, and opening session.</td></tr>
+    <tr><td><b>Phase 2: Programming Basics</b></td><td class="n">16 Oct – 26 Nov 2026</td><td>Variables, loops, arrays, strings, functions, time complexity (<span class="ltr">Big-O</span>), and weekly practice contests.</td></tr>
+    <tr><td><b>Phase 3: <span class="ltr">STL</span> &amp; Winter Checkpoint</b></td><td class="n">27 Nov 2026 – 29 Jan 2027</td><td><span class="ltr">vector</span>, <span class="ltr">stack</span>, <span class="ltr">queue</span>, <span class="ltr">set</span>, <span class="ltr">map</span>, <span class="ltr">priority_queue</span>; <span class="tag-accent">Warm-up Contest: 29 Jan 2027</span></td></tr>
+    <tr><td><b>Phase 4: Problem-Solving Techniques</b></td><td class="n">5 Feb – 19 Mar 2027</td><td>Frequency arrays, two pointers, binary search, greedy algorithms, recursion, and backtracking.</td></tr>
+    <tr><td><b>Phase 5: Advanced Algorithms</b></td><td class="n">26 Mar – 30 Apr 2027</td><td>Math 1 &amp; 2, Dynamic Programming 1 &amp; 2, and Graph Algorithms 1.</td></tr>
+    <tr><td><b>Phase 6: Team Formation &amp; Selection</b></td><td class="n">24 Apr – 18 Jun 2027</td><td>Internal team trials, the official Team Selection Contest (<span class="ltr">TSC</span>), and announcement of approved teams.</td></tr>
+    <tr><td><b>Phase 7: Final <span class="ltr">ECPC</span> Preparation</b></td><td class="n">22 Jun – 15 Aug 2027</td><td>Intensive weekly 5-hour contests, a full contest simulation, and the goal: <span class="ltr">ECPC</span> 2027.</td></tr>
+  </table>
+  <p class="note" style="margin-top:6px;">* Unless stated otherwise, technical sessions are held on Fridays at 8:30 PM. Dates are estimates and may shift with Horus University's official academic calendar.</p>
+
+  <div class="foot"><span><span class="ltr">ICPC HUE</span> Community — Horus University</span><span>Page 15 of 19</span></div>
+</section>
+
+<section class="page zf ledger">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt"><span class="ltr">ICPC HUE</span> Community<br><span>Horus University — Egypt</span></div></div>
+    <div class="pill">15 · Detailed Schedule</div>
+  </div>
+
+  <div class="kicker">Full Operational Schedule</div>
+  <h1>2026/2027 Season Curriculum and Milestones</h1>
+  <p class="lead">All 46 milestones across the academic year, for academic supervision review and implementation tracking.</p>
+
+  <div style="background:#FAF7F2; border:1px solid var(--border); border-radius:8px; padding:6px 12px; margin-bottom:9px; display:flex; align-items:center; justify-content:space-between;">
+    <div style="font-size:9.6px; color:var(--head); font-weight:600;"><b>Academic Schedule 2026/2027:</b> a structured progression across Term 1, Term 2, and Summer.</div>
+    <div style="font-family:var(--font-head); font-size:9px; font-weight:700; color:var(--accent-dark); background:rgba(225,157,27,.12); padding:1px 8px; border-radius:4px;">46 Scheduled Milestones</div>
+  </div>
+
+  <div class="g3" style="align-items:start; gap:8px;">
+    <div class="sheet-card">
+      <div class="sheet-title-bar"><span>Table 1: Term 1 (Basics &amp; STL)</span></div>
+      <table class="sheet-table">
+        <tr><th style="text-align:center;">#</th><th>Milestone / Topic</th><th>Date</th></tr>
+        <tr><td class="col-idx">01</td><td>Marketing Campaign</td><td class="col-date">29 Aug – 3 Sep</td></tr>
+        <tr><td class="col-idx">02</td><td>Applications Open</td><td class="col-date">5 – 10 Sep</td></tr>
+        <tr><td class="col-idx">03</td><td>Screening &amp; Interviews</td><td class="col-date">12 – 17 Sep</td></tr>
+        <tr><td class="col-idx">04</td><td>Results Announced</td><td class="col-date">18 Sep</td></tr>
+        <tr><td class="col-idx">05</td><td>Orientation Day</td><td class="col-date">26 Sep – 1 Oct</td></tr>
+        <tr><td class="col-idx">06</td><td>Registration Reopens</td><td class="col-date">26 Sep – 1 Oct</td></tr>
+        <tr><td class="col-idx">07</td><td>Opening Session</td><td class="col-date">9 Oct (8:30 PM)</td></tr>
+        <tr><td class="col-idx">08</td><td>Basics &amp; Conditions</td><td class="col-date">16 Oct</td></tr>
+        <tr><td class="col-idx">09</td><td>Loops &amp; Nested Loops</td><td class="col-date">23 Oct</td></tr>
+        <tr><td class="col-idx">10</td><td>Arrays &amp; Functions 1</td><td class="col-date">30 Oct</td></tr>
+        <tr><td class="col-idx">11</td><td>Strings &amp; Characters</td><td class="col-date">6 Nov</td></tr>
+        <tr class="row-break"><td class="col-idx">12</td><td>Midterm Exam Break</td><td class="col-date">7 – 12 Nov</td></tr>
+        <tr><td class="col-idx">13</td><td>Functions 2</td><td class="col-date">13 Nov</td></tr>
+        <tr><td class="col-idx">14</td><td>Time Complexity (Big-O)</td><td class="col-date">20 Nov</td></tr>
+        <tr class="row-contest"><td class="col-idx">15</td><td>Practice Contests</td><td class="col-date">21 – 26 Nov</td></tr>
+        <tr><td class="col-idx">16</td><td>Progress Review</td><td class="col-date">Late Nov</td></tr>
+        <tr><td class="col-idx">17</td><td>STL: Vector &amp; Pair</td><td class="col-date">27 Nov</td></tr>
+        <tr><td class="col-idx">18</td><td>STL: Stack &amp; Queue</td><td class="col-date">4 Dec</td></tr>
+        <tr><td class="col-idx">19</td><td>STL: Set &amp; Map</td><td class="col-date">11 Dec</td></tr>
+        <tr><td class="col-idx">20</td><td>STL: Priority Queue</td><td class="col-date">18 Dec</td></tr>
+        <tr class="row-break"><td class="col-idx">21</td><td>Final Exam Break</td><td class="col-date">20 Dec – 21 Jan</td></tr>
+        <tr class="row-contest"><td class="col-idx">22</td><td>Warm-up Contest 2027</td><td class="col-date">29 Jan 2027</td></tr>
+      </table>
+    </div>
+
+    <div class="sheet-card">
+      <div class="sheet-title-bar"><span>Table 2: Term 2 (Core Algorithms)</span></div>
+      <table class="sheet-table">
+        <tr><th style="text-align:center;">#</th><th>Milestone / Topic</th><th>Date</th></tr>
+        <tr><td class="col-idx">23</td><td>Prefix Sum &amp; Frequency Array</td><td class="col-date">5 Feb</td></tr>
+        <tr><td class="col-idx">24</td><td>Two Pointers &amp; Sliding Window</td><td class="col-date">12 Feb</td></tr>
+        <tr><td class="col-idx">25</td><td>Term 2 Registration Reopens</td><td class="col-date">13 – 18 Feb</td></tr>
+        <tr><td class="col-idx">26</td><td>Binary Search</td><td class="col-date">19 Feb</td></tr>
+        <tr><td class="col-idx">27</td><td>Greedy Algorithms</td><td class="col-date">26 Feb</td></tr>
+        <tr><td class="col-idx">28</td><td>Recursion &amp; Brute Force</td><td class="col-date">5 Mar</td></tr>
+        <tr><td class="col-idx">29</td><td>Diagnostic Assessment</td><td class="col-date">6 – 11 Mar</td></tr>
+        <tr><td class="col-idx">30</td><td>Backtracking</td><td class="col-date">12 Mar</td></tr>
+        <tr><td class="col-idx">31</td><td>Bitmask &amp; State Search</td><td class="col-date">19 Mar</td></tr>
+        <tr><td class="col-idx">32</td><td>Number Theory &amp; Math 1</td><td class="col-date">26 Mar</td></tr>
+        <tr><td class="col-idx">33</td><td>Combinatorics &amp; Math 2</td><td class="col-date">2 Apr</td></tr>
+        <tr><td class="col-idx">34</td><td>Dynamic Programming 1</td><td class="col-date">9 Apr</td></tr>
+        <tr><td class="col-idx">35</td><td>Performance Assessment</td><td class="col-date">10 – 15 Apr</td></tr>
+        <tr class="row-break"><td class="col-idx">36</td><td>Term 2 Midterm Break</td><td class="col-date">17 – 22 Apr</td></tr>
+        <tr><td class="col-idx">37</td><td>Dynamic Programming 2</td><td class="col-date">23 Apr</td></tr>
+        <tr><td class="col-idx">38</td><td>Graphs (BFS/DFS)</td><td class="col-date">30 Apr</td></tr>
+      </table>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:8px;">
+      <div class="sheet-card">
+        <div class="sheet-title-bar"><span>Table 3: Summer (Selection &amp; ECPC)</span></div>
+        <table class="sheet-table">
+          <tr><th style="text-align:center;">#</th><th>Milestone / Topic</th><th>Date</th></tr>
+          <tr><td class="col-idx">39</td><td>Team Trials</td><td class="col-date">24 Apr – 6 May</td></tr>
+          <tr class="row-contest"><td class="col-idx">40</td><td>Official Selection Contest</td><td class="col-date">8 May</td></tr>
+          <tr><td class="col-idx">41</td><td>Approved Teams Announced</td><td class="col-date">15 May</td></tr>
+          <tr class="row-break"><td class="col-idx">42</td><td>Eid al-Adha Break</td><td class="col-date">16 – 19 May</td></tr>
+          <tr class="row-break"><td class="col-idx">43</td><td>Final Exams Break</td><td class="col-date">22 May – 18 Jun</td></tr>
+          <tr class="row-contest"><td class="col-idx">44</td><td>Weekly 5-Hour Mocks</td><td class="col-date">22 Jun – 27 Jul</td></tr>
+          <tr class="row-contest"><td class="col-idx">45</td><td>Full Simulation</td><td class="col-date">1 Aug</td></tr>
+          <tr class="row-contest" style="border-left:3px solid var(--accent);"><td class="col-idx" style="font-weight:900;">46</td><td style="font-weight:800; color:var(--accent-dark);">Goal: ECPC 2027</td><td class="col-date" style="font-weight:800; color:var(--accent-dark);">15 Aug 2027</td></tr>
+        </table>
+      </div>
+      <div class="sheet-card">
+        <div class="sheet-title-bar" style="background:#F3EFE6;"><span>Schedule Summary &amp; KPIs</span></div>
+        <table class="sheet-table">
+          <tr><td style="font-weight:700; width:52%; background:#FAF7F2;">Total Milestones</td><td style="text-align:right; font-weight:800; color:var(--accent-dark);">46 milestones</td></tr>
+          <tr><td style="font-weight:700; background:#FAF7F2;">Schedule Length</td><td style="text-align:right;">34 academic weeks</td></tr>
+          <tr><td style="font-weight:700; background:#FAF7F2;">Live Training</td><td style="text-align:right;">120+ hours</td></tr>
+          <tr><td style="font-weight:700; background:#FAF7F2;">Mock Contests</td><td style="text-align:right;">8 timed contests</td></tr>
+          <tr><td style="font-weight:700; background:#FAF7F2;">Delivery</td><td style="text-align:right;">Labs + Platform</td></tr>
+          <tr><td style="font-weight:700; background:#FAF7F2;">Primary Goal</td><td style="text-align:right; font-weight:800; color:var(--accent-dark);">ECPC Finals</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:8px; background:#FAF7F2; border:1px solid var(--border); border-radius:8px; padding:7px 12px; display:flex; align-items:center; gap:12px;">
+    <div style="background:var(--card); color:var(--accent-dark); font-family:var(--font-head); font-size:8.5px; font-weight:800; padding:2px 8px; border-radius:5px; border:1px solid var(--border); white-space:nowrap;">Monitoring Note</div>
+    <div style="font-size:9.2px; line-height:1.6;">All technical content is reviewed before delivery, and we continuously track attendance, platform submissions, and contest results.</div>
+  </div>
+
+  <div class="foot"><span><span class="ltr">ICPC HUE</span> Community — Horus University</span><span>Page 16 of 19</span></div>
+</section>
+
+<section class="page zi">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt"><span class="ltr">ICPC HUE</span> Community<br><span>Horus University — Egypt</span></div></div>
+    <div class="pill">16 · What We Need</div>
+  </div>
+
+  <div class="kicker">Support Requests for the 2026/2027 Season</div>
+  <h1>7 Specific Requests to Help Us Double Our Results</h1>
+  <p class="lead">Training, the platform, and follow-up are run entirely by the community team. What we need from the University are specific facilities we cannot provide ourselves. For each request: the current situation, exactly what we ask, and the expected result.</p>
+
+  <div class="g2" style="gap:8px; margin-bottom:8px;">
+    <div class="req"><div class="i">1</div><div><b>A Fixed Hall or Lab for Sessions</b>
+      <span class="pl">Now:</span> We search for an available room every week, so sessions get cancelled or moved online.<br>
+      <span class="pl">We ask:</span> A hall or lab reserved for us for two hours weekly, at a fixed time throughout the term.<br>
+      <span class="ok">Result:</span> Students know where and when to attend, so they stay committed.</div></div>
+    <div class="req"><div class="i">2</div><div><b>A Lab Equipped for Contests</b>
+      <span class="pl">Now:</span> Lab computers have no programming environments, so we ask students to bring laptops.<br>
+      <span class="pl">We ask:</span> Installing <span class="ltr">C++</span>, <span class="ltr">Python</span>, and a code editor, and unblocking <span class="ltr">icpchue.com</span> and <span class="ltr">Codeforces</span> on the University network.<br>
+      <span class="ok">Result:</span> On-campus contests under the same conditions as <span class="ltr">ECPC</span>.</div></div>
+    <div class="req"><div class="i">3</div><div><b>Attendance Excuses for Events</b>
+      <span class="pl">Now:</span> Events and contests clash with lectures and sections, forcing students to choose.<br>
+      <span class="pl">We ask:</span> An official absence excuse for students in approved events, based on a name list we send in advance.<br>
+      <span class="ok">Result:</span> Students take part without losing academic attendance.</div></div>
+    <div class="req"><div class="i">4</div><div><b>5 Minutes for Announcements in Lectures</b>
+      <span class="pl">Now:</span> Many students learn about the community or the contest only when it is too late.<br>
+      <span class="pl">We ask:</span> Faculty approval for 5 minutes at the start of one lecture per cohort, once at the start of each term.<br>
+      <span class="ok">Result:</span> The information reaches all students, not only our page followers.</div></div>
+    <div class="req"><div class="i">5</div><div><b>Coordination with the Official Faculty Page</b>
+      <span class="pl">Now:</span> Announcements of our activities are sometimes posted late or with details needing correction.<br>
+      <span class="pl">We ask:</span> A faculty contact person to whom we send the reviewed announcement and details one week before each event.<br>
+      <span class="ok">Result:</span> Official announcements on time and with accurate information.</div></div>
+    <div class="req"><div class="i">6</div><div><b>Official Recognition for Students</b>
+      <span class="pl">Now:</span> Contestants and committee members work all year without any recognition from the University.<br>
+      <span class="pl">We ask:</span> Certificates accredited by the University Presidency, activity credits, or consideration of their absences.<br>
+      <span class="ok">Result:</span> Students stay on, and others see that effort is valued.</div></div>
+    <div class="req" style="grid-column:1 / -1; margin-bottom:0;"><div class="i">7</div><div><b>An Activity Budget</b>
+      <span class="pl">Now:</span> There is no budget allocated to the community.<br>
+      <span class="pl">We ask:</span> Support for four items: (1) <span class="ltr">ECPC</span> team registration fees, 1,500 EGP per team, as other universities such as Damietta do. (2) Printing, certificates, T-shirts, and internal contest prizes. (3) Hospitality at events. (4) Platform hosting and domain.<br>
+      <span class="ok">Result:</span> More teams at <span class="ltr">ECPC</span>, and events that reflect the University's reputation.</div></div>
+  </div>
+
+  <div class="foot"><span>Thank you for your support. Together, we raise Horus University's name at <span class="ltr">ECPC</span>, <span class="ltr">ACPC</span>, and <span class="ltr">ICPC</span>.</span><span>Page 17 of 19</span></div>
+</section>
+
+<section class="page zh">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt"><span class="ltr">ICPC HUE</span> Community<br><span>Horus University — Egypt</span></div></div>
+    <div class="pill">17 · The Team</div>
+  </div>
+
+  <div class="kicker">The Team Behind <span class="ltr">ICPC HUE</span></div>
+  <h1>Team and Academic Supervision</h1>
+  <p class="lead">Everything in this report was made by these people: from academic supervision and leadership to instructors, mentors, and the Organizing Committee that runs every event day.</p>
+
+  <div class="card" style="margin-bottom:10px;">
+    <h2>Academic Supervision &amp; Support</h2>
+    <div class="g2" style="gap:8px; margin:0;">
+      <div class="card-w" style="padding:8px 10px;"><span class="ct">Prof. Dr. Hossam El-Din Mostafa</span><div class="s">Dean, Faculty of AI; supported the Orientation Day, local qualifiers, and <span class="ltr">DCC</span>.</div></div>
+      <div class="card-w" style="padding:8px 10px;"><span class="ct">Dr. Yasser El-Awady</span><div class="s">Coordinator of the Robotics and Intelligent Systems programs; has supervised the community since its official registration.</div></div>
+    </div>
+    <p class="s" style="margin:8px 0 0 0;"><b>Supervising Engineers:</b> Eng. Fatma Magdy · Eng. Sara Lotfy · Eng. Raafat Mohamed. They followed the events and supervised the instructor and mentor selection interviews.</p>
+  </div>
+
+  <div class="g2" style="gap:10px; margin-bottom:10px;">
+    <div class="card-w">
+      <h2>Leadership</h2>
+      <table class="t">
+        <tr><td><b>AbdelRahman Mohsen El-Shahat</b></td><td class="n">Founder</td></tr>
+        <tr><td><b>Youssef Mohamed Salah El-Din</b></td><td class="n">Co-Founder &amp; Platform Developer</td></tr>
+        <tr><td><b>Ahmed Waleed</b></td><td class="n"><span class="ltr">Tech Lead</span></td></tr>
+      </table>
+    </div>
+    <div class="card-w">
+      <h2><span class="ltr">Instructors</span></h2>
+      <table class="t">
+        <tr><td><b>Ahmed Waleed</b></td><td class="n"><span class="ltr">Lead Instructor</span></td></tr>
+        <tr><td><b>Ibrahim Matar</b></td><td class="n"><span class="ltr">Co-Lead Instructor</span></td></tr>
+        <tr><td><b>Omar El-Shayyal</b></td><td class="n"><span class="ltr">Instructor</span></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="g2" style="gap:10px; margin-bottom:10px;">
+    <div class="card-w">
+      <h2><span class="ltr">Mentors</span></h2>
+      <p class="s" style="margin:0;">Noha Kamal · Omar El-Shayyal · Abdullah Shata · Yousef Mohamed</p>
+      <p class="note" style="margin:4px 0 0 0;">Each mentor follows a small group weekly through the Mentors Dashboard.</p>
+    </div>
+    <div class="card-w">
+      <h2><span class="ltr">Media</span></h2>
+      <p class="s" style="margin:0;">Yousef Mohamed</p>
+      <p class="note" style="margin:4px 0 0 0;">Photography, videos, and posts, joined by new members from the <span class="ltr">Hire Up</span> campaign.</p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:0;">
+    <h2>Organizing Committee (OC) · 11 Members</h2>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:5px 12px;" class="s">
+      <div>Abdelrahman Mohamed Elkassas</div><div>Salma Ashraf Elkholany</div><div>Mostafa Kamal</div>
+      <div>Noreen Sameh El Shenawey</div><div>Eyad</div><div>Omar Ahmad Elzahar</div>
+      <div>Aliaa Asaad</div><div>Mai Saber Qotb</div><div>Haneen Hany Adel</div>
+      <div>Kareem Essam Salama</div><div>Ahmad Alsayed Ebrahim</div>
+    </div>
+  </div>
+
+  <div class="foot"><span><span class="ltr">ICPC HUE</span> Community — Horus University</span><span>Page 18 of 19</span></div>
+</section>
+
+<section class="page zj">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt"><span class="ltr">ICPC HUE</span> Community<br><span>Horus University — Egypt</span></div></div>
+    <div class="pill">18 · Contact Us</div>
+  </div>
+
+  <div class="kicker">Our Official Channels</div>
+  <h1>Contact <span class="ltr">ICPC HUE</span></h1>
+  <p class="lead">Scan any code with your phone to go directly to the platform or our pages. All events, results, and photos in this report are published there with their dates.</p>
+
+  <div class="card-dark" style="display:flex; gap:16px; align-items:center; margin-bottom:12px;">
+    <div style="background:#fff; padding:6px; border-radius:10px;"><img src="../../report/assets/qr/qr_website.png" alt="QR code for icpchue.com" style="width:34mm; height:34mm; display:block;"></div>
+    <div style="flex:1;">
+      <div class="kicker" style="color:var(--accent);">Official Training Platform</div>
+      <div style="font-family:var(--font-head); font-size:22px; font-weight:800; color:#fff; line-height:1.5;" class="ltr">icpchue.com</div>
+      <p class="s" style="color:#DDD; margin:0;">The platform our students train on daily: 650 problems, a session library, a leaderboard, and a Mentors Dashboard. Sign-up uses the university email.</p>
+    </div>
+  </div>
+
+  <div class="g3" style="gap:10px; margin-bottom:12px;">
+    <div class="card-w" style="text-align:center;">
+      <img src="../../report/assets/qr/qr_facebook.png" alt="QR code for the Facebook page" style="width:30mm; height:30mm; display:block; margin:0 auto 6px;">
+      <span class="ct">Facebook</span>
+      <div class="s ltr">facebook.com/icpchue</div>
+      <div class="note">Announcements, photos, and contest results</div>
+    </div>
+    <div class="card-w" style="text-align:center;">
+      <img src="../../report/assets/qr/qr_linkedin.png" alt="QR code for the LinkedIn page" style="width:30mm; height:30mm; display:block; margin:0 auto 6px;">
+      <span class="ct">LinkedIn</span>
+      <div class="s ltr">linkedin.com/company/icpchue</div>
+      <div class="note">Project news for those interested in the field</div>
+    </div>
+    <div class="card-w" style="text-align:center;">
+      <img src="../../report/assets/qr/qr_telegram.png" alt="QR code for the Telegram channel" style="width:30mm; height:30mm; display:block; margin:0 auto 6px;">
+      <span class="ct">Telegram</span>
+      <div class="s ltr">t.me/ICPCHUE</div>
+      <div class="note">Session links and daily contact with students</div>
+    </div>
+  </div>
+
+  <div class="card" style="text-align:center; margin-bottom:0;">
+    <div style="font-family:var(--font-head); font-size:14px; font-weight:800; color:var(--head); line-height:1.6;">The Competitive Programming Community at Horus University</div>
+    <div class="s" style="color:var(--muted);">Faculty of AI · Horus University — Egypt</div>
+    <p class="s" style="margin:6px 0 0 0;">Our goal is for Horus University to have a lasting tradition in competitive programming, to raise its name in the <span class="ltr">ECPC</span> and <span class="ltr">ACPC</span> contests, and to graduate Egyptian software engineers of the highest caliber. Thank you for your time and support.</p>
+  </div>
+
+  <div class="foot"><span>Thank you for your support. Together, we raise Horus University's name at <span class="ltr">ECPC</span>, <span class="ltr">ACPC</span>, and <span class="ltr">ICPC</span>.</span><span>Page 19 of 19</span></div>
+</section>
+
+</body>
+</html>

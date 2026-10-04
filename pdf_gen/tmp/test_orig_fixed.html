@@ -1,0 +1,1923 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ICPC HUE Community Progress Report — Annual Dossier 2025 - 2027</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700;800&display=swap');
+
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+
+    :root {
+      --bg: #FFFFFF;
+      --accent: #E19D1B;
+      --accent-dark: #B47E17;
+      --card-bg: #F9ECD1;
+      --card-border: #DED1B8;
+      --text-head: #000000;
+      --text-body: #373737;
+      --text-muted: #737373;
+      --line: #E6E6E6;
+      --font-main: 'Plus Jakarta Sans', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #F0EDE6;
+      font-family: var(--font-main);
+      color: var(--text-body);
+      font-size: 11px;
+      line-height: 1.5;
+    }
+
+    .deck {
+      width: 210mm;
+      margin: 20px auto;
+    }
+
+    @media print {
+      body {
+        background: transparent;
+      }
+      .deck {
+        width: auto;
+        margin: 0;
+      }
+    }
+
+    .page {
+      width: 210mm;
+      height: 297mm;
+      background: var(--bg);
+      padding: 16mm 18mm 18mm 18mm;
+      position: relative;
+      page-break-after: always;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header Bar */
+    .header-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 18px;
+    }
+
+    .inst-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .inst-logo {
+      height: 32px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .inst-text {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--text-head);
+      line-height: 1.25;
+      text-transform: uppercase;
+    }
+
+    .inst-sub {
+      color: var(--accent-dark);
+      font-weight: 600;
+    }
+
+    .pill-tag {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 9px;
+      font-weight: 700;
+      color: var(--accent-dark);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    /* Titles */
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      color: var(--accent-dark);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .kicker-bar {
+      width: 22px;
+      height: 3px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    h1.slide-title {
+      font-size: 25px;
+      font-weight: 800;
+      color: var(--text-head);
+      line-height: 1.15;
+      margin: 4px 0 6px 0;
+      letter-spacing: -0.02em;
+    }
+
+    p.slide-sub {
+      font-size: 12px;
+      font-weight: 500;
+      color: #555555;
+      line-height: 1.45;
+      margin: 0 0 18px 0;
+      max-width: 95%;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 15px 18px;
+      position: relative;
+    }
+
+    .card-white {
+      background: #FFFFFF;
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 15px 18px;
+    }
+
+    .card-solid {
+      background: var(--accent);
+      border: 1px solid var(--accent-dark);
+      border-radius: 14px;
+      padding: 15px 18px;
+      color: #000000;
+    }
+
+    .card-stripe {
+      background: #FFFFFF;
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 14px 18px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+
+    .card-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-head);
+      margin: 0 0 6px 0;
+      line-height: 1.25;
+    }
+
+    .card-solid .card-title {
+      color: #000000;
+      font-weight: 800;
+    }
+
+    .card-body {
+      font-size: 10.5px;
+      color: var(--text-body);
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .card-solid .card-body {
+      color: #1A1A1A;
+      font-weight: 500;
+    }
+
+    /* Grids */
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 15px;
+    }
+
+    /* Metric Cards */
+    .metric-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 14px 12px;
+      text-align: left;
+    }
+
+    .metric-val {
+      font-size: 30px;
+      font-weight: 800;
+      color: var(--text-head);
+      line-height: 1;
+      margin-bottom: 5px;
+      letter-spacing: -0.03em;
+    }
+
+    .metric-label {
+      font-size: 9px;
+      font-weight: 700;
+      color: var(--accent-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 4px;
+    }
+
+    .metric-desc {
+      font-size: 9px;
+      color: var(--text-muted);
+      line-height: 1.35;
+      margin: 0;
+    }
+
+    /* Photo Box */
+    .photo-box {
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--card-border);
+      background: #F4EADA;
+      margin-bottom: 6px;
+    }
+
+    .photo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .photo-caption {
+      font-size: 9px;
+      color: var(--text-muted);
+      font-style: italic;
+      line-height: 1.35;
+      padding: 3px 2px;
+    }
+
+    /* Badges & Icons */
+    .icon-badge {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8px;
+    }
+
+    .icon-badge svg {
+      width: 17px;
+      height: 17px;
+      fill: #000000;
+    }
+
+    .step-badge {
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11.5px;
+      font-weight: 800;
+      color: var(--text-head);
+      margin-bottom: 8px;
+    }
+
+    /* Table */
+    .gamma-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      overflow: hidden;
+      font-size: 9.5px;
+      margin-top: 4px;
+    }
+
+    .gamma-table th {
+      background: var(--card-bg);
+      color: var(--text-head);
+      font-weight: 700;
+      text-align: left;
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--card-border);
+      letter-spacing: 0.04em;
+    }
+
+    .gamma-table td {
+      padding: 7px 12px;
+      border-bottom: 1px solid #ECE3D4;
+      background: #FFFFFF;
+      color: var(--text-body);
+      vertical-align: top;
+    }
+
+    .gamma-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .gamma-table tr:nth-child(even) td {
+      background: #FDFAF5;
+    }
+
+    .tag-accent {
+      display: inline-block;
+      background: var(--accent);
+      color: #000000;
+      font-weight: 700;
+      font-size: 8.5px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-left: 4px;
+    }
+
+    /* Quote Callout */
+    .quote-callout {
+      
+      padding: 10px 14px;
+      background: #FDFAF5;
+      border-radius: 0 10px 10px 0;
+      font-size: 10.8px;
+      font-weight: 500;
+      color: #222222;
+      line-height: 1.5;
+      margin-top: 12px;
+    }
+
+    /* Footer */
+    .footer-bar {
+      margin-top: auto;
+      padding-top: 8px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 8.5px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .footer-bar strong {
+      color: var(--text-body);
+    }
+
+    a.custom-link {
+      color: var(--accent-dark);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Executive Roadmap Steps (Page 2) */
+    .roadmap-list {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      margin-bottom: 14px;
+    }
+    .roadmap-step {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 10px 14px;
+    }
+    .roadmap-step.highlight {
+      background: var(--accent);
+      border-color: var(--accent-dark);
+      color: #000000;
+    }
+    .step-circle {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--accent-dark);
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .roadmap-step.highlight .step-circle {
+      background: #000000;
+      color: #FFFFFF;
+    }
+    .step-content {
+      flex: 1;
+    }
+    .step-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2px;
+    }
+    .step-title {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--text-head);
+    }
+    .roadmap-step.highlight .step-title {
+      color: #000000;
+      font-weight: 800;
+    }
+    .step-tag {
+      font-size: 8.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #E8D8BF;
+      color: #5B4018;
+    }
+    .roadmap-step.highlight .step-tag {
+      background: rgba(0,0,0,0.15);
+      color: #000000;
+    }
+    .step-desc {
+      font-size: 10px;
+      line-height: 1.45;
+      color: var(--text-body);
+      margin: 0;
+    }
+    .roadmap-step.highlight .step-desc {
+      color: #1A1A1A;
+      font-weight: 500;
+    }
+
+
+    /* Multi-Photo Collage on Page 5 */
+    .collage-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .collage-bottom {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+  </style>
+</head>
+<body>
+<div class="deck">
+
+  <!-- ================= PAGE 1: COVER ================= -->
+  <section class="page">
+    <div class="header-bar">
+      <div class="inst-badge">
+        <img src="/home/yousefmsm1/Desktop/pdf_gen/report/assets/horus_logo.png" class="inst-logo" alt="Horus University Logo">
+        <div class="inst-text">
+          Horus University — Egypt<br>
+          <span class="inst-sub">Faculty of Artificial Intelligence & Engineering</span>
+        </div>
+      </div>
+      <div class="pill-tag">Annual Report • 2025 – 2027</div>
+    </div>
+
+    <div class="kicker">
+      <div class="kicker-bar"></div>
+      <span>Executive Progress Dossier</span>
+    </div>
+
+    <h1 class="slide-title" style="font-size: 32px; margin-bottom: 6px;">
+      ICPC HUE Community Progress Report
+    </h1>
+    <p class="slide-sub" style="font-size: 13.5px; color: #444; margin-bottom: 16px;">
+      From Winter 2025 Launch to National ECPC Qualification and the 2026/2027 Operating Model
+    </p>
+
+    <div class="card" style="margin-bottom: 14px; padding: 14px 18px;">
+      <div class="card-title" style="font-size: 13px; color: var(--accent-dark);">Executive Retrospective</div>
+      <p class="card-body" style="font-size: 11px; line-height: 1.6;">
+        Since its launch on November 28, 2025, ICPC HUE transformed from a student initiative into an institutional competitive programming powerhouse at Horus University. Over the 2025/2026 season, the community engineered a custom digital platform serving thousands of monthly visitors, delivered 17+ hours of live curriculum, hosted a landmark Orientation Day with national champions, crowned internal champions, and qualified seven fully-formed collegiate teams for ECPC. This report synthesizes our foundational achievements, the DCC and ECPC milestones, and the roadmap for 2026/2027.
+      </p>
+    </div>
+
+    <div class="photo-box" style="height: 330px; margin-bottom: 8px;">
+      <img src="/home/yousefmsm1/Desktop/pdf_gen/report/ecpc_qulifcatio/FB_IMG_1790132738501.jpg" alt="ECPC Qualification Delegation">
+    </div>
+    <div class="photo-caption" style="text-align: center; margin-bottom: 14px;">
+      Horus University Competitive Programming Delegation at the ECPC Qualification Stage — Arab Academy for Science, Technology and Maritime Transport (AASTMT), August 2026.
+    </div>
+
+    <div class="footer-bar">
+      <div><strong>ICPC HUE</strong> • Horus University Competitive Programming Community</div>
+      <div>Page 01 of 14</div>
+    </div>
+  </section>
+
+
+  <!-- ================= PAGE 2: ROAD TO DCC ROADMAP & RETROSPECTIVE ================= -->
+  <section class="page">
+    <div class="header-bar">
+      <div class="inst-badge">
+        <img src="/home/yousefmsm1/Desktop/pdf_gen/report/assets/horus_logo.png" class="inst-logo" alt="Horus University Logo">
+        <div class="inst-text">Horus University — Egypt • <span class="inst-sub">ICPC HUE Community</span></div>
+      </div>
+      <div class="pill-tag">01 / Season Retrospective</div>
+    </div>
+
+    <div class="kicker">
+      <div class="kicker-bar"></div>
+      <span>Institutional Trajectory & Roadmap</span>
+    </div>
+    <h1 class="slide-title">The Road to DCC: Building Our Competitive Foundation</h1>
+    <p class="slide-sub">
+      A strategic overview of how ICPC HUE established a collegiate training ecosystem, engineered a custom learning platform, and formed seven national teams before our regional debut.
+    </p>
+
+    <!-- Key Metrics Grid -->
+    <div class="grid-4" style="margin-bottom: 14px;">
+      <div class="metric-card">
+        <div class="metric-val">650</div>
+        <div class="metric-label">Curated Problems</div>
+        <p class="metric-desc">Structured across 3 skill levels (Levels 0–2) on the custom icpchue.com platform.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val">17+ hrs</div>
+        <div class="metric-label">Live Training</div>
+        <p class="metric-desc">Structured live lectures delivered covering foundational syntax to algorithmic logic.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val">120</div>
+        <div class="metric-label">Active Users</div>
+        <p class="metric-desc">Active student users on icpchue.com engaging with problem sheets and submissions.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val">16 Teams</div>
+        <div class="metric-label">Horus Delegation</div>
+        <p class="metric-desc">16 teams from all Horus University, including 7 teams from Faculty of AI directly trained by ICPC HUE.</p>
+      </div>
+    </div>
+
+    <!-- 5-Step Visual Roadmap -->
+    <div class="roadmap-list">
+      <!-- Step 01 -->
+      <div class="roadmap-step">
+        <div class="step-circle">01</div>
+        <div class="step-content">
+          <div class="step-header">
+            <span class="step-title">Community Inception & Winter Camp Launch</span>
+            <span class="step-tag">Dec 2025 – Jan 2026</span>
+          </div>
+          <p class="step-desc">
+            Established the competitive programming initiative at Horus University; launched a university-wide Winter Camp welcoming beginners starting from scratch while activating senior students.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 02 -->
+      <div class="roadmap-step">
+        <div class="step-circle">02</div>
+        <div class="step-content">
+          <div class="step-header">
+            <span class="step-title">The ICPC HUE Educational Platform (icpchue.com)</span>
+            <span class="step-tag">February 2026</span>
+          </div>
+          <p class="step-desc">
+            Engineered and deployed our custom training hub with official university email authentication, automated problem evaluation, and categorized sheets from Level 0 to Level 2.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 03: Highlight -->
+      <div class="roadmap-step highlight">
+        <div class="step-circle">03</div>
+        <div class="step-content">
+          <div class="step-header">
+            <span class="step-title">The Landmark Orientation Day (Faculty of AI)</span>
+            <span class="step-tag">March 12, 2026</span>
+          </div>
+          <p class="step-desc">
+            Under the sponsorship of <strong>Dr. Basma Mostafa</strong> & <strong>Dr. Yasser El-Awady</strong> and supervision of <strong>Eng. Fatima Magdy</strong> & <strong>Eng. Raafat Mohamed</strong>, hosted hundreds of students and six decorated ACPC DU national champions to inspire our community.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 04 -->
+      <div class="roadmap-step">
+        <div class="step-circle">04</div>
+        <div class="step-content">
+          <div class="step-header">
+            <span class="step-title">High-Stakes Selection Trials & Campus Champions</span>
+            <span class="step-tag">April 2026</span>
+          </div>
+          <p class="step-desc">
+            Conducted two official selection contests to evaluate algorithmic mastery and team synergy, crowning top campus solvers across competitive individual trials and finalizing collegiate lineups.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 05 -->
+      <div class="roadmap-step">
+        <div class="step-circle">05</div>
+        <div class="step-content">
+          <div class="step-header">
+            <span class="step-title">Seven AI Teams Formed & Approved for National ECPC</span>
+            <span class="step-tag">April 30 – May 2026</span>
+          </div>
+          <p class="step-desc">
+            Assembled 21 student competitors into 7 balanced three-member teams from the Faculty of AI (4 Level 1 teams, 3 Level 2 teams), completing official registration for the Egyptian Collegiate Programming Contest as part of the university delegation.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Strategic Bridge Callout -->
+    <div class="quote-callout" style="padding: 10px 14px; margin-bottom: 0;">
+      <strong>Strategic Proving Ground:</strong> With seven official teams assembled and our digital training platform established, ICPC HUE partnered with ACPC Club Damietta University to co-organize DCC 2026 as an authentic regional tournament simulation.
+    </div>
+
+    <div class="footer-bar">
+      <div><strong>ICPC HUE</strong> • Annual Progress Dossier 2025 – 2027</div>
+      <div>Page 02 of 14</div>
+    </div>
+  </section>
+
+  <!-- ================= PAGE 3: DCC 2026 WITH PHOTO GALLERY ================= -->
+  <section class="page">
+    <div class="header-bar">
+      <div class="inst-badge">
+        <img src="/home/yousefmsm1/Desktop/pdf_gen/report/assets/horus_logo.png" class="inst-logo" alt="Horus University Logo">
+        <div class="inst-text">Horus University — Egypt • <span class="inst-sub">ICPC HUE Community</span></div>
+      </div>
+      <div class="pill-tag">02 / Regional Proving Ground</div>
+    </div>
+
+    <div class="kicker">
+      <div class="kicker-bar"></div>
+      <span>Regional Proving Ground</span>
+    </div>
+    <h1 class="slide-title">DCC 2026: Competitive Programming in Damietta</h1>
+    <p class="slide-sub">
+      Co-organized with ACPC Club Damietta University as a practical pre-ECPC simulation and regional milestone.
+    </p>
+
+    <!-- 3 Stats Badges -->
+    <div class="grid-3" style="margin-bottom: 12px;">
+      <div class="card" style="padding: 8px 12px;">
+        <div style="font-size: 15px; font-weight: 800; color: var(--text-head);">2 Phases</div>
+        <div style="font-size: 8.5px; font-weight: 700; color: var(--accent-dark); text-transform: uppercase;">Online &amp; In-Person Final</div>
+      </div>
+      <div class="card" style="padding: 8px 12px;">
+        <div style="font-size: 15px; font-weight: 800; color: var(--text-head);">5 Communities</div>
+        <div style="font-size: 8.5px; font-weight: 700; color: var(--accent-dark); text-transform: uppercase;">MNU, HUE, DELTA, DU, NDETI</div>
+      </div>
+      <div class="card" style="padding: 8px 12px;">
+        <div style="font-size: 15px; font-weight: 800; color: var(--text-head);">100+ Contestants</div>
+        <div style="font-size: 8.5px; font-weight: 700; color: var(--accent-dark); text-transform: uppercase;">First Damietta Edition</div>
+      </div>
+    </div>
+
+    <!-- 2x2 Photo Mosaic (Enlarged High-Impact Gallery) -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px;">
+      <div>
+        <div class="photo-box" style="height: 175px;">
+          <img src="/home/yousefmsm1/Desktop/pdf_gen/report/dcc/FB_IMG_1790132479548.jpg" alt="DCC Presentation">
+        </div>
+        <div class="photo-caption" style="font-size: 9.5px; margin-top: 4px;">Co-founder of ICPC HUE speaking at DCC.</div>
+      </div>
+
+      <div>
+        <div class="photo-box" style="height: 175px;">
+          <img src="/home/yousefmsm1/Desktop/pdf_gen/report/dcc/FB_IMG_1790132765397.jpg" alt="First Place Award Ceremony">
+        </div>
+        <div class="photo-caption" style="font-size: 9.5px; margin-top: 4px;">First Place winners receiving their championship check.</div>
+      </div>
+
+      <div>
+        <div class="photo-box" style="height: 175px;">
+          <img src="/home/yousefmsm1/Desktop/pdf_gen/report/dcc/FB_IMG_1790132508863.jpg" alt="Organizers and Faculty with Students">
+        </div>
+        <div class="photo-caption" style="font-size: 9.5px; margin-top: 4px;">Faculty leadership, community organizers, and student competitors at DCC.</div>
+      </div>
+
+      <div>
+        <div class="photo-box" style="height: 175px;">
+          <img src="/home/yousefmsm1/Desktop/pdf_gen/report/dcc/FB_IMG_1790132476044.jpg" alt="Group Photo of Contestants">
+        </div>
+        <div class="photo-caption" style="font-size: 9.5px; margin-top: 4px;">Group photo of all the 100 contestants of DCC.</div>
+      </div>
+    </div>
+
+    <!-- Bottom Context Cards -->
+    <div class="grid-2" style="margin-bottom: 0;">
+      <div class="card-stripe" style="padding: 10px 14px;">
+        <div class="card-title" style="font-size: 11.5px;">Digital Infrastructure: dcchub.xyz</div>
+        <p class="card-body" style="font-size: 9.8px;">
+          ICPC HUE member <strong>Yousef Mohamed</strong> developed <a href="https://dcchub.xyz" class="custom-link">dcchub.xyz</a>, serving as the official digital portal for registration, announcements, and live contest standings.
+        </p>
+      </div>
+
+      <div class="card-white" style="padding: 10px 14px;">
+        <div class="card-title" style="font-size: 11.5px; color: var(--accent-dark);">Faculty Supervision & Support</div>
+        <p class="card-body" style="font-size: 9.5px; line-height: 1.45;">
+          Delivered under Dean <strong>Dr. Hossam El-Din Mostafa</strong>, coordinators <strong>Dr. Basma Mostafa</strong> &amp; <strong>Dr. Yasser El-Awady</strong>, and supervising engineers <strong>Fatma Magdy, Sara Lotfy, and Raafat El-Moneer</strong>.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <div><strong>ICPC HUE</strong> • Annual Progress Dossier 2025 – 2027</div>
+      <div>Page 03 of 14</div>
+    </div>
+  </section>
+
+
+  <!-- ================= PAGE 4: ECPC QUALIFICATION ================= -->
+  <section class="page">
+    <div class="header-bar">
+      <div class="inst-badge">
+        <img src="/home/yousefmsm1/Desktop/pdf_gen/report/assets/horus_logo.png" class="inst-logo" alt="Horus University Logo">
+        <div class="inst-text">Horus University — Egypt • <span class="inst-sub">ICPC HUE Community</span></div>
+      </div>
+      <div class="pill-tag">03 / Field Experience</div>
+    </div>
+
+    <div class="kicker">
+      <div class="kicker-bar"></div>
+      <span>National Field Experience</span>
+    </div>
+    <h1 class="slide-title">ECPC Qualification: Turning Preparation into Evidence</h1>
+    <p class="slide-sub">
+      A dedicated one-month intensive curriculum culminated in delegation travel to AASTMT and competitive validation.
+    </p>
+
+    <div class="grid-2" style="margin-bottom: 12px;">
+      <!-- Left: Solid Gold Journey Card -->
+      <div class="card-solid" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div class="card-title" style="font-size: 15px; margin-bottom: 10px;">The Tournament Journey</div>
+          <p class="card-body" style="font-size: 11px; margin-bottom: 12px;">
+            Approximately one month prior to ECPC qualification, ICPC HUE conducted rigorous reviews of advanced data structures, completed official collegiate registration, and organized travel logistics.
+          </p>
+          <div style="background: rgba(255,255,255,0.4); border-radius: 8px; padding: 10px 12px; margin-bottom: 10px;">
+            <div style="font-size: 10px; font-weight: 800; color: #000; text-transform: uppercase;">August 18 Departure</div>
+            <div style="font-size: 10.2px; color: #111;">Delegation travelled to Alexandria, checked into accommodations, and participated in community team-building.</div>
+          </div>
+          <div style="background: rgba(255,255,255,0.4); border-radius: 8px; padding: 10px 12px; margin-bottom: 10px;">
+            <div style="font-size: 10px; font-weight: 800; color: #000; text-transform: uppercase;">AASTMT Campus Testing</div>
+            <div style="font-size: 10.2px; color: #111;">Teams completed the official practice contest, verified IDE/PC^2 setups, received team jerseys, and acclimatized to tournament pressure.</div>
+          </div>
+          <div style="background: rgba(255,255,255,0.4); border-radius: 8px; padding: 10px 12px;">
+            <div style="font-size: 10px; font-weight: 800; color: #000; text-transform: uppercase;">Official Competition Round</div>
+            <div style="font-size: 10.2px; color: #111;">Competed against premier universities nationwide over 5 rigorous hours, demonstrating tactical problem triage and high-pressure execution.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Qualification Metrics & Hall Photo -->
+      <div>
+        <div class="grid-3" style="gap: 10px; margin-bottom: 12px;">
+          <div class="metric-card" style="padding: 12px 10px;">
+            <div class="metric-val" style="font-size: 26px;">12</div>
+            <div class="metric-label" style="font-size: 8.5px;">Problems</div>
+            <p class="metric-desc">Challenging official problem set.</p>
+          </div>
+          <div class="metric-card" style="padding: 12px 10px;">
+            <div class="metric-val" style="font-size: 26px;">3+</div>
+            <div class="metric-label" style="font-size: 8.5px;">Solved Most</div>
+            <p class="metric-desc">Baseline reached by majority.</p>
+          </div>
+          <div class="metric-card" style="padding: 12px 10px;">
+            <div class="metric-val" style="font-size: 26px;">4</div>
+            <div class="metric-label" style="font-size: 8.5px;">Top Score</div>
+            <p class="metric-desc">Within 1 problem of advancing.</p>
+          </div>
+        </div>
+
+        <div class="photo-box" style="height: 185px;">
+          <img src="/home/yousefmsm1/Desktop/pdf_gen/report/ecpc_qulifcatio/FB_IMG_1790132659885.jpg" alt="Team at ECPC Qualification">
+        </div>
+        <div class="photo-caption">
+          Horus University team working through algorithmic problem sets during the official qualification round.
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="padding: 12px 16px;">
+      <div class="card-title" style="font-size: 12px; color: var(--accent-dark);">Key Takeaways for Next Season: Within 1 Problem of National Qualification</div>
+      <p class="card-body" style="font-size: 10.5px; line-height: 1.5;">
+        Horus University proved its competitive caliber by finishing within <strong>just 1 single problem</strong> of advancing directly to the ECPC National Finals. The results strongly validated student capability while pinpointing precise areas for growth: starting structured multi-hour practice contests months earlier, instituting daily mentor follow-ups, and conducting timed team selection trials.
+      </p>
+    </div>
+
+    <div class="footer-bar">
+      <div><strong>ICPC HUE</strong> • Annual Progress Dossier 2025 – 2027</div>
+      <div>Page 04 of 14</div>
+    </div>
+  </section>
+
+
+      <!-- ================= PAGE 5: OUTREACH & RECRUITMENT ================= -->
+  <section class="page">
+    <div class="header-bar">
+      <div class="inst-badge">
+        <img src="/home/yousefmsm1/Desktop/pdf_gen/report/assets/horus_logo.png" class="inst-logo" alt="Horus University Logo">
+        <div class="inst-text">Horus University — Egypt • <span class="inst-sub">ICPC HUE Community</span></div>
+      </div>
+      <div class="pill-tag">04 / Outreach &amp; Momentum</div>
+    </div>
+
+    <div class="kicker">
+      <div class="kicker-bar"></div>
+      <span>Outreach &amp; Community Momentum</span>
+    </div>
+    <h1 class="slide-title">Converting Contest Experience into Season-Wide Momentum</h1>
+    <p class="slide-sub">
+      Documenting the tournament journey transformed competitive programming into an exciting, high-visibility activity across Horus University.
+    </p>
+
+    <!-- 3 Compact Cards in Grid -->
+    <div class="grid-3" style="margin-bottom: 14px;">
+      <div class="card-white" style=" padding: 12px 14px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <div class="card-title" style="margin: 0; font-size: 12px;">43K+ Facebook Views</div>
+          <span class="pill-tag" style="font-size: 7.5px; padding: 2px 6px;">Reach</span>
+        </div>
+        <p class="card-body" style="font-size: 9.8px; line-height: 1.45;">
+          A synchronized campaign published travel footage and updates, generating <strong>43,000+ views on Facebook</strong> and establishing competitive programming as a recognized university endeavor.
+        </p>
+      </div>
+
+      <div class="card-white" style=" padding: 12px 14px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <div class="card-title" style="margin: 0; font-size: 12px;">Educational Video Series</div>
+          <span class="pill-tag" style="font-size: 7.5px; padding: 2px 6px;">Outreach</span>
+        </div>
+        <p class="card-body" style="font-size: 9.8px; line-height: 1.45;">
+          Three professionally edited videos welcomed incoming freshmen, illustrating problem-solving concepts, showcasing student achievements, and outlining upcoming training cohorts.
+        </p>
+      </div>
+
+      <div class="card-white" style=" padding: 12px 14px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <div class="card-title" style="margin: 0; font-size: 12px;">Hire Up Recruitment</div>
+          <span class="pill-tag" style="font-size: 7.5px; padding: 2px 6px;">Intake</span>
+        </div>
+        <p class="card-body" style="font-size: 9.8px; line-height: 1.45;">
+          Launched recruitment via <a href="https://icpchue.com/job" class="custom-link">icpchue.com/job</a> for student instructors, mentors, media creators, and operations officers to formalize staffing.
+        </p>
+      </div>
+    </div>
+
+    <!-- 2 Large Feature Photos (Travel & Celebration) -->
+    <div class="grid-2" style="gap: 14px; margin-bottom: 14px;">
+      <div>
+        <div class="photo-box" style="height: 165px; margin-bottom: 5px;">
+          <img src="/home/yousefmsm1/Desktop/pdf_gen/report/ecpc_qulifcatio/FB_IMG_1790132541422.jpg" alt="Delegation Bus Travel to Alexandria">
+        </div>
+        <div class="photo-caption" style="font-size: 9.5px;">Delegation transit to Alexandria: building community synergy, morale, and focus.</div>
+      </div>
+
+      <div>
+        <div class="photo-box" style="height: 165px; margin-bottom: 5px;">
+          <img src="/home/yousefmsm1/Desktop/pdf_gen/report/ecpc_qulifcatio/FB_IMG_1790132740356.jpg" alt="Delegation Tournament Celebration">
+        </div>
+        <div class="photo-caption" style="font-size: 9.5px;">Post-contest tournament celebration on the AASTMT Alexandria campus lawn.</div>
+      </div>
+    </div>
+
+    <!-- Institutional Media Impact Card -->
+    <div class="card-stripe" style="padding: 14px 18px;">
+      <div class="card-title" style="font-size: 12.5px; color: var(--accent-dark); margin-bottom: 4px;">Institutional Impact &amp; Recruitment Surge</div>
+      <p class="card-body" style="font-size: 10.2px; line-height: 1.55;">
+        The high-visibility media coverage and viral social media reception directly accelerated community recruitment for the 2026/2027 season. Over 300 prospective freshmen and returning students registered interest via <strong>icpchue.com/job</strong> within the first 72 hours, laying the groundwork for our largest and most competitive intake to date.
+      </p>
+    </div>
+
+    <div class="footer-bar">
+      <div><strong>ICPC HUE</strong> • Annual Progress Dossier 2025 – 2027</div>
+      <div>Page 05 of 14</div>
+    </div>
+  </section>
+
+  <!-- ================= PAGE 6: 16 COMPETING TEAMS SHOWCASE ================= -->
+  <section class="page">
+    <div class="header-bar">
+      <div class="inst-badge">
+        <img src="/home/yousefmsm1/Desktop/pdf_gen/report/assets/horus_logo.png" class="inst-logo" alt="Horus University Logo">
+        <div class="inst-text">Horus University — Egypt • <span class="inst-sub">ICPC HUE Community</span></div>
+      </div>
+      <div class="pill-tag">05 / National Delegation</div>
+    </div>
+
+    <div class="kicker">
+      <div class="kicker-bar"></div>
+      <span>National Collegiate Delegation</span>
+    </div>
+    <h1 class="slide-title">Our 16 Competing Teams at ECPC Qualifications</h1>
+    <p class="slide-sub">
+      48 student competitors representing the Faculty of Artificial Intelligence and Faculty of Engineering across 16 official tournament teams at AASTMT, Alexandria.
+    </p>
+
+    <!-- Delegation Key Metrics Banner -->
+    <div class="grid-3" style="margin-bottom: 12px;">
+      <div class="card" style="padding: 8px 12px;">
+        <div style="font-size: 15px; font-weight: 800; color: var(--text-head);">16 Teams</div>
+        <div style="font-size: 8.5px; font-weight: 700; color: var(--accent-dark); text-transform: uppercase;">Official Delegation</div>
+      </div>
+      <div class="card" style="padding: 8px 12px;">
+        <div style="font-size: 15px; font-weight: 800; color: var(--text-head);">48 Students</div>
+        <div style="font-size: 8.5px; font-weight: 700; color: var(--accent-dark); text-transform: uppercase;">Active Competitors</div>
+      </div>
+      <div class="card" style="padding: 8px 12px;">
+        <div style="font-size: 15px; font-weight: 800; color: var(--text-head);">2 Faculties</div>
+        <div style="font-size: 8.5px; font-weight: 700; color: var(--accent-dark); text-transform: uppercase;">AI &amp; Engineering</div>
+      </div>
+    </div>
+
+    <!-- 4x4 Grid of 16 Teams -->
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 10px;">
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+          <div class="photo-box" style="height: 86px; margin: 0; border-radius: 0;">
+            <img src="/home/yousefmsm1/Desktop/pdf_gen/report/ecpc_qulifcatio/FB_IMG_1790132708823.jpg" alt="Team 01">
+          </div>
+          <div style="text-align: center; padding: 5px 6px; background: #FFFFFF; font-size: 8.5px; font-weight: 700; color: #111;">
+            Team 01
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+          <div class="photo-box" style="height: 86px; margin: 0; border-radius: 0;">
+            <img src="/home/yousefmsm1/Desktop/pdf_gen/report/ecpc_qulifcatio/FB_IMG_1790132683848.jpg" alt="Team 02">
+          </div>
+          <div style="text-align: center; padding: 5px 6px; background: #FFFFFF; font-size: 8.5px; font-weight: 700; color: #111;">
+            Team 02
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+          <div class="photo-box" style="height: 86px; margin: 0; border-radius: 0;">
+            <img src="/home/yousefmsm1/Desktop/pdf_gen/report/ecpc_qulifcatio/FB_IMG_1790132657082.jpg" alt="Team 03">
+          </div>
+          <div style="text-align: center; padding: 5px 6px; background: #FFFFFF; font-size: 8.5px; font-weight: 700; color: #111;">
+            Team 03
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+          <div class="photo-box" style="height: 86px; margin: 0; border-radius: 0;">
+            <img src="/home/yousefmsm1/Desktop/pdf_gen/report/ecpc_qulifcatio/FB_IMG_1790132659885.jpg" alt="Team 04">
+          </div>
+          <div style="text-align: center; padding: 5px 6px; background: #FFFFFF; font-size: 8.5px; font-weight: 700; color: #111;">
+            Team 04
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+          <div class="photo-box" style="height: 86px; margin: 0; border-radius: 0;">
+            <img src="/home/yousefmsm1/Desktop/pdf_gen/report/ecpc_qulifcatio/FB_IMG_1790132664255.jpg" alt="Team 05">
+          </div>
+          <div style="text-align: center; padding: 5px 6px; background: #FFFFFF; font-size: 8.5px; font-weight: 700; color: #111;">
+            Team 05
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+          <div class="photo-box" style="height: 86px; margin: 0; border-radius: 0;">
+            <img src="/home/yousefmsm1/Desktop/pdf_gen/report/ecpc_qulifcatio/FB_IMG_1790132668477.jpg" alt="Team 06">
+          </div>
+          <div style="text-align: center; padding: 5px 6px; background: #FFFFFF; font-size: 8.5px; font-weight: 700; color: #111;">
+            Team 06
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+          <div class="photo-box" style="height: 86px; margin: 0; border-radius: 0;">
+            <img src="/home/yousefmsm1/Desktop/pdf_gen/report/ecpc_qulifcatio/FB_IMG_1790132686754.jpg" alt="Team 07">
+          </div>
+          <div style="text-align: center; padding: 5px 6px; background: #FFFFFF; font-size: 8.5px; font-weight: 700; color: #111;">
+            Team 07
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+          <div class="photo-box" style="height: 86px; margin: 0; border-radius: 0;">
+            <img src="/home/yousefmsm1/Desktop/pdf_gen/report/ecpc_qulifcatio/FB_IMG_1790132690995.jpg" alt="Team 08">
+          </div>
+          <div style="text-align: center; padding: 5px 6px; background: #FFFFFF; font-size: 8.5px; font-weight: 700; color: #111;">
+            Team 08
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+          <div class="photo-box" style="height: 86px; margin: 0; border-radius: 0;">
+            <img src="/home/yousefmsm1/Desktop/pdf_gen/report/ecpc_qulifcatio/FB_IMG_1790132693865.jpg" alt="Team 09">
+          </div>
+          <div style="text-align: center; padding: 5px 6px; background: #FFFFFF; font-size: 8.5px; font-weight: 700; color: #111;">
+            Team 09
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+          <div class="photo-box" style="height: 86px; margin: 0; border-radius: 0;">
+            <img src="/home/yousefmsm1/Desktop/pdf_gen/report/ecpc_qulifcatio/FB_IMG_1790132696016.jpg" alt="Team 10">
+          </div>
+          <div style="text-align: center; padding: 5px 6px; background: #FFFFFF; font-size: 8.5px; font-weight: 700; color: #111;">
+            Team 10
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+          <div class="photo-box" style="height: 86px; margin: 0; border-radius: 0;">
+            <img src="/home/yousefmsm1/Desktop/pdf_gen/report/ecpc_qulifcatio/FB_IMG_1790132697858.jpg" alt="Team 11">
+          </div>
+          <div style="text-align: center; padding: 5px 6px; background: #FFFFFF; font-size: 8.5px; font-weight: 700; color: #111;">
+            Team 11
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+          <div class="photo-box" style="height: 86px; margin: 0; border-radius: 0;">
+            <img src="/home/yousefmsm1/Desktop/pdf_gen/report/ecpc_qulifcatio/FB_IMG_1790132699784.jpg" alt="Team 12">
+          </div>
+          <div style="text-align: center; padding: 5px 6px; background: #FFFFFF; font-size: 8.5px; font-weight: 700; color: #111;">
+            Team 12
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+          <div class="photo-box" style="height: 86px; margin: 0; border-radius: 0;">
+            <img src="/home/yousefmsm1/Desktop/pdf_gen/report/ecpc_qulifcatio/FB_IMG_1790132702043.jpg" alt="Team 13">
+          </div>
+          <div style="text-align: center; padding: 5px 6px; background: #FFFFFF; font-size: 8.5px; font-weight: 700; color: #111;">
+            Team 13
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+          <div class="photo-box" style="height: 86px; margin: 0; border-radius: 0;">
+            <img src="/home/yousefmsm1/Desktop/pdf_gen/report/ecpc_qulifcatio/FB_IMG_1790132703739.jpg" alt="Team 14">
+          </div>
+          <div style="text-align: center; padding: 5px 6px; background: #FFFFFF; font-size: 8.5px; font-weight: 700; color: #111;">
+            Team 14
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+          <div class="photo-box" style="height: 86px; margin: 0; border-radius: 0;">
+            <img src="/home/yousefmsm1/Desktop/pdf_gen/report/ecpc_qulifcatio/FB_IMG_1790132705475.jpg" alt="Team 15">
+          </div>
+          <div style="text-align: center; padding: 5px 6px; background: #FFFFFF; font-size: 8.5px; font-weight: 700; color: #111;">
+            Team 15
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+          <div class="photo-box" style="height: 86px; margin: 0; border-radius: 0;">
+            <img src="/home/yousefmsm1/Desktop/pdf_gen/report/ecpc_qulifcatio/FB_IMG_1790132707334.jpg" alt="Team 16">
+          </div>
+          <div style="text-align: center; padding: 5px 6px; background: #FFFFFF; font-size: 8.5px; font-weight: 700; color: #111;">
+            Team 16
+          </div>
+        </div>
+    </div>
+
+    <div class="footer-bar">
+      <div><strong>ICPC HUE</strong> • Annual Progress Dossier 2025 – 2027</div>
+      <div>Page 06 of 14</div>
+    </div>
+  </section>
+
+<!-- ================= PAGE 7: OPERATING COMMITTEES ================= -->
+  <section class="page">
+    <div class="header-bar">
+      <div class="inst-badge">
+        <img src="/home/yousefmsm1/Desktop/pdf_gen/report/assets/horus_logo.png" class="inst-logo" alt="Horus University Logo">
+        <div class="inst-text">Horus University — Egypt • <span class="inst-sub">ICPC HUE Community</span></div>
+      </div>
+      <div class="pill-tag">06 / Operating Model</div>
+    </div>
+
+    <div class="kicker">
+      <div class="kicker-bar"></div>
+      <span>Operating Model</span>
+    </div>
+    <h1 class="slide-title">The Four Community Committees: Structured Specialization</h1>
+    <p class="slide-sub">
+      A defined functional division of labor designed to overcome technical gaps, inconsistent follow-up, and logistical overhead.
+    </p>
+
+    <!-- Core Principle Banner -->
+    <div class="card-stripe" style="margin-bottom: 18px; padding: 12px 16px;">
+      <strong style="color: var(--accent-dark); font-size: 11px;">Foundational Leadership Principle:</strong>
+      <span style="font-size: 10.5px; color: var(--text-body);">
+        No member is forced into a particular committee. Each student actively selects the role matching their skills and passion, ensuring high intrinsic accountability and pedagogical integrity.
+      </span>
+    </div>
+
+    <!-- 2x2 Grid of Committees -->
+    <div class="grid-2">
+      <!-- 1. Instructors -->
+      <div class="card" style="padding: 16px 18px;">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+        </div>
+        <div class="card-title">01 · Instructors Committee</div>
+        <p class="card-body">
+          Deliver weekly technical lectures, solve problems live with step-by-step clarity, and prepare structured problem sheets. Instructors must demonstrate academic honesty, deep algorithmic mastery, and the patience required to guide novice programmers.
+        </p>
+      </div>
+
+      <!-- 2. Mentors -->
+      <div class="card" style="padding: 16px 18px;">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+        </div>
+        <div class="card-title">02 · Mentors Committee</div>
+        <p class="card-body">
+          Track small teams continuously, conduct weekly check-ins, identify when students encounter conceptual roadblocks, and monitor student wellbeing. Mentors ensure students maintain consistent practice habits rather than dropping off.
+        </p>
+      </div>
+
+      <!-- 3. Media -->
+      <div class="card" style="padding: 16px 18px;">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24"><path d="M4 4h3l2-2h6l2 2h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm8 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg>
+        </div>
+        <div class="card-title">03 · Media Committee</div>
+        <p class="card-body">
+          Produce high-quality presentations, promotional videos (using Adobe Premiere and After Effects), and social media documentation. They celebrate student achievements, elevate community visibility, and drive recruitment.
+        </p>
+      </div>
+
+      <!-- 4. Operations -->
+      <div class="card" style="padding: 16px 18px;">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+        </div>
+        <div class="card-title">04 · Operations Committee</div>
+        <p class="card-body">
+          Manage physical logistics, coordinate lab reservations with university administration, organize on-campus event flows, oversee printing of materials, and ensure smooth operational execution during all offline contests.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <div><strong>ICPC HUE</strong> • Progress Report August – September 2026</div>
+      <div>Page 07 of 14</div>
+    </div>
+  </section>
+
+
+  <!-- ================= PAGE 8: LEADERSHIP & PLATFORM ================= -->
+  <section class="page">
+    <div class="header-bar">
+      <div class="inst-badge">
+        <img src="/home/yousefmsm1/Desktop/pdf_gen/report/assets/horus_logo.png" class="inst-logo" alt="Horus University Logo">
+        <div class="inst-text">Horus University — Egypt • <span class="inst-sub">ICPC HUE Community</span></div>
+      </div>
+      <div class="pill-tag">07 / Talent & Systems</div>
+    </div>
+
+    <div class="kicker">
+      <div class="kicker-bar"></div>
+      <span>Talent Pipeline & Systems</span>
+    </div>
+    <h1 class="slide-title">Leadership Development and the ICPC HUE Platform</h1>
+    <p class="slide-sub">
+      Identifying student talent through rigorous teach-backs and unifying mentoring workflows into a closed-loop platform.
+    </p>
+
+    <div class="grid-2" style="margin-bottom: 14px;">
+      <!-- Left: Leadership Selection Pipeline -->
+      <div class="card-white" style="border-top: 4px solid var(--accent); padding: 18px;">
+        <div class="card-title" style="font-size: 14px; margin-bottom: 8px;">Top-5 Team Leadership Challenge</div>
+        <p class="card-body" style="font-size: 10.5px; margin-bottom: 12px;">
+          To prepare the next generation of student instructors, ICPC HUE conducted extensive interviews with the <strong>top five teams</strong> from the ECPC qualification stage: four teams from the Faculty of Artificial Intelligence and one from Engineering.
+        </p>
+
+        <div class="card" style="background: #FFFDF9; border: 1px solid var(--card-border); padding: 12px; margin-bottom: 10px;">
+          <div style="font-size: 10.5px; font-weight: 700; color: var(--accent-dark); margin-bottom: 4px;">The 5-Day "Teach-Back" Evaluation</div>
+          <p style="font-size: 9.8px; margin: 0; line-height: 1.5; color: var(--text-body);">
+            Candidates were assigned complex technical subjects (STL vectors, iterators, and recursion) to study over 5 days. They then conducted live "teach-back" presentations evaluated for pedagogical clarity, calmness under questioning, and ability to inspire peers.
+          </p>
+        </div>
+
+        <p class="card-body" style="font-size: 10px; color: var(--text-muted);">
+          Interviews and evaluations were conducted with the guidance of faculty engineers: <strong>Eng. Fatma Magdy, Eng. Sara Lotfy, and Eng. Raafat El-Moneer</strong>.
+        </p>
+      </div>
+
+      <!-- Right: The Platform & Mentoring Model -->
+      <div class="card-solid" style="padding: 18px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div class="card-title" style="font-size: 14px; margin-bottom: 8px;">The ICPC HUE Platform: Closed-Loop Tracking</div>
+          <p class="card-body" style="font-size: 10.8px; margin-bottom: 12px;">
+            The digital platform was developed to serve as the central backbone for all community recruitment, problem submission, and mentor reviews.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <div style="background: rgba(255,255,255,0.45); border-radius: 8px; padding: 8px 12px;">
+              <div style="font-size: 10.5px; font-weight: 800; color: #000;">1. Daily Student Problem Logs</div>
+              <div style="font-size: 9.8px; color: #111;">Students record sheets and solved problems daily, encouraging self-reflection and habit formation.</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.45); border-radius: 8px; padding: 8px 12px;">
+              <div style="font-size: 10.5px; font-weight: 800; color: #000;">2. Real-Time Mentor Dashboard</div>
+              <div style="font-size: 9.8px; color: #111;">Mentors view active solving volume, spotting participation drops before students fall permanently behind.</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.45); border-radius: 8px; padding: 8px 12px;">
+              <div style="font-size: 10.5px; font-weight: 800; color: #000;">3. Targeted Technical Interventions</div>
+              <div style="font-size: 9.8px; color: #111;">Instructors tailor weekly review sessions based on actual aggregate failure rates on specific sheets.</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 14px; border-top: 1px solid rgba(0,0,0,0.15); padding-top: 8px; font-size: 10px; font-weight: 700;">
+          Result: Transition from informal follow-up to a verifiable training system.
+        </div>
+      </div>
+    </div>
+
+    <div class="quote-callout" style="margin-top: 6px;">
+      <strong>Institutional Outcome:</strong> By connecting student logs, mentor monitoring, and instructor reviews into a single system, ICPC HUE ensures that student progress is quantitatively tracked throughout the academic year.
+    </div>
+
+    <div class="footer-bar">
+      <div><strong>ICPC HUE</strong> • Progress Report August – September 2026</div>
+      <div>Page 08 of 14</div>
+    </div>
+  </section>
+
+<!-- ================= PAGE 9: PARTNERSHIPS & INTRO DAY ================= -->
+  <section class="page">
+    <div class="header-bar">
+      <div class="inst-badge">
+        <img src="/home/yousefmsm1/Desktop/pdf_gen/report/assets/horus_logo.png" class="inst-logo" alt="Horus University Logo">
+        <div class="inst-text">Horus University — Egypt • <span class="inst-sub">ICPC HUE Community</span></div>
+      </div>
+      <div class="pill-tag">08 / Ecosystem & Engagement</div>
+    </div>
+
+    <div class="kicker">
+      <div class="kicker-bar"></div>
+      <span>Ecosystem & Campus Engagement</span>
+    </div>
+    <h1 class="slide-title">Strategic Partnerships & Community Introduction Day</h1>
+    <p class="slide-sub">
+      Expanding Horus University's learning network and preparing a professional orientation for incoming freshmen.
+    </p>
+
+    <!-- TOP HALF: STRATEGIC REGIONAL PARTNERSHIPS (HORIZONTAL 3 COLUMNS) -->
+    <div style="margin-bottom: 24px;">
+      <div class="card-title" style="margin-bottom: 12px; font-size: 14px; display: flex; align-items: center; justify-content: space-between;">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span>Strategic Regional Partnerships</span>
+          <span style="font-size: 10px; font-weight: 600; color: var(--text-muted); background: #F3F4F6; padding: 2px 8px; border-radius: 12px;">3 Partner Communities</span>
+        </div>
+        <span style="font-size: 10px; color: var(--accent-dark); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Knowledge Exchange & Co-Hosting</span>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;">
+        <!-- Damietta -->
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border);  border-radius: 12px; padding: 18px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.03);">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+            <div style="width: 64px; height: 64px; min-width: 64px; border-radius: 12px; overflow: hidden; background: #FFFFFF; border: 1px solid #EAE2D5; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">
+              <img src="/home/yousefmsm1/Desktop/pdf_gen/report/assets/logo_damietta_cropped.png" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <div>
+              <div style="font-weight: 800; font-size: 13px; color: var(--text-head); line-height: 1.25;">ACPC Club Damietta Univ.</div>
+            </div>
+          </div>
+          <p class="card-body" style="font-size: 10.5px; line-height: 1.5; margin: 0;">
+            Established through the joint organization of DCC 2026. This ongoing relationship enables shared problem setting, contest hosting infrastructure, and combined local competitions.
+          </p>
+        </div>
+
+        <!-- Port Said -->
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border);  border-radius: 12px; padding: 18px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.03);">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+            <div style="width: 64px; height: 64px; min-width: 64px; border-radius: 12px; overflow: hidden; background: #F8F9FA; border: 1px solid #EAE2D5; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">
+              <img src="/home/yousefmsm1/Desktop/pdf_gen/report/assets/logo_psu_cropped.jpg" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <div>
+              <div style="font-weight: 800; font-size: 13px; color: var(--text-head); line-height: 1.25;">ICPC PSU Community</div>
+              <div style="font-size: 9.5px; font-weight: 700; color: var(--accent-dark); margin-top: 3px;">Port Said University</div>
+            </div>
+          </div>
+          <p class="card-body" style="font-size: 10.5px; line-height: 1.5; margin: 0;">
+            A direct connection to a seasoned regional community with proven ECPC bronze-medal experience, creating valuable peer mentoring opportunities for advanced HUE teams.
+          </p>
+        </div>
+
+        <!-- Assiut -->
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border);  border-radius: 12px; padding: 18px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.03);">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+            <div style="width: 64px; height: 64px; min-width: 64px; border-radius: 12px; overflow: hidden; background: #000000; border: 1px solid #333333; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0,0,0,0.12);">
+              <img src="/home/yousefmsm1/Desktop/pdf_gen/report/assets/logo_assiut_cropped.png" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <div>
+              <div style="font-weight: 800; font-size: 13px; color: var(--text-head); line-height: 1.25;">ICPC Assiut Community</div>
+              <div style="font-size: 9.5px; font-weight: 700; color: var(--accent-dark); margin-top: 3px;">Assiut University</div>
+            </div>
+          </div>
+          <p class="card-body" style="font-size: 10.5px; line-height: 1.5; margin: 0;">
+            Cooperation focused on pedagogical standards and instructor training, drawing upon one of the largest and most successful competitive programming ecosystems in Egypt.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM HALF: COMMUNITY INTRODUCTION DAY PREPARATIONS (HORIZONTAL FULL WIDTH) -->
+    <div style="background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 14px; padding: 24px 24px;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px;">
+        <div>
+          <div class="card-title" style="color: var(--accent-dark); font-size: 16.5px; margin-bottom: 4px;">Community Introduction Day Preparations</div>
+          <p class="card-body" style="font-size: 11px; margin: 0; color: var(--text-head); font-weight: 500;">
+            To welcome incoming students and establish professional standards from day one, ICPC HUE developed a comprehensive set of event assets:
+          </p>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 20px; padding: 5px 14px; font-size: 10.5px; font-weight: 700; color: var(--accent-dark); white-space: nowrap; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
+          Freshmen Intake 2026/27
+        </div>
+      </div>
+
+      <!-- 6 Event Assets Grid (3 columns x 2 rows) -->
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 16px;">
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 10px; padding: 14px 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
+          <div style="font-weight: 800; font-size: 12px; color: var(--text-head); margin-bottom: 5px; display: flex; align-items: center; gap: 8px;">
+            <div style="width: 24px; height: 24px; min-width: 24px; border-radius: 6px; background: rgba(225, 157, 27, 0.12); display: flex; align-items: center; justify-content: center;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#B47E17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+                <path d="M4 22h16"/>
+                <path d="M10 14.66V17c0 .55-.45 1-1 1H7v4h10v-4h-2c-.55 0-1-.45-1-1v-2.34"/>
+                <path d="M6 4h12a2 2 0 0 1 2 2v3a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6V6a2 2 0 0 1 2-2z"/>
+              </svg>
+            </div>
+            <span>Award Certificates</span>
+          </div>
+          <div style="font-size: 10.2px; color: var(--text-muted); line-height: 1.4;">Honoring top 5 ECPC teams</div>
+        </div>
+
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 10px; padding: 14px 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
+          <div style="font-weight: 800; font-size: 12px; color: var(--text-head); margin-bottom: 5px; display: flex; align-items: center; gap: 8px;">
+            <div style="width: 24px; height: 24px; min-width: 24px; border-radius: 6px; background: rgba(225, 157, 27, 0.12); display: flex; align-items: center; justify-content: center;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#B47E17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="12" x="2" y="6" rx="2"/>
+                <circle cx="12" cy="12" r="2"/>
+                <path d="M6 12h.01M18 12h.01"/>
+              </svg>
+            </div>
+            <span>Financial Prizes</span>
+          </div>
+          <div style="font-size: 10.2px; color: var(--text-muted); line-height: 1.4;">Reward checks for top achievers</div>
+        </div>
+
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 10px; padding: 14px 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
+          <div style="font-weight: 800; font-size: 12px; color: var(--text-head); margin-bottom: 5px; display: flex; align-items: center; gap: 8px;">
+            <div style="width: 24px; height: 24px; min-width: 24px; border-radius: 6px; background: rgba(225, 157, 27, 0.12); display: flex; align-items: center; justify-content: center;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#B47E17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/>
+              </svg>
+            </div>
+            <span>Official T-Shirts</span>
+          </div>
+          <div style="font-size: 10.2px; color: var(--text-muted); line-height: 1.4;">Branded community apparel</div>
+        </div>
+
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 10px; padding: 14px 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
+          <div style="font-weight: 800; font-size: 12px; color: var(--text-head); margin-bottom: 5px; display: flex; align-items: center; gap: 8px;">
+            <div style="width: 24px; height: 24px; min-width: 24px; border-radius: 6px; background: rgba(225, 157, 27, 0.12); display: flex; align-items: center; justify-content: center;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#B47E17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+              </svg>
+            </div>
+            <span>Printed Flyers</span>
+          </div>
+          <div style="font-size: 10.2px; color: var(--text-muted); line-height: 1.4;">Season roadmap & intake guides</div>
+        </div>
+
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 10px; padding: 14px 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
+          <div style="font-weight: 800; font-size: 12px; color: var(--text-head); margin-bottom: 5px; display: flex; align-items: center; gap: 8px;">
+            <div style="width: 24px; height: 24px; min-width: 24px; border-radius: 6px; background: rgba(225, 157, 27, 0.12); display: flex; align-items: center; justify-content: center;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#B47E17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
+                <line x1="4" y1="22" x2="4" y2="15"/>
+              </svg>
+            </div>
+            <span>Flag & Banners</span>
+          </div>
+          <div style="font-size: 10.2px; color: var(--text-muted); line-height: 1.4;">Official HUE roll-ups and flags</div>
+        </div>
+
+        <div style="background: #FFFFFF; border: 1px solid var(--card-border); border-radius: 10px; padding: 14px 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
+          <div style="font-weight: 800; font-size: 12px; color: var(--text-head); margin-bottom: 5px; display: flex; align-items: center; gap: 8px;">
+            <div style="width: 24px; height: 24px; min-width: 24px; border-radius: 6px; background: rgba(225, 157, 27, 0.12); display: flex; align-items: center; justify-content: center;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#B47E17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 12 20 22 4 22 4 12"/>
+                <rect width="20" height="5" x="2" y="7" rx="1"/>
+                <line x1="12" y1="22" x2="12" y2="7"/>
+                <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/>
+                <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
+              </svg>
+            </div>
+            <span>Welcome Gifts</span>
+          </div>
+          <div style="font-size: 10.2px; color: var(--text-muted); line-height: 1.4;">Chocolates and intake merchandise</div>
+        </div>
+      </div>
+
+      <!-- Keynote Speaker (Horizontal Banner) -->
+      <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid var(--card-border);  padding: 16px 20px; display: flex; align-items: center; gap: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.03);">
+        <div style="width: 46px; height: 46px; min-width: 46px; border-radius: 50%; background: var(--card-bg); display: flex; align-items: center; justify-content: center;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B47E17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+            <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+            <line x1="12" y1="19" x2="12" y2="22"/>
+          </svg>
+        </div>
+        <div>
+          <div style="font-weight: 800; font-size: 12px; color: var(--text-head); margin-bottom: 3px;">
+            Keynote Speaker: Official Collegiate Guest Address
+          </div>
+          <p style="font-size: 10.5px; margin: 0; color: var(--text-body); line-height: 1.5;">
+            Contacted an <strong>ICPC-qualified veteran</strong> to deliver a guest address on real-world problem-solving value, algorithmic careers, and the discipline needed to excel in collegiate contests.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <div><strong>ICPC HUE</strong> • Annual Progress Dossier 2025 – 2027</div>
+      <div>Page 09 of 14</div>
+    </div>
+  </section>
+
+
+  <!-- ================= PAGE 10: ROAD TO ICPC ROADMAP ================= -->
+  <section class="page">
+    <div class="header-bar">
+      <div class="inst-badge">
+        <img src="/home/yousefmsm1/Desktop/pdf_gen/report/assets/horus_logo.png" class="inst-logo" alt="Horus University Logo">
+        <div class="inst-text">Horus University — Egypt • <span class="inst-sub">ICPC HUE Community</span></div>
+      </div>
+      <div class="pill-tag">09 / Season Roadmap</div>
+    </div>
+
+    <div class="kicker">
+      <div class="kicker-bar"></div>
+      <span>Annual Roadmap</span>
+    </div>
+    <h1 class="slide-title">The 2026/2027 Road to ICPC: Season Pathway</h1>
+    <p class="slide-sub">
+      A 7-phase algorithmic curriculum guiding students from basic programming fundamentals to national ECPC selection.
+    </p>
+
+    <!-- Prominent Visual Roadmap Graphic -->
+    <div style="text-align: center; margin: 4px 0 12px 0; background: #FFFFFF; border-radius: 12px; padding: 4px 0;">
+      <img src="/home/yousefmsm1/Desktop/pdf_gen/report/assets/roadmap_curve_cropped.jpg" style="height: 255px; max-width: 100%; object-fit: contain; display: block; margin: 0 auto;" alt="Road to ICPC Pathway">
+    </div>
+
+    <!-- 7 Phases Table -->
+    <table class="gamma-table">
+      <thead>
+        <tr>
+          <th style="width: 24%;">Phase & Stage</th>
+          <th style="width: 26%;">Timeline</th>
+          <th style="width: 50%;">Core Technical Focus & Milestone Events</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Phase 1: Recruitment &amp; Orientation</strong></td>
+          <td>Aug 29 – Oct 9, 2026</td>
+          <td>Campus promotion, online forms, interviews, Orientation Day, Intro Session.</td>
+        </tr>
+        <tr>
+          <td><strong>Phase 2: Programming Foundations</strong></td>
+          <td>Oct 16 – Nov 26, 2026</td>
+          <td>Variables, loops, arrays, strings, functions, Big-O complexity; weekly practice contests.</td>
+        </tr>
+        <tr>
+          <td><strong>Phase 3: STL &amp; Winter Checkpoint</strong></td>
+          <td>Nov 27, 2026 – Jan 29, 2027</td>
+          <td>Vectors, stacks, queues, sets, maps, priority queues; <span class="tag-accent">Warm-up Contest: Jan 29, 2027</span></td>
+        </tr>
+        <tr>
+          <td><strong>Phase 4: Core Problem-Solving</strong></td>
+          <td>Feb 5 – Mar 19, 2027</td>
+          <td>Frequency arrays, two pointers, binary search, greedy algorithms, recursion, backtracking.</td>
+        </tr>
+        <tr>
+          <td><strong>Phase 5: Advanced Algorithms</strong></td>
+          <td>Mar 26 – Apr 30, 2027</td>
+          <td>Mathematics I &amp; II, Dynamic Programming (DP I &amp; II), Graph Algorithms I.</td>
+        </tr>
+        <tr>
+          <td><strong>Phase 6: Team Formation &amp; Selection</strong></td>
+          <td>Apr 24 – Jun 18, 2027</td>
+          <td>Internal team trials, Team Selection Contest (TSC), official team roster announcement.</td>
+        </tr>
+        <tr>
+          <td><strong>Phase 7: Final ECPC Preparation</strong></td>
+          <td>Jun 22 – Aug 15, 2027</td>
+          <td>Intensive weekly 5-hour simulated contests, full tournament simulation, target ECPC 2027.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="font-size: 8.8px; color: var(--text-muted); margin-top: 6px;">
+      * Unless otherwise stated, technical sessions are held Fridays at 8:30 PM. Dates marked as estimated adjust in accordance with the official Horus University academic calendar.
+    </div>
+
+    <div class="footer-bar">
+      <div><strong>ICPC HUE</strong> • Annual Progress Dossier 2025 – 2027</div>
+      <div>Page 10 of 14</div>
+    </div>
+  </section>
+
+    <!-- ================= PAGE 11: ACADEMIC CURRICULUM & MILESTONES ================= -->
+  <section class="page">
+    <div class="header-bar">
+      <div class="inst-badge">
+        <img src="/home/yousefmsm1/Desktop/pdf_gen/report/assets/horus_logo.png" class="inst-logo" alt="Horus University Logo">
+        <div class="inst-text">Horus University — Egypt • <span class="inst-sub">ICPC HUE Community</span></div>
+      </div>
+      <div class="pill-tag">10 / Academic Curriculum</div>
+    </div>
+
+    <div class="kicker">
+      <div class="kicker-bar"></div>
+      <span>Academic Appendix &amp; Milestones</span>
+    </div>
+    <h1 class="slide-title">2026/2027 Season Curriculum &amp; Milestones</h1>
+    <p class="slide-sub">
+      Comprehensive schedule of all 46 milestones across the academic year for faculty review and operational tracking.
+    </p>
+
+    <div class="grid-3" style="font-size: 9px; line-height: 1.45;">
+      <!-- Column 1: Term 1 -->
+      <div class="card-white" style="padding: 12px 14px;">
+        <div style="font-size: 11px; font-weight: 700; color: var(--accent-dark); border-bottom: 1px solid var(--card-border); padding-bottom: 4px; margin-bottom: 8px;">
+          Term 1: Foundations &amp; STL
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <div><strong>01.</strong> Promotion: Aug 29 – Sep 03</div>
+          <div><strong>02.</strong> Applications Open: Sep 05 – Sep 10</div>
+          <div><strong>03.</strong> Screening/Interviews: Sep 12 – Sep 17</div>
+          <div><strong>04.</strong> Results: Sep 18</div>
+          <div><strong>05.</strong> Orientation Day: Sep 26 – Oct 01</div>
+          <div><strong>06.</strong> Form Reopen: Sep 26 – Oct 01</div>
+          <div><strong>07.</strong> Intro Session: Oct 09 (8:30 PM)</div>
+          <div><strong>08.</strong> Basics &amp; Conditions: Oct 16</div>
+          <div><strong>09.</strong> Loops &amp; Nested Loops: Oct 23</div>
+          <div><strong>10.</strong> Arrays &amp; Functions: Oct 30</div>
+          <div><strong>11.</strong> Strings: Nov 06</div>
+          <div><strong>12.</strong> Midterm Break: Nov 07 – Nov 12</div>
+          <div><strong>13.</strong> Functions: Nov 13</div>
+          <div><strong>14.</strong> Complexity (Big-O): Nov 20</div>
+          <div><strong>15.</strong> Practice Contests: Nov 21 – Nov 26</div>
+          <div><strong>16.</strong> Progress Check: Late Nov</div>
+          <div><strong>17.</strong> STL Vector &amp; Pair: Nov 27</div>
+          <div><strong>18.</strong> STL Stack &amp; Queue: Dec 04</div>
+          <div><strong>19.</strong> STL Set &amp; Map: Dec 11</div>
+          <div><strong>20.</strong> STL Priority Queue: Dec 18</div>
+          <div><strong>21.</strong> Finals Break: Dec 20 – Jan 21</div>
+          <div><strong>22.</strong> <span style="color: var(--accent-dark); font-weight: 800;">Warm-up Contest: Jan 29, 2027</span></div>
+        </div>
+      </div>
+
+      <!-- Column 2: Term 2 -->
+      <div class="card-white" style="padding: 12px 14px;">
+        <div style="font-size: 11px; font-weight: 700; color: var(--accent-dark); border-bottom: 1px solid var(--card-border); padding-bottom: 4px; margin-bottom: 8px;">
+          Term 2: Core Algorithms
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <div><strong>23.</strong> Prefix &amp; Freq Arrays: Feb 05</div>
+          <div><strong>24.</strong> Two Pointers / Sliding Win: Feb 12</div>
+          <div><strong>25.</strong> Form Reopen: Feb 13 – Feb 18</div>
+          <div><strong>26.</strong> Binary Search: Feb 19</div>
+          <div><strong>27.</strong> Greedy Algorithms: Feb 26</div>
+          <div><strong>28.</strong> Recursion &amp; Brute Force: Mar 05</div>
+          <div><strong>29.</strong> Diagnostic Review: Mar 06 – Mar 11</div>
+          <div><strong>30.</strong> Backtracking: Mar 12</div>
+          <div><strong>31.</strong> Bitmask &amp; Brute Force: Mar 19</div>
+          <div><strong>32.</strong> Mathematics I: Mar 26</div>
+          <div><strong>33.</strong> Mathematics II: Apr 02</div>
+          <div><strong>34.</strong> Dynamic Programming I: Apr 09</div>
+          <div><strong>35.</strong> Progress Check: Apr 10 – Apr 15</div>
+          <div><strong>36.</strong> Midterm Break: Apr 17 – Apr 22</div>
+          <div><strong>37.</strong> Dynamic Programming II: Apr 23</div>
+          <div><strong>38.</strong> Graph Algorithms I: Apr 30</div>
+        </div>
+      </div>
+
+      <!-- Column 3: Summer & ECPC -->
+      <div class="card-white" style="padding: 12px 14px;">
+        <div style="font-size: 11px; font-weight: 700; color: var(--accent-dark); border-bottom: 1px solid var(--card-border); padding-bottom: 4px; margin-bottom: 8px;">
+          Summer: Selection &amp; ECPC
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <div><strong>39.</strong> Team Trials: Apr 24 – May 06</div>
+          <div><strong>40.</strong> Team Selection Contest: May 08</div>
+          <div><strong>41.</strong> Official Teams Announced: May 15</div>
+          <div><strong>42.</strong> Eid Break: May 16 – May 19</div>
+          <div><strong>43.</strong> Finals Break: May 22 – Jun 18</div>
+          <div><strong>44.</strong> Weekly Contests: Jun 22 – Jul 27</div>
+          <div><strong>45.</strong> Full Contest Simulation: Aug 01</div>
+          <div><strong>46.</strong> <span style="color: var(--accent-dark); font-weight: 800;">Target ECPC 2027: Aug 15</span></div>
+          <div style="margin-top: 14px; padding: 10px; background: var(--card-bg); border-radius: 8px; border: 1px solid var(--card-border);">
+            <strong style="color: var(--text-head);">Governance Note:</strong><br>
+            All technical content is peer-reviewed prior to delivery. Attendance, platform problem submissions, and contest logs are monitored continuously.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <div><strong>ICPC HUE</strong> • Annual Progress Dossier 2025 – 2027</div>
+      <div>Page 11 of 14</div>
+    </div>
+  </section>
+
+  <!-- ================= PAGE 12: CONCLUSION & NEXT STRATEGIC OBJECTIVES ================= -->
+  <section class="page">
+    <div class="header-bar">
+      <div class="inst-badge">
+        <img src="/home/yousefmsm1/Desktop/pdf_gen/report/assets/horus_logo.png" class="inst-logo" alt="Horus University Logo">
+        <div class="inst-text">Horus University — Egypt • <span class="inst-sub">ICPC HUE Community</span></div>
+      </div>
+      <div class="pill-tag">11 / Strategic Objectives</div>
+    </div>
+
+    <div class="kicker">
+      <div class="kicker-bar"></div>
+      <span>Strategic Vision & Long-Term Trajectory</span>
+    </div>
+    <h1 class="slide-title">Conclusion and Next Strategic Objectives</h1>
+    <p class="slide-sub">
+      The full 2025/2026 trajectory proved that ICPC HUE can organize, compete, learn, and build a lasting system simultaneously.
+    </p>
+
+    <!-- 4 Pillars 2x2 -->
+    <div class="grid-2">
+      <div class="card">
+        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 8px;">
+          <div class="step-circle" style="width: 24px; height: 24px; font-size: 11px;">1</div>
+          <div class="card-title" style="margin: 0; font-size: 13.5px;">Expand Instructor & Mentor Pipeline</div>
+        </div>
+        <p class="card-body" style="font-size: 10.2px;">
+          Institutionalize the teach-back interview framework to groom past top performers into certified student instructors and mentors, preventing knowledge loss as senior cohorts graduate.
+        </p>
+      </div>
+
+      <div class="card">
+        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 8px;">
+          <div class="step-circle" style="width: 24px; height: 24px; font-size: 11px;">2</div>
+          <div class="card-title" style="margin: 0; font-size: 13.5px;">Standardize Daily Platform Tracking</div>
+        </div>
+        <p class="card-body" style="font-size: 10.2px;">
+          Make daily submission logging on the ICPC HUE platform mandatory for all active trainees, providing mentors with transparent data to intervene early when solving momentum dips.
+        </p>
+      </div>
+
+      <div class="card">
+        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 8px;">
+          <div class="step-circle" style="width: 24px; height: 24px; font-size: 11px;">3</div>
+          <div class="card-title" style="margin: 0; font-size: 13.5px;">Deepen Cross-University Cooperation</div>
+        </div>
+        <p class="card-body" style="font-size: 10.2px;">
+          Expand joint contests and instructor exchanges with Assiut University, Port Said University, and Damietta University, ensuring HUE students are regularly benchmarked against top regional teams.
+        </p>
+      </div>
+
+      <div class="card">
+        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 8px;">
+          <div class="step-circle" style="width: 24px; height: 24px; font-size: 11px;">4</div>
+          <div class="card-title" style="margin: 0; font-size: 13.5px;">Initiate Structured Simulation Earlier</div>
+        </div>
+        <p class="card-body" style="font-size: 10.2px;">
+          Transition teams into 5-hour timed contest simulations months ahead of ECPC qualification, building the endurance, strategic problem triage, and team dynamics required to advance.
+        </p>
+      </div>
+    </div>
+
+    <!-- Long Term Objective -->
+    <div class="card-stripe" style="margin-top: 14px; padding: 16px 20px;">
+      <div class="card-title" style="color: var(--accent-dark); font-size: 14px; margin-bottom: 6px;">Institutional Long-Term Objective</div>
+      <p class="card-body" style="font-size: 11px; line-height: 1.6;">
+        Establish a self-sustaining competitive programming culture at Horus University — guiding students from their very first solved problem to the highest levels of collegiate excellence in the ECPC, ACPC, and ICPC World Finals.
+      </p>
+    </div>
+
+    <div class="quote-callout" style="margin-top: 14px;">
+      <em>"ICPC HUE is continuing to build that path one student, one team, and one well-organized training cycle at a time."</em>
+    </div>
+
+    <div class="footer-bar">
+      <div><strong>ICPC HUE</strong> • Annual Progress Dossier 2025 – 2027</div>
+      <div>Page 12 of 14</div>
+    </div>
+  </section>
+
+
+    <!-- ================= PAGE 13: MEET THE TEAM ================= -->
+  <section class="page">
+    <div class="header-bar">
+      <div class="inst-badge">
+        <img src="/home/yousefmsm1/Desktop/pdf_gen/report/assets/horus_logo.png" class="inst-logo" alt="Horus University Logo">
+        <div class="inst-text">Horus University — Egypt • <span class="inst-sub">ICPC HUE Community</span></div>
+      </div>
+      <div class="pill-tag">12 / Community Leadership</div>
+    </div>
+
+    <!-- Handshake Emoji & Big Title -->
+    <div style="display: flex; align-items: center; gap: 10px; margin-top: 6px; margin-bottom: 6px;">
+      <span style="font-size: 28px; line-height: 1;">🤝</span>
+      <h1 style="font-size: 28px; font-weight: 800; color: #000000; margin: 0; letter-spacing: -0.02em;">Meet the Team</h1>
+    </div>
+
+    <!-- Gold Pill Tag -->
+    <div style="display: inline-block; border: 1px solid #E19D1B; border-radius: 6px; padding: 3px 8px; font-size: 8.5px; font-weight: 700; color: #E19D1B; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px;">
+      THE PEOPLE BEHIND ICPC HUE
+    </div>
+
+    <!-- Intro Text -->
+    <p style="font-size: 10.2px; line-height: 1.5; color: #373737; margin-bottom: 14px;">
+      ICPCHUE's success is built on the dedication and expertise of our talented team members. From visionary leadership to experienced instructors, each member plays a crucial role in shaping the future of competitive programming at Horus University.
+    </p>
+
+    <!-- 5 Cards matching Canva design -->
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+
+      <!-- Card 1: Academic Supervision & Support -->
+      <div style="display: flex; border: 1px solid #E2D9C8; border-radius: 10px; overflow: hidden; background: #FFFFFF;">
+        <div style="width: 55px; background: #F9ECD1; flex-shrink: 0;"></div>
+        <div style="padding: 10px 16px; flex: 1;">
+          <div style="font-size: 13px; font-weight: 800; color: #000000; margin-bottom: 4px;">Academic Supervision &amp; Support</div>
+          <ul style="margin: 0; padding-left: 18px; font-size: 10px; line-height: 1.55; color: #373737;">
+            <li>Dr. Basma Mostafa</li>
+            <li>Dr. Yasser Elawady</li>
+            <li>Eng. Fatma Magdy</li>
+            <li>Eng. Raafat Mohamed</li>
+            <li>Eng. Sara</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Card 2: Leadership -->
+      <div style="display: flex; border: 1px solid #E2D9C8; border-radius: 10px; overflow: hidden; background: #FFFFFF;">
+        <div style="width: 55px; background: #F9ECD1; flex-shrink: 0;"></div>
+        <div style="padding: 10px 16px; flex: 1;">
+          <div style="font-size: 13px; font-weight: 800; color: #000000; margin-bottom: 4px;">Leadership</div>
+          <ul style="margin: 0; padding-left: 18px; font-size: 10px; line-height: 1.55; color: #373737;">
+            <li>AbdelRahman Mohsen El-Shahat – Owner</li>
+            <li>Youssef Mohamed Salah El-Din – Co-Founder</li>
+            <li>Ahmed Waleed – The Lead</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Card 3: Platform Developing -->
+      <div style="display: flex; border: 1px solid #E2D9C8; border-radius: 10px; overflow: hidden; background: #FFFFFF;">
+        <div style="width: 55px; background: #F9ECD1; flex-shrink: 0;"></div>
+        <div style="padding: 10px 16px; flex: 1;">
+          <div style="font-size: 13px; font-weight: 800; color: #000000; margin-bottom: 4px;">Platform Developing</div>
+          <ul style="margin: 0; padding-left: 18px; font-size: 10px; line-height: 1.55; color: #373737;">
+            <li>Youssef Mohamed Salah El-Din – Main Dev</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Card 4: Instructors -->
+      <div style="display: flex; border: 1px solid #E2D9C8; border-radius: 10px; overflow: hidden; background: #FFFFFF;">
+        <div style="width: 55px; background: #F9ECD1; flex-shrink: 0;"></div>
+        <div style="padding: 10px 16px; flex: 1;">
+          <div style="font-size: 13px; font-weight: 800; color: #000000; margin-bottom: 4px;">Instructors</div>
+          <ul style="margin: 0; padding-left: 18px; font-size: 10px; line-height: 1.55; color: #373737;">
+            <li>Ahmed Waleed – Lead Instructor</li>
+            <li>Ibrahim Matar – Co-Lead Instructor</li>
+            <li>Omar El-Shayyal – Instructor</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Card 5: Monitors -->
+      <div style="display: flex; border: 1px solid #E2D9C8; border-radius: 10px; overflow: hidden; background: #FFFFFF;">
+        <div style="width: 55px; background: #F9ECD1; flex-shrink: 0;"></div>
+        <div style="padding: 10px 16px; flex: 1;">
+          <div style="font-size: 13px; font-weight: 800; color: #000000; margin-bottom: 4px;">Monitors</div>
+          <ul style="margin: 0; padding-left: 18px; font-size: 10px; line-height: 1.55; color: #373737;">
+            <li>Noha – Lead Monitor</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bar">
+      <div><strong>ICPC HUE</strong> • Annual Progress Dossier 2025 – 2027</div>
+      <div>Page 13 of 14</div>
+    </div>
+  </section>
+
+  <!-- ================= PAGE 14: ACADEMIC SUPERVISION & SPECIAL THANKS ================= -->
+  <section class="page">
+    <div class="header-bar">
+      <div class="inst-badge">
+        <img src="/home/yousefmsm1/Desktop/pdf_gen/report/assets/horus_logo.png" class="inst-logo" alt="Horus University Logo">
+        <div class="inst-text">Horus University — Egypt • <span class="inst-sub">Faculty of Artificial Intelligence</span></div>
+      </div>
+      <div class="pill-tag">13 / Academic Governance</div>
+    </div>
+
+    <div class="kicker">
+      <div class="kicker-bar"></div>
+      <span>Institutional Support & Governance</span>
+    </div>
+    <h1 class="slide-title">Academic Supervision & Special Thanks</h1>
+    <p class="slide-sub">
+      With profound gratitude to university leadership, faculty deanship, and supervising engineers who championed our community every step of the way.
+    </p>
+
+    <!-- 3 Academic Tiers -->
+    <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 14px;">
+      <!-- Dean -->
+      <div class="card-white" style=" padding: 12px 18px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <div style="font-size: 13px; font-weight: 800; color: var(--text-head);">Prof. Dr. Hossam El-Din Mostafa</div>
+          <span class="pill-tag" style="font-size: 8px;">Dean of Faculty of Artificial Intelligence</span>
+        </div>
+        <p class="card-body" style="font-size: 10px; line-height: 1.5;">
+          We express our deepest gratitude to the Dean for his visionary leadership, continuous patronage of collegiate competitive programming, endorsement of university computer laboratory allocations, and championing our participation in regional and national arenas.
+        </p>
+      </div>
+
+      <!-- Coordinators -->
+      <div class="card-white" style=" padding: 12px 18px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <div style="font-size: 13px; font-weight: 800; color: var(--text-head);">Dr. Basma Mostafa & Dr. Yasser El-Awady</div>
+          <span class="pill-tag" style="font-size: 8px;">Academic Program Coordinators</span>
+        </div>
+        <p class="card-body" style="font-size: 10px; line-height: 1.5;">
+          Heartfelt thanks for their generous sponsorship of the landmark March 12 Orientation Day, providing continuous strategic guidance, bridging faculty resources with student initiatives, and mentoring teams throughout the entire competitive season.
+        </p>
+      </div>
+
+      <!-- Supervising Engineers -->
+      <div class="card-white" style=" padding: 12px 18px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <div style="font-size: 13px; font-weight: 800; color: var(--text-head);">Eng. Fatma Magdy • Eng. Sara Lotfy • Eng. Raafat Mohamed</div>
+          <span class="pill-tag" style="font-size: 8px;">Faculty Supervising Engineers</span>
+        </div>
+        <p class="card-body" style="font-size: 10px; line-height: 1.5;">
+          Our sincere appreciation for their tireless hands-on mentorship, conducting rigorous 5-day teach-back evaluations for student instructors, coordinating logistics across departments, and providing steadfast academic and moral guidance to every competitor.
+        </p>
+      </div>
+    </div>
+
+    <!-- Formal Leadership Letter (Solid Gold Card) -->
+    <div class="card-solid" style="padding: 16px 20px;">
+      <div style="font-size: 12px; font-weight: 800; text-transform: uppercase; margin-bottom: 6px; letter-spacing: 0.04em; color: #000;">
+        Institutional Tribute to Horus University Leadership
+      </div>
+      <p style="font-size: 10.5px; line-height: 1.6; color: #111; margin: 0; font-style: italic;">
+        "On behalf of all ICPC HUE competitors, instructors, and student members, we express our highest appreciation to the University Leadership, the Faculty Deanship, and our supervising engineers. Your unwavering trust and academic guidance transformed a student initiative into an official collegiate powerhouse. We pledge to continue building on this foundation and carrying Horus University's flag to the highest podiums in the ECPC, ACPC, and ICPC World Finals."
+      </p>
+    </div>
+
+    <div class="footer-bar">
+      <div><strong>ICPC HUE</strong> • Annual Progress Dossier 2025 – 2027</div>
+      <div>Page 14 of 14</div>
+    </div>
+  </section>
+
+</body>
+</html>

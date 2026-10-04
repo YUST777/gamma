@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --accent: #E19D1B;
+    --accent-dark: #B47E17;
+    --card-border: #DED1B8;
+    --card-bg: #F9ECD1;
+    --text-head: #111111;
+    --text-body: #373737;
+    --text-muted: #666666;
+  }
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: #F4F4F6;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .card-box {
+    background: #FFFFFF;
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent-dark);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* LAYOUT A: 5-Column Grid */
+  .grid-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  .col-item-5 {
+    background: #FDFAF5;
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .col-badge {
+    display: inline-block;
+    background: var(--card-bg);
+    color: var(--accent-dark);
+    font-size: 8px;
+    font-weight: 800;
+    padding: 2px 6px;
+    border-radius: 10px;
+    border: 1px solid var(--card-border);
+    margin-bottom: 6px;
+    width: fit-content;
+  }
+  .col-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-head);
+    margin-bottom: 4px;
+    line-height: 1.3;
+  }
+  .col-desc {
+    font-size: 8.8px;
+    color: var(--text-muted);
+    line-height: 1.4;
+  }
+
+  /* LAYOUT B: 2-Column Clean Index */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .index-row {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 6px 0;
+    border-bottom: 1px dashed rgba(222, 209, 184, 0.6);
+  }
+  .index-row:last-child {
+    border-bottom: none;
+  }
+  .row-badge {
+    background: var(--accent);
+    color: #000;
+    font-size: 8px;
+    font-weight: 800;
+    padding: 2px 7px;
+    border-radius: 4px;
+    white-space: nowrap;
+    margin-top: 1px;
+  }
+  .row-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-head);
+  }
+  .row-desc {
+    font-size: 9px;
+    color: var(--text-muted);
+    line-height: 1.35;
+  }
+
+  /* LAYOUT C: 4-Column Grid */
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  .col-item-4 {
+    background: #FDFAF5;
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 10px 12px;
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <h2>Layout A: 5-Column Compact Grid (All 5 Pillars)</h2>
+  <div class="card-box">
+    <div class="section-label">
+      <span>Dossier Content Index</span>
+      <span style="font-size: 9px; color: #888; font-weight: 500; text-transform: none;">• 14-Page Comprehensive Executive Overview</span>
+    </div>
+    <div class="grid-5">
+      <div class="col-item-5">
+        <span class="col-badge">PAGES 01–03</span>
+        <div class="col-title">Retrospective & DCC Proving Ground</div>
+        <div class="col-desc">Winter Camp, custom platform launch, and the DCC Damietta tournament simulation.</div>
+      </div>
+      <div class="col-item-5">
+        <span class="col-badge">PAGES 04–06</span>
+        <div class="col-title">National ECPC & 16-Team Contingent</div>
+        <div class="col-desc">Field qualification at AASTMT, top ranking validation, and our 16 competing teams.</div>
+      </div>
+      <div class="col-item-5">
+        <span class="col-badge">PAGES 07–09</span>
+        <div class="col-title">Committees & Regional Ecosystem</div>
+        <div class="col-desc">4 operational committees, 5-day teach-back pipeline, and regional partnerships.</div>
+      </div>
+      <div class="col-item-5">
+        <span class="col-badge">PAGES 10–12</span>
+        <div class="col-title">2026/27 Strategic Roadmap</div>
+        <div class="col-desc">7-phase season pathway, 46-milestone academic schedule, and long-term goals.</div>
+      </div>
+      <div class="col-item-5">
+        <span class="col-badge">PAGES 13–14</span>
+        <div class="col-title">Team Roster & Faculty Governance</div>
+        <div class="col-desc">Community member roster, academic supervision, and institutional leadership tribute.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <h2>Layout B: 2-Column Table of Contents (Executive List)</h2>
+  <div class="card-box">
+    <div class="section-label">
+      <span>Dossier Content Index & Section Directory</span>
+    </div>
+    <div class="grid-2">
+      <div>
+        <div class="index-row">
+          <span class="row-badge">Pages 01–03</span>
+          <div>
+            <div class="row-title">Season Retrospective & DCC Regional Proving Ground</div>
+            <div class="row-desc">Platform launch (icpchue.com), Winter Camp intake, and DCC Damietta co-hosting.</div>
+          </div>
+        </div>
+        <div class="index-row">
+          <span class="row-badge">Pages 04–06</span>
+          <div>
+            <div class="row-title">National ECPC Qualification & 16-Team Delegation</div>
+            <div class="row-desc">Field qualification at AASTMT (within 1 problem of advancing), media impact, and the full 16-team contingent.</div>
+          </div>
+        </div>
+        <div class="index-row">
+          <span class="row-badge">Pages 07–09</span>
+          <div>
+            <div class="row-title">Operational Committees & Regional Partnerships</div>
+            <div class="row-desc">The 4 community branches, teach-back instructor evaluations, and partnerships with Assiut, PSU, and Damietta.</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="index-row">
+          <span class="row-badge">Pages 10–12</span>
+          <div>
+            <div class="row-title">2026/2027 Season Pathway & Academic Milestones</div>
+            <div class="row-desc">The 7-phase algorithmic roadmap, 46 scheduled academic milestones, and next strategic goals.</div>
+          </div>
+        </div>
+        <div class="index-row">
+          <span class="row-badge">Pages 13–14</span>
+          <div>
+            <div class="row-title">Community Leadership Roster & Special Thanks</div>
+            <div class="row-desc">The students behind ICPC HUE, faculty supervisory engineers, deanship acknowledgments, and leadership tribute.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

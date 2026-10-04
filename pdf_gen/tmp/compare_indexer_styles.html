@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --accent: #E19D1B;
+    --accent-dark: #B47E17;
+    --card-border: #DED1B8;
+    --card-bg: #F9ECD1;
+    --text-head: #111111;
+    --text-body: #373737;
+    --text-muted: #666666;
+  }
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: #F4F4F6;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .card-box {
+    background: #FFFFFF;
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 18px 22px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+  }
+  .header-label {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent-dark);
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* OPTION 1: Classic Real Table of Contents with Dotted Leaders */
+  .toc-list-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .toc-row-1 {
+    display: flex;
+    align-items: baseline;
+    font-size: 11px;
+  }
+  .toc-num-1 {
+    font-weight: 800;
+    color: var(--accent-dark);
+    width: 24px;
+    font-size: 11.5px;
+    flex-shrink: 0;
+  }
+  .toc-title-1 {
+    font-weight: 700;
+    color: var(--text-head);
+    flex-shrink: 0;
+  }
+  .toc-sub-1 {
+    font-size: 9.5px;
+    font-weight: 500;
+    color: var(--text-muted);
+    margin-left: 6px;
+    flex-shrink: 0;
+  }
+  .toc-dots-1 {
+    flex: 1;
+    border-bottom: 1.5px dotted #CBB89A;
+    margin: 0 12px 3px 12px;
+  }
+  .toc-page-1 {
+    font-weight: 800;
+    font-size: 10.5px;
+    color: var(--accent-dark);
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 2px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* OPTION 2: Vertical Dotted Line Timeline Indexer + Dotted Leader */
+  .toc-timeline {
+    position: relative;
+    padding-left: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  /* The vertical dotted line */
+  .toc-timeline::before {
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 6px;
+    bottom: 6px;
+    width: 0;
+    border-left: 2px dotted var(--accent);
+  }
+  .timeline-node {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+  }
+  .timeline-dot {
+    position: absolute;
+    left: -28px;
+    top: 3px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 2px solid var(--accent);
+    color: var(--accent-dark);
+    font-size: 8.5px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <h2>Option 1: Classic Real Indexer (Vertical rows with horizontal dotted leader lines)</h2>
+  <div class="card-box">
+    <div class="header-label">
+      <span>Dossier Content Index</span>
+      <span style="font-size: 9px; color: #888; font-weight: 600;">14-Page Comprehensive Map</span>
+    </div>
+    <div class="toc-list-1">
+      <div class="toc-row-1">
+        <span class="toc-num-1">01</span>
+        <span class="toc-title-1">Season Retrospective & DCC Regional Proving Ground</span>
+        <span class="toc-sub-1">— Inception, platform launch & DCC simulation</span>
+        <span class="toc-dots-1"></span>
+        <span class="toc-page-1">Pages 01–03</span>
+      </div>
+      <div class="toc-row-1">
+        <span class="toc-num-1">02</span>
+        <span class="toc-title-1">National ECPC Qualification & 16-Team Contingent</span>
+        <span class="toc-sub-1">— AASTMT field trials & full delegation</span>
+        <span class="toc-dots-1"></span>
+        <span class="toc-page-1">Pages 04–06</span>
+      </div>
+      <div class="toc-row-1">
+        <span class="toc-num-1">03</span>
+        <span class="toc-title-1">Organizational Architecture & Regional Partnerships</span>
+        <span class="toc-sub-1">— 4 committees, teach-back trials & partners</span>
+        <span class="toc-dots-1"></span>
+        <span class="toc-page-1">Pages 07–09</span>
+      </div>
+      <div class="toc-row-1">
+        <span class="toc-num-1">04</span>
+        <span class="toc-title-1">2026/2027 Season Roadmap & Academic Curriculum</span>
+        <span class="toc-sub-1">— 7-phase curriculum & 46 milestones</span>
+        <span class="toc-dots-1"></span>
+        <span class="toc-page-1">Pages 10–12</span>
+      </div>
+      <div class="toc-row-1">
+        <span class="toc-num-1">05</span>
+        <span class="toc-title-1">Community Leadership Roster & Special Thanks</span>
+        <span class="toc-sub-1">— Member roster, faculty supervision & deanship</span>
+        <span class="toc-dots-1"></span>
+        <span class="toc-page-1">Pages 13–14</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <h2>Option 2: Vertical Dotted Line Timeline + Dotted Leader (Hybrid Indexer)</h2>
+  <div class="card-box">
+    <div class="header-label">
+      <span>Dossier Content Index</span>
+      <span style="font-size: 9px; color: #888; font-weight: 600;">14-Page Comprehensive Map</span>
+    </div>
+    <div class="toc-timeline">
+      <div class="timeline-node">
+        <div class="timeline-dot">1</div>
+        <span class="toc-title-1">Season Retrospective & DCC Regional Proving Ground</span>
+        <span class="toc-sub-1">— Inception, platform launch & DCC simulation</span>
+        <span class="toc-dots-1"></span>
+        <span class="toc-page-1">Pages 01–03</span>
+      </div>
+      <div class="timeline-node">
+        <div class="timeline-dot">2</div>
+        <span class="toc-title-1">National ECPC Qualification & 16-Team Contingent</span>
+        <span class="toc-sub-1">— AASTMT field trials & full delegation</span>
+        <span class="toc-dots-1"></span>
+        <span class="toc-page-1">Pages 04–06</span>
+      </div>
+      <div class="timeline-node">
+        <div class="timeline-dot">3</div>
+        <span class="toc-title-1">Organizational Architecture & Regional Partnerships</span>
+        <span class="toc-sub-1">— 4 committees, teach-back trials & partners</span>
+        <span class="toc-dots-1"></span>
+        <span class="toc-page-1">Pages 07–09</span>
+      </div>
+      <div class="timeline-node">
+        <div class="timeline-dot">4</div>
+        <span class="toc-title-1">2026/2027 Season Roadmap & Academic Curriculum</span>
+        <span class="toc-sub-1">— 7-phase curriculum & 46 milestones</span>
+        <span class="toc-dots-1"></span>
+        <span class="toc-page-1">Pages 10–12</span>
+      </div>
+      <div class="timeline-node">
+        <div class="timeline-dot">5</div>
+        <span class="toc-title-1">Community Leadership Roster & Special Thanks</span>
+        <span class="toc-sub-1">— Member roster, faculty supervision & deanship</span>
+        <span class="toc-dots-1"></span>
+        <span class="toc-page-1">Pages 13–14</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

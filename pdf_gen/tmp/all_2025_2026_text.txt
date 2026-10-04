@@ -1,0 +1,2767 @@
+=== FILE: ICPC-HUE-Community-Progress-Report.pdf ===
+--- Page 1 ---
+ICPC HUE Community Progress Report
+JANUARY – MAY 2026
+From a bold winter launch to seven fully-formed competitive teams, the ICPC HUE community has
+built something extraordinary in just five months. This report captures the complete journey —
+platform launches, elite mentorship events, intensive training, official competitions, and the
+exceptional numbers that prove a new era of competitive programming has arrived at Horus
+University.
+--- Page 2 ---
+❄ January: The Launch & Preparation
+CHAPTER 1 —FOUNDATION
+A structured program to
+develop problem-solving
+skills and prepare students
+for upcoming competitions
+and tech career
+opportunities.
+Open registration targeting
+new students starting from
+scratch, while confirming
+spots of returning members.
+Connecting students to
+potential job opportunities
+at major tech companies
+and fostering a culture of
+excellence.
+January marked the cornerstone of everything that followed. The ICPC HUE community announced
+a strong, determined return for the new season with the launch of the Winter Camp — a structured
+program designed to develop students' problem-solving skills, prepare them for upcoming
+competitions, and connect those skills to real-world opportunities at major tech companies like
+Noon. This was not just a warm-up; it was a declaration of intent.
+The Winter Camp served a dual purpose: reigniting the competitive spirit of returning members
+while opening the door wide for newcomers. Registration was opened specifically to target new
+students who wanted to start their competitive programming journey from scratch, while
+simultaneously confirming the spots of previously registered members in preparation for the camp's
+intensive schedule. The result was a growing, energized community united by a shared goal.
+The January foundation was critical because it set the tone for everything that followed. By
+welcoming both experienced competitors and absolute beginners under the same banner, ICPC HUE
+established itself as an inclusive yet ambitious community. The Winter Camp wasn't just about
+solving problems — it was about building identity, momentum, and a shared sense of purpose that
+would carry the community through the intense months ahead.
+Winter Camp Launch
+Newcomer
+Registration
+Community Building
+--- Page 3 ---
+🔥 March: Platform Evolution
+CHAPTER 2 — INFRASTRUCTURE
+A completely new and smoother registration
+system launched at icpchue.com/register,
+supporting university email verification and an
+active Achievements system that rewards student
+progress and keeps them motivated throughout
+their journey.
+A massive library of programming problems was
+added to the platform, categorized into three
+distinct difficulty levels — Level 0, Level 1, and
+Level 2 — to suit everyone from absolute beginners
+to seasoned professionals. This single update
+transformed icpchue.com from a community hub
+into a comprehensive training platform.
+New Registration System
+Functions, recursion, sorting,
+searching, and introductory data
+structures for developing
+competitors.
+Fundamentals, data types, loops,
+arrays, and basic algorithmic
+thinking for students starting from
+zero.
+Complex algorithms, dynamic
+programming, graph theory, and
+advanced problem-solving for elite
+competitors.
+The platform updates in March were more than technical improvements — they represented a
+commitment to quality and scalability. By categorizing 650 problems across three levels, the
+community ensured that no student would ever hit a wall due to lack of appropriate challenges.
+Beginners could start confidently at Level 0, while advanced competitors could push themselves at
+Level 2. The new registration system with university email support added a layer of authenticity and
+community trust, while the Achievements system introduced gamification elements that kept
+students engaged and motivated to climb the ranks.
+March witnessed a qualitative leap in the platform's infrastructure. The community didn't just grow
+— it evolved. The icpchue.com platform underwent a major transformation, becoming a fully-
+fledged competitive programming training ground capable of serving hundreds of students
+simultaneously. Every update was designed with one goal: remove every barrier between a student
+and their next breakthrough.
+650 Problems Added
+Level 2 — Advanced
+Level 1 — Intermediate
+Three-Level Problem System
+Level 0 — Beginner
+--- Page 4 ---
+March: The Biggest Orientation Day
+CHAPTER 2 — EVENTS
+On Thursday, March 12, the Faculty of Artificial Intelligence hosted what would become the most
+significant on-ground event in ICPC HUE's history. The Orientation Day brought together hundreds
+of students and a lineup of elite champions and founders from ACPC DU, one of Egypt's most
+decorated competitive programming programs. These weren't just speakers — they were living
+proof of what dedication and structured training could achieve.
+The event was organized under the
+generous sponsorship of Dr.
+Basma Mostafa and Dr. Yasser El-
+Awady, supervised by Eng. Fatima
+Magdy and Eng. Raafat Mohamed,
+and excellently managed by the
+AXIS team. Their combined effort
+ensured a seamless, professional
+experience that set a new standard
+for student-led events at the
+university.
+The
+event
+featured
+six
+distinguished
+speakers:
+Eng.
+Assem
+Gado,
+Eng.
+Hossam
+Hassan, Eng. Belal El-Babli, Eng.
+Omar Badr, Eng. Anas Al-Harigi,
+and
+Eng.
+Abdo
+Selim
+—
+all
+founders and champions of ACPC
+DU. They shared their personal
+journeys,
+competition
+strategies,
+and hard-won lessons from the
+competitive
+programming
+arena,
+giving students a rare glimpse into
+the mindset of champions.
+The Orientation Day was a pivotal moment for the community. Having champions from ACPC DU —
+a program with a proven track record of producing world-class competitors — speak directly to
+ICPC HUE students sent a powerful message: the path to the ICPC World Finals was real, and it started
+right here. The event didn't just inspire; it provided a concrete roadmap, showing students exactly what
+it takes to compete at the highest levels and what support structures they could rely on along the way.
+Elite Champions as
+Mentors
+Impeccable Organization
+--- Page 5 ---
+📡 March: Training & Community
+Engagement
+CHAPTER 2 — TRAINING
+Completed hours of live
+streams explaining
+programming fundamentals,
+covering everything from basic
+syntax to algorithmic thinking.
+To drive engagement and foster healthy
+competition, ICPC HUE announced a
+Leaderboard Challenge — awarding an official
+ICPC HUE t-shirt to the highest-rated
+competitor on the platform. The challenge
+sparked immediate action, with students
+pushing themselves to solve more problems
+and climb the rankings. Mustafa Kamal
+emerged as the first champion, earning the t-
+shirt and setting the standard for competitive
+excellence within the community.
+While the platform grew and the Orientation Day inspired hundreds, March also saw the launch of
+hands-on, live training that brought the community together in real time. The commitment to
+practical, accessible education became the hallmark of ICPC HUE's approach — no student would
+be left behind.
+Programming problems available
+across three difficulty levels,
+ready for students to practice
+and improve.
+Alongside the live streams, the community
+launched an official training Telegram group to
+facilitate real-time communication, resource
+sharing, and group formation. This channel
+became the heartbeat of daily community
+interaction — a place where students asked
+questions, shared solutions, celebrated
+breakthroughs, and supported each other
+through the toughest problems. The group also
+served as the primary tool for dividing students
+into training groups based on their skill levels and
+progress.
+17hrs
+650
+1
+Leaderboard Champion
+Leaderboard Challenge
+Mustafa Kamal crowned the first
+ICPC HUE leaderboard
+champion, winning an official t-
+shirt for topping the rankings.
+Problems on Platform
+Telegram Training Group
+--- Page 6 ---
+🏆 April: ECPC Announcement & Team
+Formation
+CHAPTER 3 — COMPETITION
+Internal contests to identify and form the
+strongest teams from Horus University.
+Arab Collegiate Programming Contest —
+representing Egypt at the regional level.
+Egyptian Collegiate Programming Contest —
+the national stage for university teams.
+The ultimate destination — competing against
+the best university teams in the world.
+April was the month of decision. All the preparation, training, and platform building culminated in one
+clear objective: forming the strongest possible teams to represent Horus University in the ECPC
+(Egyptian Collegiate Programming Contest). The community shifted into high gear, with every
+session, contest, and announcement focused on this singular goal.
+The official ECPC announcement outlined the full competition roadmap, giving students a clear
+vision of the journey ahead: from University Qualifiers to ECPC, then ACPC, and ultimately the ICPC
+World Finals. An intensive 3-month training period was announced to prepare teams for each
+stage. ECPC registration officially closed on April 30, marking the end of the enrollment phase and
+the beginning of the final sprint.
+To support students through this critical period, the community hosted a dedicated live stream to
+answer all questions regarding ECPC rules, team formation requirements, and training expectations.
+Additionally, the Functions and Recursion sessions were successfully uploaded to the platform's
+dashboard, ensuring that students had on-demand access to key educational content even outside
+of live sessions. These resources were essential for students who needed to balance competition
+preparation with their academic schedules.
+3
+1
+4
+2
+ACPC
+University Qualifiers
+ECPC
+ICPC World Finals
+--- Page 7 ---
+🥇 April: Contest Champions Crowned
+CHAPTER 3 — CONTESTS
+Ebrahim Matar dominated
+the first contest,
+demonstrating exceptional
+problem-solving speed and
+accuracy to claim the top
+position and cement his
+place as a cornerstone of
+the ECPC team lineup.
+Ahmed Waleed secured
+second place with a strong,
+consistent performance
+throughout the contest,
+showcasing both technical
+depth and the composure
+needed for high-pressure
+competition.
+Noha Kamal claimed third
+place in the first contest,
+rounding out the podium
+and proving that ICPC
+HUE's talent pool runs
+deep across all
+p ar ticip ants.
+Two official contests in April served as the proving grounds for team formation. These weren't just
+practice runs — they were high-stakes competitions that determined which students would
+represent Horus University at ECPC. The results crowned champions, revealed hidden talent, and
+gave coaches the data they needed to build balanced, competitive three-member teams.
+The Second Contest, held on Tuesday, April 14, served a different but equally important purpose:
+finalizing and officially approving the three-member teams. With the rankings from both contests in
+hand, coaches could make informed decisions about team composition, balancing individual
+strengths, problem-solving styles, and compatibility. The result was a set of officially approved
+teams ready to enter intensive ECPC preparation with full confidence in their lineup.
+ECPC Registration Closed — April 30: All teams officially registered and ready to compete.
+The countdown to ECPC has begun.
+First Contest — 1st
+Place
+First Contest — 2nd
+Place
+First Contest — 3rd
+Place
+--- Page 8 ---
+📚 May: Academic Progress — Level 0
+Track Complete
+CHAPTER 4 — EDUCATION
+Working with indexed data structures, traversal,
+and fundamental array manipulation techniques.
+Modular code design, parameter passing, return
+values, and building reusable problem-solving
+components.
+Understanding variables, data types, and
+conditional logic — the absolute bedrock of all
+programming.
+The gateway to advanced algorithms —
+understanding base cases, recursive calls, and
+tree-like problem structures.
+Text processing, string manipulation, and the
+patterns that appear constantly in competitive
+programming.
+All six core sessions of the Level 0 track have been
+successfully completed, covering the full spectrum of
+foundational programming concepts. Only the Math &
+Geometry session remains to complete the entire track —
+a final module that will round out the newcomers' toolkit
+with the mathematical foundations essential for
+competitive programming success.
+Mastering iteration patterns, loop control, and
+the art of writing efficient repetitive logic.
+May crowned the educational efforts of the entire season. The Newcomers Training Roadmap — a
+carefully structured curriculum designed to take students from zero to competition-ready —
+reached its near-completion milestone. Every session was delivered, every concept was covered,
+and hundreds of students now possess a solid programming foundation built to last.
+01
+Data Types & Conditions
+02
+Loops
+A massive thank you to
+Ahmed Waleed for his extraordinary
+effort in delivering these sessions.
+His dedication to helping students
+build a solid programming
+foundation has been instrumental in
+the success of the Level 0 track and
+the growth of the entire community.
+Special Thanks
+03
+arrys
+04
+strings
+05
+functions
+06
+reaursion
+--- Page 9 ---
+📈 May: Platform Statistics — Exceptional
+Performance
+CHAPTER 4 — ANALYTICS
+In the last 30 days — students actively engaging with
+the platform daily.
+Average unique visitors per day in the last 24 hours —
+consistent daily engagement.
+In the last 30 days — reflecting deep, sustained
+platform usage.
+The numbers tell a story that words alone cannot capture. Based on Cloudflare analytics for icpchue.com, the
+platform has achieved unprecedented levels of engagement and traffic. These are not just statistics — they are
+proof that a thriving, active, and growing community of competitive programmers has taken root at Horus
+University.
+The traffic patterns reveal a community in constant motion. With 1.24k unique visitors in the last 7 days and 224
+visitors in the last 24 hours, the platform maintains strong daily engagement. The request-to-visitor ratio indicates
+that students aren't just visiting — they're actively solving problems, accessing sessions, and deeply engaging
+with the content. 23.56k requests in the last 24 hours alone demonstrates the intensity of daily platform usage as
+teams ramp up their ECPC preparation.
+4.13K
+224
+179K
+Unique Visitors
+Total Requests (thousands)
+Last 30 Days
+Last 7 Days
+Time Period
+Last 24 Hours
+1k
+2k
+3k
+4k
+500
+1.5k
+3.5k
+2.5k
+4.5k
+--- Page 10 ---
+📱 Social Media Impact — Facebook
+Dominance
+CHAPTER 4 — COMMUNITY REACH
+12,812 views
+3,546 unique viewers
+535 engagements
+38 new followers
+(+428.9% increase)
+(viral reach)
+8,510 views
+4,243 unique viewers
+848 engagements
+Visual content dominated: 54% multi-photo posts, 41.4% single photo posts
+7,001 views
+518 engagements
+39 new followers
+The ICPC HUE Facebook page became a powerhouse of community engagement over the last 90
+days (February 1 - May 1). These analytics prove that our message is resonating far beyond our
+immediate circle.
+46.3K
+70.1%
+9.6K
+Contest "Thank
+You" Post (April 9)
+Champions
+Celebration Post
+(April 9)
+Orientation Teaser
+(March 11)
+Top 3 Performing Posts
+Winning Content Strategy
+1
+2
+3
+--- Page 11 ---
+🚀 May: 7 Teams Ready to Compete
+FINAL CHAPTER — THE ROAD AHEAD
+icpchue.com with
+650 problems,
+Achievements
+system, and smooth
+registration.
+Four teams formed from the
+Level 1 track, representing
+students who have built
+intermediate-level skills and
+are ready to compete at the
+ECPC level with confidence.
+Level 0 track
+nearly complete,
+17+ hours of live
+streams delivered.
+Three teams formed from
+the Level 2 track,
+representing the most
+advanced competitors in the
+community — students
+prepared to tackle the
+hardest problems on the
+competition stage.
+7 official teams, 21
+students, ready for
+ECPC.
+4.13k monthly
+visitors, thriving
+and growing every
+day.
+Twenty-one competitors
+across all seven teams, each
+one trained, tested, and
+officially approved to
+represent Horus University in
+the ECPC.
+The ICPC HUE community has built something that will outlast any single competition season. A
+platform with 650 problems. A training curriculum that takes students from zero to competition-
+ready. A Telegram community of hundreds. Seven teams carrying the flag of Horus University. The
+foundation is solid, the momentum is real, and the road to the ICPC World Finals runs directly
+through this community. The season is just beginning. 🔥
+"In just a few short months, the ICPC HUE community has proven that it is not just a standard
+student activity, but an integrated tech entity with a powerful platform, professional training, and
+teams fully prepared to sweep the ECPC competitions!"
+The journey that began in January with a Winter Camp announcement has culminated in something
+remarkable: 7 official teams totaling 21 students fully prepared and ready to represent Horus
+University at ECPC. This is not just a number — it is the result of months of dedication, infrastructure
+building, elite mentorship, and relentless training.
+Platform
+4 Teams — Level 1
+Training
+3 Teams — Level 2
+Teams
+21 Students Total
+Community
+🌐
+🎓
+🏅
+📊
+--- Page 12 ---
+💰 Financial Report: Operations & Event Costs
+TRANSPARENCY & INVESTMENT
+Total Digital Platform Costs
+Total On-Ground Event Costs
+Grand Total
+(Exchange rate: 52.5 EGP per USD)
+Description
+23/12/2025: Server Hosting (VPS-1)
+24/01/2026: Server Hosting (VPS-1)
+18/02/2026: Server Hosting Upgrade (VPS-
+2)
+25/02/2026: Official Domain Registration
+(icpchue.com)
+May 2026: Server Hosting (New Addition)
+Subtotal
+USD
+$5.59
+$5.59
+$8.78
+$11.48
+$14.00
+Costs for organizing the introductory day and student preparations at the university
+Description
+Student Gifts (Chocolate)
+Platform Logo Stickers
+Promotional Flyers
+Logistics (Balloons & Transport)
+Subtotal
+602.70 EGP
+EGP
+293.48 EGP
+293.48 EGP
+460.95 EGP
+Amount
+420.00 EGP
+238.00 EGP
+500.00 EGP
+160.00 EGP
+1,318.00 EGP
+2,385.61 EGP
+1,318.00 EGP
+3,703.61 EGP
+735.00 EGP
+2,385.61 EGP
+Building ICPC HUE required strategic investments in both digital infrastructure and on-ground community events. This
+financial report details every expense, demonstrating the commitment to creating a world-class competitive
+programming platform and experience.
+Financial Summary
+1. Digital Infrastructure Expenses
+2. On-Ground Event Expenses (Orientation Day -
+12/03/2026)
+--- Page 13 ---
+🤝 Meet the Team
+THE PEOPLE BEHIND ICPC HUE
+Noha – Lead Monitor
+Dr. Basma Mostafa
+Dr. Yasser Elawady
+Eng. Fatma Magdy
+Eng. Raafat Mohamed
+Eng. Sara
+Ahmed Waleed – Lead Instructor
+Ibrahim Matar – Co-Lead Instructor
+Omar El-Shayyal – Instructor
+Youssef Mohamed Salah El-Din – Main Dev
+AbdelRahman Mohsen El-Shahat – Owner
+Youssef Mohamed Salah El-Din – Co-Founder
+Ahmed Waleed – The Lead
+ICPCHUE's success is built on the dedication and expertise of our talented team members. From
+visionary leadership to experienced instructors, each member plays a crucial role in shaping the
+future of competitive programming at Horus University.
+Monitors
+Instructors
+Leadership
+Platform Developing
+Academic Supervision & Support
+=== FILE: ICPC-HUE-Progress-Report_260707_145639.pdf ===
+--- Page 1 ---
+ICPC HUE Community Progress Report
+JANUARY – MAY 2026
+From a bold winter launch to seven fully-formed competitive teams, the ICPC HUE community has
+built something extraordinary in just five months. This report captures the complete journey —
+platform launches, elite mentorship events, intensive training, official competitions, and the
+exceptional numbers that prove a new era of competitive programming has arrived at Horus
+University.
+--- Page 2 ---
+❄ January: The Launch & Preparation
+CHAPTER 1 —FOUNDATION
+A structured program to
+develop problem-solving
+skills and prepare students
+for upcoming competitions
+and tech career
+opportunities.
+Open registration targeting
+new students starting from
+scratch, while confirming
+spots of returning members.
+Connecting students to
+potential job opportunities
+at major tech companies
+and fostering a culture of
+excellence.
+January marked the cornerstone of everything that followed. The ICPC HUE community announced
+a strong, determined return for the new season with the launch of the Winter Camp — a structured
+program designed to develop students' problem-solving skills, prepare them for upcoming
+competitions, and connect those skills to real-world opportunities at major tech companies like
+Noon. This was not just a warm-up; it was a declaration of intent.
+The Winter Camp served a dual purpose: reigniting the competitive spirit of returning members
+while opening the door wide for newcomers. Registration was opened specifically to target new
+students who wanted to start their competitive programming journey from scratch, while
+simultaneously confirming the spots of previously registered members in preparation for the camp's
+intensive schedule. The result was a growing, energized community united by a shared goal.
+The January foundation was critical because it set the tone for everything that followed. By
+welcoming both experienced competitors and absolute beginners under the same banner, ICPC HUE
+established itself as an inclusive yet ambitious community. The Winter Camp wasn't just about
+solving problems — it was about building identity, momentum, and a shared sense of purpose that
+would carry the community through the intense months ahead.
+Winter Camp Launch
+Newcomer
+Registration
+Community Building
+--- Page 3 ---
+🔥 March: Platform Evolution
+CHAPTER 2 — INFRASTRUCTURE
+A completely new and smoother registration
+system launched at icpchue.com/register,
+supporting university email verification and an
+active Achievements system that rewards student
+progress and keeps them motivated throughout
+their journey.
+A massive library of programming problems was
+added to the platform, categorized into three
+distinct difficulty levels — Level 0, Level 1, and
+Level 2 — to suit everyone from absolute beginners
+to seasoned professionals. This single update
+transformed icpchue.com from a community hub
+into a comprehensive training platform.
+New Registration System
+Functions, recursion, sorting,
+searching, and introductory data
+structures for developing
+competitors.
+Fundamentals, data types, loops,
+arrays, and basic algorithmic
+thinking for students starting from
+zero.
+Complex algorithms, dynamic
+programming, graph theory, and
+advanced problem-solving for elite
+competitors.
+The platform updates in March were more than technical improvements — they represented a
+commitment to quality and scalability. By categorizing 650 problems across three levels, the
+community ensured that no student would ever hit a wall due to lack of appropriate challenges.
+Beginners could start confidently at Level 0, while advanced competitors could push themselves at
+Level 2. The new registration system with university email support added a layer of authenticity and
+community trust, while the Achievements system introduced gamification elements that kept
+students engaged and motivated to climb the ranks.
+March witnessed a qualitative leap in the platform's infrastructure. The community didn't just grow
+— it evolved. The icpchue.com platform underwent a major transformation, becoming a fully-
+fledged competitive programming training ground capable of serving hundreds of students
+simultaneously. Every update was designed with one goal: remove every barrier between a student
+and their next breakthrough.
+650 Problems Added
+Level 2 — Advanced
+Level 1 — Intermediate
+Three-Level Problem System
+Level 0 — Beginner
+--- Page 4 ---
+March: The Biggest Orientation Day
+CHAPTER 2 — EVENTS
+On Thursday, March 12, the Faculty of Artificial Intelligence hosted what would become the most
+significant on-ground event in ICPC HUE's history. The Orientation Day brought together hundreds
+of students and a lineup of elite champions and founders from ACPC DU, one of Egypt's most
+decorated competitive programming programs. These weren't just speakers — they were living
+proof of what dedication and structured training could achieve.
+The event was organized under the
+generous sponsorship of Dr.
+Basma Mostafa and Dr. Yasser El-
+Awady, supervised by Eng. Fatima
+Magdy and Eng. Raafat Mohamed,
+and excellently managed by the
+AXIS team. Their combined effort
+ensured a seamless, professional
+experience that set a new standard
+for student-led events at the
+university.
+The
+event
+featured
+six
+distinguished
+speakers:
+Eng.
+Assem
+Gado,
+Eng.
+Hossam
+Hassan, Eng. Belal El-Babli, Eng.
+Omar Badr, Eng. Anas Al-Harigi,
+and
+Eng.
+Abdo
+Selim
+—
+all
+founders and champions of ACPC
+DU. They shared their personal
+journeys,
+competition
+strategies,
+and hard-won lessons from the
+competitive
+programming
+arena,
+giving students a rare glimpse into
+the mindset of champions.
+The Orientation Day was a pivotal moment for the community. Having champions from ACPC DU —
+a program with a proven track record of producing world-class competitors — speak directly to
+ICPC HUE students sent a powerful message: the path to the ICPC World Finals was real, and it started
+right here. The event didn't just inspire; it provided a concrete roadmap, showing students exactly what
+it takes to compete at the highest levels and what support structures they could rely on along the way.
+Elite Champions as
+Mentors
+Impeccable Organization
+--- Page 5 ---
+📡 March: Training & Community
+Engagement
+CHAPTER 2 — TRAINING
+Completed hours of live
+streams explaining
+programming fundamentals,
+covering everything from basic
+syntax to algorithmic thinking.
+To drive engagement and foster healthy
+competition, ICPC HUE announced a
+Leaderboard Challenge — awarding an official
+ICPC HUE t-shirt to the highest-rated
+competitor on the platform. The challenge
+sparked immediate action, with students
+pushing themselves to solve more problems
+and climb the rankings. Mustafa Kamal
+emerged as the first champion, earning the t-
+shirt and setting the standard for competitive
+excellence within the community.
+While the platform grew and the Orientation Day inspired hundreds, March also saw the launch of
+hands-on, live training that brought the community together in real time. The commitment to
+practical, accessible education became the hallmark of ICPC HUE's approach — no student would
+be left behind.
+Programming problems available
+across three difficulty levels,
+ready for students to practice
+and improve.
+Alongside the live streams, the community
+launched an official training Telegram group to
+facilitate real-time communication, resource
+sharing, and group formation. This channel
+became the heartbeat of daily community
+interaction — a place where students asked
+questions, shared solutions, celebrated
+breakthroughs, and supported each other
+through the toughest problems. The group also
+served as the primary tool for dividing students
+into training groups based on their skill levels and
+progress.
+17hrs
+650
+1
+Leaderboard Champion
+Leaderboard Challenge
+Mustafa Kamal crowned the first
+ICPC HUE leaderboard
+champion, winning an official t-
+shirt for topping the rankings.
+Problems on Platform
+Telegram Training Group
+--- Page 6 ---
+🏆 April: ECPC Announcement & Team
+Formation
+CHAPTER 3 — COMPETITION
+Internal contests to identify and form the
+strongest teams from Horus University.
+Arab Collegiate Programming Contest —
+representing Egypt at the regional level.
+Egyptian Collegiate Programming Contest —
+the national stage for university teams.
+The ultimate destination — competing against
+the best university teams in the world.
+April was the month of decision. All the preparation, training, and platform building culminated in one
+clear objective: forming the strongest possible teams to represent Horus University in the ECPC
+(Egyptian Collegiate Programming Contest). The community shifted into high gear, with every
+session, contest, and announcement focused on this singular goal.
+The official ECPC announcement outlined the full competition roadmap, giving students a clear
+vision of the journey ahead: from University Qualifiers to ECPC, then ACPC, and ultimately the ICPC
+World Finals. An intensive 3-month training period was announced to prepare teams for each
+stage. ECPC registration officially closed on April 30, marking the end of the enrollment phase and
+the beginning of the final sprint.
+To support students through this critical period, the community hosted a dedicated live stream to
+answer all questions regarding ECPC rules, team formation requirements, and training expectations.
+Additionally, the Functions and Recursion sessions were successfully uploaded to the platform's
+dashboard, ensuring that students had on-demand access to key educational content even outside
+of live sessions. These resources were essential for students who needed to balance competition
+preparation with their academic schedules.
+3
+1
+4
+2
+ACPC
+University Qualifiers
+ECPC
+ICPC World Finals
+--- Page 7 ---
+🥇 April: Contest Champions Crowned
+CHAPTER 3 — CONTESTS
+Ebrahim Matar dominated
+the first contest,
+demonstrating exceptional
+problem-solving speed and
+accuracy to claim the top
+position and cement his
+place as a cornerstone of
+the ECPC team lineup.
+Ahmed Waleed secured
+second place with a strong,
+consistent performance
+throughout the contest,
+showcasing both technical
+depth and the composure
+needed for high-pressure
+competition.
+Noha Kamal claimed third
+place in the first contest,
+rounding out the podium
+and proving that ICPC
+HUE's talent pool runs
+deep across all
+p ar ticip ants.
+Two official contests in April served as the proving grounds for team formation. These weren't just
+practice runs — they were high-stakes competitions that determined which students would
+represent Horus University at ECPC. The results crowned champions, revealed hidden talent, and
+gave coaches the data they needed to build balanced, competitive three-member teams.
+The Second Contest, held on Tuesday, April 14, served a different but equally important purpose:
+finalizing and officially approving the three-member teams. With the rankings from both contests in
+hand, coaches could make informed decisions about team composition, balancing individual
+strengths, problem-solving styles, and compatibility. The result was a set of officially approved
+teams ready to enter intensive ECPC preparation with full confidence in their lineup.
+ECPC Registration Closed — April 30: All teams officially registered and ready to compete.
+The countdown to ECPC has begun.
+First Contest — 1st
+Place
+First Contest — 2nd
+Place
+First Contest — 3rd
+Place
+--- Page 8 ---
+📚 May: Academic Progress — Level 0
+Track Complete
+CHAPTER 4 — EDUCATION
+Working with indexed data structures, traversal,
+and fundamental array manipulation techniques.
+Modular code design, parameter passing, return
+values, and building reusable problem-solving
+components.
+Understanding variables, data types, and
+conditional logic — the absolute bedrock of all
+programming.
+The gateway to advanced algorithms —
+understanding base cases, recursive calls, and
+tree-like problem structures.
+Text processing, string manipulation, and the
+patterns that appear constantly in competitive
+programming.
+All six core sessions of the Level 0 track have been
+successfully completed, covering the full spectrum of
+foundational programming concepts. Only the Math &
+Geometry session remains to complete the entire track —
+a final module that will round out the newcomers' toolkit
+with the mathematical foundations essential for
+competitive programming success.
+Mastering iteration patterns, loop control, and
+the art of writing efficient repetitive logic.
+May crowned the educational efforts of the entire season. The Newcomers Training Roadmap — a
+carefully structured curriculum designed to take students from zero to competition-ready —
+reached its near-completion milestone. Every session was delivered, every concept was covered,
+and hundreds of students now possess a solid programming foundation built to last.
+01
+Data Types & Conditions
+02
+Loops
+A massive thank you to
+Ahmed Waleed for his extraordinary
+effort in delivering these sessions.
+His dedication to helping students
+build a solid programming
+foundation has been instrumental in
+the success of the Level 0 track and
+the growth of the entire community.
+Special Thanks
+03
+arrys
+04
+strings
+05
+functions
+06
+reaursion
+--- Page 9 ---
+📈 May: Platform Statistics — Exceptional
+Performance
+CHAPTER 4 — ANALYTICS
+In the last 30 days — students actively engaging with
+the platform daily.
+Average unique visitors per day in the last 24 hours —
+consistent daily engagement.
+In the last 30 days — reflecting deep, sustained
+platform usage.
+The numbers tell a story that words alone cannot capture. Based on Cloudflare analytics for icpchue.com, the
+platform has achieved unprecedented levels of engagement and traffic. These are not just statistics — they are
+proof that a thriving, active, and growing community of competitive programmers has taken root at Horus
+University.
+The traffic patterns reveal a community in constant motion. With 1.24k unique visitors in the last 7 days and 224
+visitors in the last 24 hours, the platform maintains strong daily engagement. The request-to-visitor ratio indicates
+that students aren't just visiting — they're actively solving problems, accessing sessions, and deeply engaging
+with the content. 23.56k requests in the last 24 hours alone demonstrates the intensity of daily platform usage as
+teams ramp up their ECPC preparation.
+4.13K
+224
+179K
+Unique Visitors
+Total Requests (thousands)
+Last 30 Days
+Last 7 Days
+Time Period
+Last 24 Hours
+1k
+2k
+3k
+4k
+500
+1.5k
+3.5k
+2.5k
+4.5k
+--- Page 10 ---
+📱 Social Media Impact — Facebook
+Dominance
+CHAPTER 4 — COMMUNITY REACH
+12,812 views
+3,546 unique viewers
+535 engagements
+38 new followers
+(+428.9% increase)
+(viral reach)
+8,510 views
+4,243 unique viewers
+848 engagements
+Visual content dominated: 54% multi-photo posts, 41.4% single photo posts
+7,001 views
+518 engagements
+39 new followers
+The ICPC HUE Facebook page became a powerhouse of community engagement over the last 90
+days (February 1 - May 1). These analytics prove that our message is resonating far beyond our
+immediate circle.
+46.3K
+70.1%
+9.6K
+Contest "Thank
+You" Post (April 9)
+Champions
+Celebration Post
+(April 9)
+Orientation Teaser
+(March 11)
+Top 3 Performing Posts
+Winning Content Strategy
+1
+2
+3
+--- Page 11 ---
+🚀 May: 7 Teams Ready to Compete
+FINAL CHAPTER — THE ROAD AHEAD
+icpchue.com with
+650 problems,
+Achievements
+system, and smooth
+registration.
+Four teams formed from the
+Level 1 track, representing
+students who have built
+intermediate-level skills and
+are ready to compete at the
+ECPC level with confidence.
+Level 0 track
+nearly complete,
+17+ hours of live
+streams delivered.
+Three teams formed from
+the Level 2 track,
+representing the most
+advanced competitors in the
+community — students
+prepared to tackle the
+hardest problems on the
+competition stage.
+7 official teams, 21
+students, ready for
+ECPC.
+4.13k monthly
+visitors, thriving
+and growing every
+day.
+Twenty-one competitors
+across all seven teams, each
+one trained, tested, and
+officially approved to
+represent Horus University in
+the ECPC.
+The ICPC HUE community has built something that will outlast any single competition season. A
+platform with 650 problems. A training curriculum that takes students from zero to competition-
+ready. A Telegram community of hundreds. Seven teams carrying the flag of Horus University. The
+foundation is solid, the momentum is real, and the road to the ICPC World Finals runs directly
+through this community. The season is just beginning. 🔥
+"In just a few short months, the ICPC HUE community has proven that it is not just a standard
+student activity, but an integrated tech entity with a powerful platform, professional training, and
+teams fully prepared to sweep the ECPC competitions!"
+The journey that began in January with a Winter Camp announcement has culminated in something
+remarkable: 7 official teams totaling 21 students fully prepared and ready to represent Horus
+University at ECPC. This is not just a number — it is the result of months of dedication, infrastructure
+building, elite mentorship, and relentless training.
+Platform
+4 Teams — Level 1
+Training
+3 Teams — Level 2
+Teams
+21 Students Total
+Community
+🌐
+🎓
+🏅
+📊
+--- Page 12 ---
+🤝 Meet the Team
+THE PEOPLE BEHIND ICPC HUE
+Noha – Lead Monitor
+Dr. Basma Mostafa
+Dr. Yasser Elawady
+Eng. Fatma Magdy
+Eng. Raafat Mohamed
+Eng. Sara
+Ahmed Waleed – Lead Instructor
+Ibrahim Matar – Co-Lead Instructor
+Omar El-Shayyal – Instructor
+Youssef Mohamed Salah El-Din – Main Dev
+AbdelRahman Mohsen El-Shahat – Owner
+Youssef Mohamed Salah El-Din – Co-Founder
+Ahmed Waleed – The Lead
+ICPCHUE's success is built on the dedication and expertise of our talented team members. From
+visionary leadership to experienced instructors, each member plays a crucial role in shaping the
+future of competitive programming at Horus University.
+Monitors
+Instructors
+Leadership
+Platform Developing
+Academic Supervision & Support
+=== FILE: ICPC-HUE-Progress-Report.pdf ===
+--- Page 1 ---
+ICPC HUE Community Progress Report
+JANUARY – MAY 2026
+From a bold winter launch to seven fully-formed competitive teams, the ICPC HUE community has
+built something extraordinary in just five months. This report captures the complete journey —
+platform launches, elite mentorship events, intensive training, official competitions, and the
+exceptional numbers that prove a new era of competitive programming has arrived at Horus
+University.
+--- Page 2 ---
+❄ January: The Launch & Preparation
+CHAPTER 1 —FOUNDATION
+A structured program to
+develop problem-solving
+skills and prepare students
+for upcoming competitions
+and tech career
+opportunities.
+Open registration targeting
+new students starting from
+scratch, while confirming
+spots of returning members.
+Connecting students to
+potential job opportunities
+at major tech companies
+and fostering a culture of
+excellence.
+January marked the cornerstone of everything that followed. The ICPC HUE community announced
+a strong, determined return for the new season with the launch of the Winter Camp — a structured
+program designed to develop students' problem-solving skills, prepare them for upcoming
+competitions, and connect those skills to real-world opportunities at major tech companies like
+Noon. This was not just a warm-up; it was a declaration of intent.
+The Winter Camp served a dual purpose: reigniting the competitive spirit of returning members
+while opening the door wide for newcomers. Registration was opened specifically to target new
+students who wanted to start their competitive programming journey from scratch, while
+simultaneously confirming the spots of previously registered members in preparation for the camp's
+intensive schedule. The result was a growing, energized community united by a shared goal.
+The January foundation was critical because it set the tone for everything that followed. By
+welcoming both experienced competitors and absolute beginners under the same banner, ICPC HUE
+established itself as an inclusive yet ambitious community. The Winter Camp wasn't just about
+solving problems — it was about building identity, momentum, and a shared sense of purpose that
+would carry the community through the intense months ahead.
+Winter Camp Launch
+Newcomer
+Registration
+Community Building
+--- Page 3 ---
+🔥 March: Platform Evolution
+CHAPTER 2 — INFRASTRUCTURE
+A completely new and smoother registration
+system launched at icpchue.com/register,
+supporting university email verification and an
+active Achievements system that rewards student
+progress and keeps them motivated throughout
+their journey.
+A massive library of programming problems was
+added to the platform, categorized into three
+distinct difficulty levels — Level 0, Level 1, and
+Level 2 — to suit everyone from absolute beginners
+to seasoned professionals. This single update
+transformed icpchue.com from a community hub
+into a comprehensive training platform.
+New Registration System
+Functions, recursion, sorting,
+searching, and introductory data
+structures for developing
+competitors.
+Fundamentals, data types, loops,
+arrays, and basic algorithmic
+thinking for students starting from
+zero.
+Complex algorithms, dynamic
+programming, graph theory, and
+advanced problem-solving for elite
+competitors.
+The platform updates in March were more than technical improvements — they represented a
+commitment to quality and scalability. By categorizing 650 problems across three levels, the
+community ensured that no student would ever hit a wall due to lack of appropriate challenges.
+Beginners could start confidently at Level 0, while advanced competitors could push themselves at
+Level 2. The new registration system with university email support added a layer of authenticity and
+community trust, while the Achievements system introduced gamification elements that kept
+students engaged and motivated to climb the ranks.
+March witnessed a qualitative leap in the platform's infrastructure. The community didn't just grow
+— it evolved. The icpchue.com platform underwent a major transformation, becoming a fully-
+fledged competitive programming training ground capable of serving hundreds of students
+simultaneously. Every update was designed with one goal: remove every barrier between a student
+and their next breakthrough.
+650 Problems Added
+Level 2 — Advanced
+Level 1 — Intermediate
+Three-Level Problem System
+Level 0 — Beginner
+--- Page 4 ---
+March: The Biggest Orientation Day
+CHAPTER 2 — EVENTS
+On Thursday, March 12, the Faculty of Artificial Intelligence hosted what would become the most
+significant on-ground event in ICPC HUE's history. The Orientation Day brought together hundreds
+of students and a lineup of elite champions and founders from ACPC DU, one of Egypt's most
+decorated competitive programming programs. These weren't just speakers — they were living
+proof of what dedication and structured training could achieve.
+The event was organized under the
+generous sponsorship of Dr.
+Basma Mostafa and Dr. Yasser El-
+Awady, supervised by Eng. Fatima
+Magdy and Eng. Raafat Mohamed,
+and excellently managed by the
+AXIS team. Their combined effort
+ensured a seamless, professional
+experience that set a new standard
+for student-led events at the
+university.
+The
+event
+featured
+six
+distinguished
+speakers:
+Eng.
+Assem
+Gado,
+Eng.
+Hossam
+Hassan, Eng. Belal El-Babli, Eng.
+Omar Badr, Eng. Anas Al-Harigi,
+and
+Eng.
+Abdo
+Selim
+—
+all
+founders and champions of ACPC
+DU. They shared their personal
+journeys,
+competition
+strategies,
+and hard-won lessons from the
+competitive
+programming
+arena,
+giving students a rare glimpse into
+the mindset of champions.
+The Orientation Day was a pivotal moment for the community. Having champions from ACPC DU —
+a program with a proven track record of producing world-class competitors — speak directly to
+ICPC HUE students sent a powerful message: the path to the ICPC World Finals was real, and it started
+right here. The event didn't just inspire; it provided a concrete roadmap, showing students exactly what
+it takes to compete at the highest levels and what support structures they could rely on along the way.
+Elite Champions as
+Mentors
+Impeccable Organization
+--- Page 5 ---
+📡 March: Training & Community
+Engagement
+CHAPTER 2 — TRAINING
+Completed hours of live
+streams explaining
+programming fundamentals,
+covering everything from basic
+syntax to algorithmic thinking.
+To drive engagement and foster healthy
+competition, ICPC HUE announced a
+Leaderboard Challenge — awarding an official
+ICPC HUE t-shirt to the highest-rated
+competitor on the platform. The challenge
+sparked immediate action, with students
+pushing themselves to solve more problems
+and climb the rankings. Mustafa Kamal
+emerged as the first champion, earning the t-
+shirt and setting the standard for competitive
+excellence within the community.
+While the platform grew and the Orientation Day inspired hundreds, March also saw the launch of
+hands-on, live training that brought the community together in real time. The commitment to
+practical, accessible education became the hallmark of ICPC HUE's approach — no student would
+be left behind.
+Programming problems available
+across three difficulty levels,
+ready for students to practice
+and improve.
+Alongside the live streams, the community
+launched an official training Telegram group to
+facilitate real-time communication, resource
+sharing, and group formation. This channel
+became the heartbeat of daily community
+interaction — a place where students asked
+questions, shared solutions, celebrated
+breakthroughs, and supported each other
+through the toughest problems. The group also
+served as the primary tool for dividing students
+into training groups based on their skill levels and
+progress.
+17hrs
+650
+1
+Leaderboard Champion
+Leaderboard Challenge
+Mustafa Kamal crowned the first
+ICPC HUE leaderboard
+champion, winning an official t-
+shirt for topping the rankings.
+Problems on Platform
+Telegram Training Group
+--- Page 6 ---
+🏆 April: ECPC Announcement & Team
+Formation
+CHAPTER 3 — COMPETITION
+Internal contests to identify and form the
+strongest teams from Horus University.
+Arab Collegiate Programming Contest —
+representing Egypt at the regional level.
+Egyptian Collegiate Programming Contest —
+the national stage for university teams.
+The ultimate destination — competing against
+the best university teams in the world.
+April was the month of decision. All the preparation, training, and platform building culminated in one
+clear objective: forming the strongest possible teams to represent Horus University in the ECPC
+(Egyptian Collegiate Programming Contest). The community shifted into high gear, with every
+session, contest, and announcement focused on this singular goal.
+The official ECPC announcement outlined the full competition roadmap, giving students a clear
+vision of the journey ahead: from University Qualifiers to ECPC, then ACPC, and ultimately the ICPC
+World Finals. An intensive 3-month training period was announced to prepare teams for each
+stage. ECPC registration officially closed on April 30, marking the end of the enrollment phase and
+the beginning of the final sprint.
+To support students through this critical period, the community hosted a dedicated live stream to
+answer all questions regarding ECPC rules, team formation requirements, and training expectations.
+Additionally, the Functions and Recursion sessions were successfully uploaded to the platform's
+dashboard, ensuring that students had on-demand access to key educational content even outside
+of live sessions. These resources were essential for students who needed to balance competition
+preparation with their academic schedules.
+3
+1
+4
+2
+ACPC
+University Qualifiers
+ECPC
+ICPC World Finals
+--- Page 7 ---
+🥇 April: Contest Champions Crowned
+CHAPTER 3 — CONTESTS
+Ebrahim Matar dominated
+the first contest,
+demonstrating exceptional
+problem-solving speed and
+accuracy to claim the top
+position and cement his
+place as a cornerstone of
+the ECPC team lineup.
+Ahmed Waleed secured
+second place with a strong,
+consistent performance
+throughout the contest,
+showcasing both technical
+depth and the composure
+needed for high-pressure
+competition.
+Noha Kamal claimed third
+place in the first contest,
+rounding out the podium
+and proving that ICPC
+HUE's talent pool runs
+deep across all
+p ar ticip ants.
+Two official contests in April served as the proving grounds for team formation. These weren't just
+practice runs — they were high-stakes competitions that determined which students would
+represent Horus University at ECPC. The results crowned champions, revealed hidden talent, and
+gave coaches the data they needed to build balanced, competitive three-member teams.
+The Second Contest, held on Tuesday, April 14, served a different but equally important purpose:
+finalizing and officially approving the three-member teams. With the rankings from both contests in
+hand, coaches could make informed decisions about team composition, balancing individual
+strengths, problem-solving styles, and compatibility. The result was a set of officially approved
+teams ready to enter intensive ECPC preparation with full confidence in their lineup.
+ECPC Registration Closed — April 30: All teams officially registered and ready to compete.
+The countdown to ECPC has begun.
+First Contest — 1st
+Place
+First Contest — 2nd
+Place
+First Contest — 3rd
+Place
+--- Page 8 ---
+📚 May: Academic Progress — Level 0
+Track Complete
+CHAPTER 4 — EDUCATION
+Working with indexed data structures, traversal,
+and fundamental array manipulation techniques.
+Modular code design, parameter passing, return
+values, and building reusable problem-solving
+components.
+Understanding variables, data types, and
+conditional logic — the absolute bedrock of all
+programming.
+The gateway to advanced algorithms —
+understanding base cases, recursive calls, and
+tree-like problem structures.
+Text processing, string manipulation, and the
+patterns that appear constantly in competitive
+programming.
+All six core sessions of the Level 0 track have been
+successfully completed, covering the full spectrum of
+foundational programming concepts. Only the Math &
+Geometry session remains to complete the entire track —
+a final module that will round out the newcomers' toolkit
+with the mathematical foundations essential for
+competitive programming success.
+Mastering iteration patterns, loop control, and
+the art of writing efficient repetitive logic.
+May crowned the educational efforts of the entire season. The Newcomers Training Roadmap — a
+carefully structured curriculum designed to take students from zero to competition-ready —
+reached its near-completion milestone. Every session was delivered, every concept was covered,
+and hundreds of students now possess a solid programming foundation built to last.
+01
+Data Types & Conditions
+02
+Loops
+A massive thank you to
+Ahmed Waleed for his extraordinary
+effort in delivering these sessions.
+His dedication to helping students
+build a solid programming
+foundation has been instrumental in
+the success of the Level 0 track and
+the growth of the entire community.
+Special Thanks
+03
+arrys
+04
+strings
+05
+functions
+06
+reaursion
+--- Page 9 ---
+📈 May: Platform Statistics — Exceptional
+Performance
+CHAPTER 4 — ANALYTICS
+In the last 30 days — students actively engaging with
+the platform daily.
+Average unique visitors per day in the last 24 hours —
+consistent daily engagement.
+In the last 30 days — reflecting deep, sustained
+platform usage.
+The numbers tell a story that words alone cannot capture. Based on Cloudflare analytics for icpchue.com, the
+platform has achieved unprecedented levels of engagement and traffic. These are not just statistics — they are
+proof that a thriving, active, and growing community of competitive programmers has taken root at Horus
+University.
+The traffic patterns reveal a community in constant motion. With 1.24k unique visitors in the last 7 days and 224
+visitors in the last 24 hours, the platform maintains strong daily engagement. The request-to-visitor ratio indicates
+that students aren't just visiting — they're actively solving problems, accessing sessions, and deeply engaging
+with the content. 23.56k requests in the last 24 hours alone demonstrates the intensity of daily platform usage as
+teams ramp up their ECPC preparation.
+4.13K
+224
+179K
+Unique Visitors
+Total Requests (thousands)
+Last 30 Days
+Last 7 Days
+Time Period
+Last 24 Hours
+1k
+2k
+3k
+4k
+500
+1.5k
+3.5k
+2.5k
+4.5k
+--- Page 10 ---
+📱 Social Media Impact — Facebook
+Dominance
+CHAPTER 4 — COMMUNITY REACH
+12,812 views
+3,546 unique viewers
+535 engagements
+38 new followers
+(+428.9% increase)
+(viral reach)
+8,510 views
+4,243 unique viewers
+848 engagements
+Visual content dominated: 54% multi-photo posts, 41.4% single photo posts
+7,001 views
+518 engagements
+39 new followers
+The ICPC HUE Facebook page became a powerhouse of community engagement over the last 90
+days (February 1 - May 1). These analytics prove that our message is resonating far beyond our
+immediate circle.
+46.3K
+70.1%
+9.6K
+Contest "Thank
+You" Post (April 9)
+Champions
+Celebration Post
+(April 9)
+Orientation Teaser
+(March 11)
+Top 3 Performing Posts
+Winning Content Strategy
+1
+2
+3
+--- Page 11 ---
+🚀 May: 7 Teams Ready to Compete
+FINAL CHAPTER — THE ROAD AHEAD
+icpchue.com with
+650 problems,
+Achievements
+system, and smooth
+registration.
+Four teams formed from the
+Level 1 track, representing
+students who have built
+intermediate-level skills and
+are ready to compete at the
+ECPC level with confidence.
+Level 0 track
+nearly complete,
+17+ hours of live
+streams delivered.
+Three teams formed from
+the Level 2 track,
+representing the most
+advanced competitors in the
+community — students
+prepared to tackle the
+hardest problems on the
+competition stage.
+7 official teams, 21
+students, ready for
+ECPC.
+4.13k monthly
+visitors, thriving
+and growing every
+day.
+Twenty-one competitors
+across all seven teams, each
+one trained, tested, and
+officially approved to
+represent Horus University in
+the ECPC.
+The ICPC HUE community has built something that will outlast any single competition season. A
+platform with 650 problems. A training curriculum that takes students from zero to competition-
+ready. A Telegram community of hundreds. Seven teams carrying the flag of Horus University. The
+foundation is solid, the momentum is real, and the road to the ICPC World Finals runs directly
+through this community. The season is just beginning. 🔥
+"In just a few short months, the ICPC HUE community has proven that it is not just a standard
+student activity, but an integrated tech entity with a powerful platform, professional training, and
+teams fully prepared to sweep the ECPC competitions!"
+The journey that began in January with a Winter Camp announcement has culminated in something
+remarkable: 7 official teams totaling 21 students fully prepared and ready to represent Horus
+University at ECPC. This is not just a number — it is the result of months of dedication, infrastructure
+building, elite mentorship, and relentless training.
+Platform
+4 Teams — Level 1
+Training
+3 Teams — Level 2
+Teams
+21 Students Total
+Community
+🌐
+🎓
+🏅
+📊
+--- Page 12 ---
+🤝 Meet the Team
+THE PEOPLE BEHIND ICPC HUE
+Noha – Lead Monitor
+Dr. Basma Mostafa
+Dr. Yasser Elawady
+Eng. Fatma Magdy
+Eng. Raafat Mohamed
+Eng. Sara
+Ahmed Waleed – Lead Instructor
+Ibrahim Matar – Co-Lead Instructor
+Omar El-Shayyal – Instructor
+Youssef Mohamed Salah El-Din – Main Dev
+AbdelRahman Mohsen El-Shahat – Owner
+Youssef Mohamed Salah El-Din – Co-Founder
+Ahmed Waleed – The Lead
+ICPCHUE's success is built on the dedication and expertise of our talented team members. From
+visionary leadership to experienced instructors, each member plays a crucial role in shaping the
+future of competitive programming at Horus University.
+Monitors
+Instructors
+Leadership
+Platform Developing
+Academic Supervision & Support
+=== FILE: ICPCHUE_SUPPORT.pdf ===
+--- Page 1 ---
+Financial Report: Operations & Event Costs
+1. icpchue.com Platform Costs
+(Exchange rate: 52.5 EGP per USD)
+Description
+USD
+EGP
+23/12/2025: Server Hosting (VPS-1)
+$5.59
+293.48
+24/01/2026: Server Hosting (VPS-1)
+$5.59
+293.48
+18/02/2026: Server Hosting Upgrade (VPS-2)
+$8.78
+460.95
+25/02/2026: Domain Registration (icpchue.com, Namecheap)
+$11.48
+602.70
+18/03/2026: Server Hosting (VPS-2, prorated billing)
+$2.17
+113.93
+01/04/2026: Server Hosting (VPS-2)
+$13.40
+703.50
+01/05/2026: Server Hosting (VPS-2)
+$13.40
+703.50
+Subtotal
+$60.41
+3,171.54 EGP
+2. On-Ground Event Expenses (Orientation Day - 12/03/2026)
+Costs for organizing the introductory day and student preparations at the university
+Description
+Amount
+Student Gifts (Chocolate)
+420.00 EGP
+Platform Logo Stickers
+238.00 EGP
+Promotional Flyers
+500.00 EGP
+Logistics (Balloons & Transport)
+160.00 EGP
+Subtotal
+1,318.00 EGP
+Financial Summary
+Total icpchue.com Platform Costs
+3,171.54 EGP
+Total On-Ground Event Costs
+1,318.00 EGP
+Grand Total
+4,489.54 EGP
+ECPC competition support
+We formed seven teams (21 students total; three students per team) aiming to compete at ECPC. Three kinds of support
+are required for each qualifying cycle:
+1. Competition fees
+1,500 EGP per team -> 7 x 1,500 = 10,500 EGP. Many universities (for example Damietta) already cover these fees for
+their own students when sending teams to contests.
+2. Transportation
+Per ECPC arrangements for July 2026, the host city will be either Alexandria or Cairo.
+3. Accommodation
+Lodging (for example a hotel) for students during the competition days.
+--- Page 2 ---
+Invoice
+INV_US1293806
+Date
+12/23/25
+Customer code
+thebox777@proton.me
+Page
+1/2
+OVH US, LLC 11160-C1 South Lakes Drive, VA 20191
+Services provided to
+yousef
+eldemerdash
+Building 3A, 6th
+Neighborhood, 1st
+District, New
+Damietta,
+Damietta, Egypt
+34517 New
+Damietta
+Customer Service
+OVH US LLC
+11160-C1 South
+Lakes Drive
+Box 811
+Reston, VA 20191
+Account summary for yousef eldemerdash
+Products / Services
+Publiccloud vps-2ada83fe.vps.ovh.net
+$4.90
+Subtotal
+$4.90
+Order Subtotal
+Includes recurring monthly payments + non-
+recurring purchases
+$4.90
+Taxes
+Standard (14%)
+$0.69
+Total
+Including Taxes
+$5.59
+Thank you for you recent purchase, the amount of $5.59 has been
+withdrawn.
+Cloud
+Calculated
+Price
+--- Page 3 ---
+Invoice
+INV_US1293806
+Date
+12/23/25
+Customer code
+thebox777@proton.me
+Page
+2/2
+OVH US, LLC 11160-C1 South Lakes Drive, VA 20191
+Product / Service
+Cloud
+Quantity
+Original
+Price
+excl.
+Taxes
+Reductions
+Price
+excl.
+Taxes
+Price
+incl.
+Taxes
+Publiccloud vps-
+2ada83fe.vps.ovh.net
+$5.59
+VPS-1
+1x
+$0.00
+$0.00
+$0.00
+VPS-1 - 1 month (1
+month)
+1x
+$4.90
+$4.90
+$5.59
+Linux - 1 month - vps-
+2ada83fe.vps.ovh.net-
+linux
+1x
+$0.00
+$0.00
+$0.00
+Option Automated
+Backup Standard - VPS-
+1 - 1 month - vps-
+2ada83fe.vps.ovh.net-
+autobackup
+1x
+$0.50
+$0.00
+$0.00
+promotions
+autobackup option offer
+-$0.50
+Option Automated
+Backup Standard - VPS-
+1 - vps-
+2ada83fe.vps.ovh.net-
+autobackup
+1x
+$0.00
+$0.00
+$0.00
+Linux - vps-
+2ada83fe.vps.ovh.net-
+linux
+1x
+$0.00
+$0.00
+$0.00
+Subtotal
+$5.40
+-$0.50
+$4.90
+$5.59
+--- Page 4 ---
+Invoice
+INV_US1330342
+Date
+1/24/26
+Customer code
+thebox777@proton.me
+Page
+1/2
+OVH US, LLC 11160-C1 South Lakes Drive, VA 20191
+Services provided to
+yousef
+eldemerdash
+Building 3A, 6th
+Neighborhood, 1st
+District, New
+Damietta,
+Damietta, Egypt
+34517 New
+Damietta
+Customer Service
+OVH US LLC
+11160-C1 South
+Lakes Drive
+Box 811
+Reston, VA 20191
+Account summary for yousef eldemerdash
+Products / Services
+Publiccloud vps-41b80572.vps.ovh.net
+$4.90
+Subtotal
+$4.90
+Order Subtotal
+Includes recurring monthly payments + non-
+recurring purchases
+$4.90
+Taxes
+Standard (14%)
+$0.69
+Total
+Including Taxes
+$5.59
+Thank you for you recent purchase, the amount of $5.59 has been
+withdrawn.
+Cloud
+Calculated
+Price
+--- Page 5 ---
+Invoice
+INV_US1330342
+Date
+1/24/26
+Customer code
+thebox777@proton.me
+Page
+2/2
+OVH US, LLC 11160-C1 South Lakes Drive, VA 20191
+Product / Service
+Cloud
+Quantity
+Original
+Price
+excl.
+Taxes
+Reductions
+Price
+excl.
+Taxes
+Price
+incl.
+Taxes
+Publiccloud vps-
+41b80572.vps.ovh.net
+$5.59
+VPS-1 - 1 month (1
+month)
+1x
+$4.90
+$4.90
+$5.59
+VPS-1
+1x
+$0.00
+$0.00
+$0.00
+Linux - vps-
+41b80572.vps.ovh.net-
+linux
+1x
+$0.00
+$0.00
+$0.00
+Option Automated
+Backup Standard - VPS-
+1 - 1 month - vps-
+41b80572.vps.ovh.net-
+autobackup
+1x
+$0.50
+$0.00
+$0.00
+promotions
+autobackup option offer
+-$0.50
+Option Automated
+Backup Standard - VPS-
+1 - vps-
+41b80572.vps.ovh.net-
+autobackup
+1x
+$0.00
+$0.00
+$0.00
+Linux - 1 month - vps-
+41b80572.vps.ovh.net-
+linux
+1x
+$0.00
+$0.00
+$0.00
+Subtotal
+$5.40
+-$0.50
+$4.90
+$5.59
+--- Page 6 ---
+Invoice
+INV_US1363747
+Date
+2/18/26
+Customer code
+thebox777@proton.me
+Page
+1/2
+OVH US, LLC 11160-C1 South Lakes Drive, VA 20191
+Services provided to
+yousef
+eldemerdash
+Building 3A, 6th
+Neighborhood, 1st
+District, New
+Damietta,
+Damietta, Egypt
+34517 New
+Damietta
+Customer Service
+OVH US LLC
+11160-C1 South
+Lakes Drive
+Box 811
+Reston, VA 20191
+Account summary for yousef eldemerdash
+Products / Services
+Publiccloud vps-3c47a26f.vps.ovh.net
+$7.70
+Subtotal
+$7.70
+Order Subtotal
+Includes recurring monthly payments + non-
+recurring purchases
+$7.70
+Taxes
+Standard (14%)
+$1.08
+Total
+Including Taxes
+$8.78
+Thank you for you recent purchase, the amount of $8.78 has been
+withdrawn.
+Cloud
+Calculated
+Price
+--- Page 7 ---
+Invoice
+INV_US1363747
+Date
+2/18/26
+Customer code
+thebox777@proton.me
+Page
+2/2
+OVH US, LLC 11160-C1 South Lakes Drive, VA 20191
+Product / Service
+Cloud
+Quantity
+Original
+Price
+excl.
+Taxes
+Reductions
+Price
+excl.
+Taxes
+Price
+incl.
+Taxes
+Publiccloud vps-
+3c47a26f.vps.ovh.net
+$8.78
+VPS-2 - 1 month (1
+month)
+1x
+$7.70
+$7.70
+$8.78
+VPS-2
+1x
+$0.00
+$0.00
+$0.00
+Option Automated
+Backup Standard - VPS-
+2 - 1 month - vps-
+3c47a26f.vps.ovh.net-
+autobackup
+1x
+$0.60
+$0.00
+$0.00
+promotions
+autobackup option offer
+-$0.60
+Option Automated
+Backup Standard - VPS-
+2 - vps-
+3c47a26f.vps.ovh.net-
+autobackup
+1x
+$0.00
+$0.00
+$0.00
+Linux - vps-
+3c47a26f.vps.ovh.net-
+linux
+1x
+$0.00
+$0.00
+$0.00
+Linux - 1 month - vps-
+3c47a26f.vps.ovh.net-
+linux
+1x
+$0.00
+$0.00
+$0.00
+Subtotal
+$8.30
+-$0.60
+$7.70
+$8.78
+--- Page 8 ---
+Invoice
+INV_US1400663
+Date
+3/18/26
+Customer code
+thebox777@proton.me
+Page
+1/2
+OVH US, LLC 11160-C1 South Lakes Drive, VA 20191
+Services provided to
+yousef
+eldemerdash
+Building 3A, 6th
+Neighborhood, 1st
+District, New
+Damietta,
+Damietta, Egypt
+34517 New
+Damietta
+Customer Service
+OVH US LLC
+11160-C1 South
+Lakes Drive
+Box 811
+Reston, VA 20191
+Account summary for yousef eldemerdash
+Products / Services
+Publiccloud vps-3c47a26f.vps.ovh.net
+$1.90
+Subtotal
+$1.90
+Order Subtotal
+Includes recurring monthly payments + non-
+recurring purchases
+$1.90
+Taxes
+Standard (14%)
+$0.27
+Total
+Including Taxes
+$2.17
+The amount of $2.17 will be automatically withdrawn on 3/18/26 .
+Cloud
+Calculated
+Price
+--- Page 9 ---
+Invoice
+INV_US1400663
+Date
+3/18/26
+Customer code
+thebox777@proton.me
+Page
+2/2
+OVH US, LLC 11160-C1 South Lakes Drive, VA 20191
+Product / Service
+Cloud
+Quantity
+Original
+Price
+excl.
+Taxes
+Reductions
+Price
+excl.
+Taxes
+Price
+incl.
+Taxes
+Publiccloud vps-
+3c47a26f.vps.ovh.net
+$2.17
+VPS-2 - from 18/03/2026
+to 01/04/2026 (1 month)
+1x
+$3.48
+$1.90
+$2.17
+vouchers
+voucher support
+commercial gesture
+-$1.58
+Option Automated
+Backup Standard - VPS-
+2 - from 18/03/2026 to
+01/04/2026 - vps-
+3c47a26f.vps.ovh.net-
+autobackup
+1x
+$0.27
+$0.00
+$0.00
+promotions
+autobackup option offer
+-$0.27
+Linux - from
+18/03/2026 to
+01/04/2026 - vps-
+3c47a26f.vps.ovh.net-
+linux
+1x
+$0.00
+$0.00
+$0.00
+Subtotal
+$3.75
+-$1.85
+$1.90
+$2.17
+--- Page 10 ---
+Invoice
+INV_US1420465
+Date
+4/1/26
+Customer code
+thebox777@proton.me
+Page
+1/2
+OVH US, LLC 11160-C1 South Lakes Drive, VA 20191
+Services provided to
+yousef
+eldemerdash
+Building 3A, 6th
+Neighborhood, 1st
+District, New
+Damietta,
+Damietta, Egypt
+34517 New
+Damietta
+Customer Service
+OVH US LLC
+11160-C1 South
+Lakes Drive
+Box 811
+Reston, VA 20191
+Account summary for yousef eldemerdash
+Products / Services
+Publiccloud vps-3c47a26f.vps.ovh.net
+$11.75
+Subtotal
+$11.75
+Order Subtotal
+Includes recurring monthly payments + non-
+recurring purchases
+$11.75
+Taxes
+Standard (14%)
+$1.65
+Total
+Including Taxes
+$13.40
+The amount of $13.40 will be automatically withdrawn on 4/1/26 .
+Cloud
+Calculated
+Price
+--- Page 11 ---
+Invoice
+INV_US1420465
+Date
+4/1/26
+Customer code
+thebox777@proton.me
+Page
+2/2
+OVH US, LLC 11160-C1 South Lakes Drive, VA 20191
+Product / Service
+Cloud
+Quantity
+Original
+Price
+excl.
+Taxes
+Reductions
+Price
+excl.
+Taxes
+Price
+incl.
+Taxes
+Publiccloud vps-
+3c47a26f.vps.ovh.net
+$13.40
+VPS-2 - 1 month (1
+month)
+1x
+$11.75
+$11.75
+$13.40
+Linux - 1 month - vps-
+3c47a26f.vps.ovh.net-
+linux
+1x
+$0.00
+$0.00
+$0.00
+Option Automated
+Backup Standard -
+VPS-2 - 1 month - vps-
+3c47a26f.vps.ovh.net-
+autobackup
+1x
+$0.60
+$0.00
+$0.00
+promotions
+autobackup option offer
+-$0.60
+Subtotal
+$12.35
+-$0.60
+$11.75
+$13.40
+--- Page 12 ---
+Invoice
+INV_US1464407
+Date
+5/1/26
+Customer code
+thebox777@proton.me
+Page
+1/2
+OVH US, LLC 11160-C1 South Lakes Drive, VA 20191
+Services provided to
+yousef
+eldemerdash
+Building 3A, 6th
+Neighborhood, 1st
+District, New
+Damietta,
+Damietta, Egypt
+34517 New
+Damietta
+Customer Service
+OVH US LLC
+11160-C1 South
+Lakes Drive
+Box 811
+Reston, VA 20191
+Account summary for yousef eldemerdash
+Products / Services
+Publiccloud vps-3c47a26f.vps.ovh.net
+$11.75
+Subtotal
+$11.75
+Order Subtotal
+Includes recurring monthly payments + non-
+recurring purchases
+$11.75
+Taxes
+Standard (14%)
+$1.65
+Total
+Including Taxes
+$13.40
+The amount of $13.40 will be automatically withdrawn on 5/1/26 .
+Cloud
+Calculated
+Price
+--- Page 13 ---
+Invoice
+INV_US1464407
+Date
+5/1/26
+Customer code
+thebox777@proton.me
+Page
+2/2
+OVH US, LLC 11160-C1 South Lakes Drive, VA 20191
+Product / Service
+Cloud
+Quantity
+Original
+Price
+excl.
+Taxes
+Reductions
+Price
+excl.
+Taxes
+Price
+incl.
+Taxes
+Publiccloud vps-
+3c47a26f.vps.ovh.net
+$13.40
+VPS-2 - 1 month (1
+month)
+1x
+$11.75
+$11.75
+$13.40
+Option Automated
+Backup Standard -
+VPS-2 - 1 month - vps-
+3c47a26f.vps.ovh.net-
+autobackup
+1x
+$0.60
+$0.00
+$0.00
+promotions
+autobackup option offer
+-$0.60
+Linux - 1 month - vps-
+3c47a26f.vps.ovh.net-
+linux
+1x
+$0.00
+$0.00
+$0.00
+Subtotal
+$12.35
+-$0.60
+$11.75
+$13.40
+--- Page 14 ---
+Outlook
+OVH US LLC إلى مدفوعات فوضت قد
+من>service@intl.paypal.com <service@intl.paypal.com
+التاريخًمسا 11:04 23/12/25 الثالثاء
+إلى>yousef aldamrdash <yousefmsm@hotmail.com
+،yousef aldamrdash ًمرحب
+بمبلغ مدفوعات فوضت لقد
+US$‪5.59 USD‬ إلى OVH US
+LLC.
+المعاملة إدارة أو استعراض
+،كاملة المعاملة بيانات الستعراض .طلبك OVH US LLC تعالج حتى معلقة معاملة المشتريات هذه ستظهر
+يستغرق قد المعاملة هذه ظهور أن اعتبارك في خذ .PayPal على حسابك إلى الدخول تسجيل يرجى
+.PayPal الستخدامك ًشكر .لحظات
+المعاملة تعريف رمز
+6XC182458S893841N
+المعاملة تاريخ
+2025/‏12/‏23
+التاجر
+OVH US LLC
+التاجر إلى تعليمات
+.تعليمات أي تدخل لم
+الفاتورة تعريف رمز
+TPAL1611345U-7259168
+الوصف
+الوحدة سعر
+الكمية
+المبلغ
+3/18/26, 6:54 AMالبريد - yousef msm1 - Outlook
+https://outlook.live.com/mail/0/inbox/id/AQQkADAwATY3ZmYAZS1lZQBiZC1kMzE0LTAwAi0wMAoAEAD6ts0aJqnPQ7yHxcNaYB9D
+1/3
+--- Page 15 ---
+‬US$‪5.59 USD
+1
+‬US$‪5.59 USD
+الفرعي اإلجمالي‬US$‪5.59 USD
+اإلجمالي‬US$‪5.59 USD
+yousefmsm@hotmail.com من صادرة
+من أكبر النهائي المبلغ وكان المعاملة التاجر أكمل إذا .النهائي الدفع مبلغ هو أعاله الوارد المبلغ يكون ال قد
+إيصالك ذلك سيكون ذلك وبخالف .النهائي الدفع مبلغ يبين ًإضافي ًإيصا إليك فسنرسل أعاله الوارد المبلغ
+.النهائي
+)اإلجمالي( المستخدمة التمويل مصادر
+Mastercard-8381
+‬‪3,018.01 KZT₸
+العمالت تحويل
+KZT = 0.0019 USD 1 :العمالت لتحويل PayPal سعر
+.العمالت تحويل رسم يشمل السعر هذا
+معاملتك الستكمال ساعة 72 عن تزيد مدة التاجر استغرق إذا ذلك ومع ،ًفور المعامالت التجار معظم يعالج
+هذا استعراض يمكنك .أعاله الصرف سعر من ًبد المعاملة استكمال وقت الساري الصرف سعر فسنطبق
+.حسابك في المعاملة بيانات في النهائي المعاملة ومبلغ السعر
+المعاملة إدارة أو استعراض
+المعاملة؟ هذه في مشكلة تواجه هل
+."النزاعات حل مركز" في منازعة لرفع المعاملة تاريخ من ًبدء ًيوم 180 أمامك
+التطبيقات | الحماية | و التصال المساعدة
+ًدائم تتضمن PayPal من المرسلة اإللكترونية الرسائل بأن ًعلم نحيطك .الحتيالية اإللكترونية الرسائل منع على PayPal تحرص
+الحتيالي التصيد تحديد كيفية على تع ّف .الكامل اسمك
+.واتصال مساعدة على انقر معنا للتواصل .اإللكترونية الرسالة هذه على الرد عدم يرجى
+المزيد معرفة اإللكترونية؟ الرسالة هذه تلقيت َل ًمتأكد ألست
+.محفوظة الحقوق جميع .PayPal 2025-1999 © النشر حقوق
+3/18/26, 6:54 AMالبريد - yousef msm1 - Outlook
+https://outlook.live.com/mail/0/inbox/id/AQQkADAwATY3ZmYAZS1lZQBiZC1kMzE0LTAwAi0wMAoAEAD6ts0aJqnPQ7yHxcNaYB9D
+2/3
+--- Page 16 ---
+لعام الدفع خدمات قانون بموجب رئيسية دفع مؤسسة بصفتها السنغافورية النقد سلطة من مّرخصة شركة هي PayPal Pte. Ltd.
+.2019
+PayPal RT000063:ar_EG(ar-EG):1.11.2:20358d6714908
+3/18/26, 6:54 AMالبريد - yousef msm1 - Outlook
+https://outlook.live.com/mail/0/inbox/id/AQQkADAwATY3ZmYAZS1lZQBiZC1kMzE0LTAwAi0wMAoAEAD6ts0aJqnPQ7yHxcNaYB9D
+3/3
+--- Page 17 ---
+Outlook
+OVH US LLC إلى مدفوعات فوضت قد
+من>service@intl.paypal.com <service@intl.paypal.com
+التاريخًصباح 01:14 25/01/26 األحد
+إلى>yousef aldamrdash <yousefmsm@hotmail.com
+،yousef aldamrdash ًمرحب
+بمبلغ مدفوعات فوضت لقد
+US$‪5.59 USD‬ إلى OVH US
+LLC.
+المعاملة إدارة أو استعراض
+،كاملة المعاملة بيانات الستعراض .طلبك OVH US LLC تعالج حتى معلقة معاملة المشتريات هذه ستظهر
+يستغرق قد المعاملة هذه ظهور أن اعتبارك في خذ .PayPal على حسابك إلى الدخول تسجيل يرجى
+.PayPal الستخدامك ًشكر .لحظات
+المعاملة تعريف رمز
+6TT67020BD406115N
+المعاملة تاريخ
+2026/‏01/‏24
+التاجر
+OVH US LLC
+التاجر إلى تعليمات
+.تعليمات أي تدخل لم
+الفاتورة تعريف رمز
+TPAL1654533U-7357084
+الوصف
+الوحدة سعر
+الكمية
+المبلغ
+3/18/26, 6:42 AMالبريد - yousef msm1 - Outlook
+https://outlook.live.com/mail/0/inbox/id/AQQkADAwATY3ZmYAZS1lZQBiZC1kMzE0LTAwAi0wMAoAEACSUnwXqK4fRYSKf%2FZUm…
+1/3
+--- Page 18 ---
+‬US$‪5.59 USD
+1
+‬US$‪5.59 USD
+الفرعي اإلجمالي‬US$‪5.59 USD
+اإلجمالي‬US$‪5.59 USD
+yousefmsm@hotmail.com من صادرة
+من أكبر النهائي المبلغ وكان المعاملة التاجر أكمل إذا .النهائي الدفع مبلغ هو أعاله الوارد المبلغ يكون ال قد
+إيصالك ذلك سيكون ذلك وبخالف .النهائي الدفع مبلغ يبين ًإضافي ًإيصا إليك فسنرسل أعاله الوارد المبلغ
+.النهائي
+)اإلجمالي( المستخدمة التمويل مصادر
+Mastercard-8381
+‬‪2,960.19 KZT₸
+العمالت تحويل
+KZT = 0.0019 USD 1 :العمالت لتحويل PayPal سعر
+.العمالت تحويل رسم يشمل السعر هذا
+معاملتك الستكمال ساعة 72 عن تزيد مدة التاجر استغرق إذا ذلك ومع ،ًفور المعامالت التجار معظم يعالج
+هذا استعراض يمكنك .أعاله الصرف سعر من ًبد المعاملة استكمال وقت الساري الصرف سعر فسنطبق
+.حسابك في المعاملة بيانات في النهائي المعاملة ومبلغ السعر
+المعاملة إدارة أو استعراض
+المعاملة؟ هذه في مشكلة تواجه هل
+."النزاعات حل مركز" في منازعة لرفع المعاملة تاريخ من ًبدء ًيوم 180 أمامك
+التطبيقات | الحماية | و التصال المساعدة
+ًدائم تتضمن PayPal من المرسلة اإللكترونية الرسائل بأن ًعلم نحيطك .الحتيالية اإللكترونية الرسائل منع على PayPal تحرص
+الحتيالي التصيد تحديد كيفية على تع ّف .الكامل اسمك
+.واتصال مساعدة على انقر معنا للتواصل .اإللكترونية الرسالة هذه على الرد عدم يرجى
+المزيد معرفة اإللكترونية؟ الرسالة هذه تلقيت َل ًمتأكد ألست
+.محفوظة الحقوق جميع .PayPal 2026-1999 © النشر حقوق
+3/18/26, 6:42 AMالبريد - yousef msm1 - Outlook
+https://outlook.live.com/mail/0/inbox/id/AQQkADAwATY3ZmYAZS1lZQBiZC1kMzE0LTAwAi0wMAoAEACSUnwXqK4fRYSKf%2FZUm…
+2/3
+--- Page 19 ---
+لعام الدفع خدمات قانون بموجب رئيسية دفع مؤسسة بصفتها السنغافورية النقد سلطة من مّرخصة شركة هي PayPal Pte. Ltd.
+.2019
+PayPal RT000063:ar_EG(ar-EG):1.11.2:37dba0f634629
+3/18/26, 6:42 AMالبريد - yousef msm1 - Outlook
+https://outlook.live.com/mail/0/inbox/id/AQQkADAwATY3ZmYAZS1lZQBiZC1kMzE0LTAwAi0wMAoAEACSUnwXqK4fRYSKf%2FZUm…
+3/3
+--- Page 20 ---
+Outlook
+OVH US LLC إلى مدفوعات فوضت قد
+من>service@intl.paypal.com <service@intl.paypal.com
+التاريخًصباح 09:00 18/02/26 األربعاء
+إلى>yousef aldamrdash <yousefmsm@hotmail.com
+،yousef aldamrdash ًمرحب
+بمبلغ مدفوعات فوضت لقد
+US$‪8.78 USD‬ إلى OVH US
+LLC.
+المعاملة إدارة أو استعراض
+،كاملة المعاملة بيانات الستعراض .طلبك OVH US LLC تعالج حتى معلقة معاملة المشتريات هذه ستظهر
+يستغرق قد المعاملة هذه ظهور أن اعتبارك في خذ .PayPal على حسابك إلى الدخول تسجيل يرجى
+.PayPal الستخدامك ًشكر .لحظات
+المعاملة تعريف رمز
+1CM4195752718864S
+المعاملة تاريخ
+2026/‏02/‏17
+التاجر
+OVH US LLC
+التاجر إلى تعليمات
+.تعليمات أي تدخل لم
+الفاتورة تعريف رمز
+TPAL1693762U-7470853
+الوصف
+الوحدة سعر
+الكمية
+المبلغ
+3/18/26, 6:40 AMالبريد - yousef msm1 - Outlook
+https://outlook.live.com/mail/0/inbox/id/AQQkADAwATY3ZmYAZS1lZQBiZC1kMzE0LTAwAi0wMAoAEAA0eVDnPOB%2BQbqLyX7HX…
+1/3
+--- Page 21 ---
+‬US$‪8.78 USD
+1
+‬US$‪8.78 USD
+الفرعي اإلجمالي‬US$‪8.78 USD
+اإلجمالي‬US$‪8.78 USD
+yousefmsm@hotmail.com من صادرة
+من أكبر النهائي المبلغ وكان المعاملة التاجر أكمل إذا .النهائي الدفع مبلغ هو أعاله الوارد المبلغ يكون ال قد
+إيصالك ذلك سيكون ذلك وبخالف .النهائي الدفع مبلغ يبين ًإضافي ًإيصا إليك فسنرسل أعاله الوارد المبلغ
+.النهائي
+)اإلجمالي( المستخدمة التمويل مصادر
+Mastercard-8381
+‬‪4,511.08 KZT₸
+العمالت تحويل
+KZT = 0.0019 USD 1 :العمالت لتحويل PayPal سعر
+.العمالت تحويل رسم يشمل السعر هذا
+معاملتك الستكمال ساعة 72 عن تزيد مدة التاجر استغرق إذا ذلك ومع ،ًفور المعامالت التجار معظم يعالج
+هذا استعراض يمكنك .أعاله الصرف سعر من ًبد المعاملة استكمال وقت الساري الصرف سعر فسنطبق
+.حسابك في المعاملة بيانات في النهائي المعاملة ومبلغ السعر
+المعاملة إدارة أو استعراض
+المعاملة؟ هذه في مشكلة تواجه هل
+."النزاعات حل مركز" في منازعة لرفع المعاملة تاريخ من ًبدء ًيوم 180 أمامك
+التطبيقات | الحماية | و التصال المساعدة
+ًدائم تتضمن PayPal من المرسلة اإللكترونية الرسائل بأن ًعلم نحيطك .الحتيالية اإللكترونية الرسائل منع على PayPal تحرص
+الحتيالي التصيد تحديد كيفية على تع ّف .الكامل اسمك
+.واتصال مساعدة على انقر معنا للتواصل .اإللكترونية الرسالة هذه على الرد عدم يرجى
+المزيد معرفة اإللكترونية؟ الرسالة هذه تلقيت َل ًمتأكد ألست
+.محفوظة الحقوق جميع .PayPal 2026-1999 © النشر حقوق
+3/18/26, 6:40 AMالبريد - yousef msm1 - Outlook
+https://outlook.live.com/mail/0/inbox/id/AQQkADAwATY3ZmYAZS1lZQBiZC1kMzE0LTAwAi0wMAoAEAA0eVDnPOB%2BQbqLyX7HX…
+2/3
+--- Page 22 ---
+لعام الدفع خدمات قانون بموجب رئيسية دفع مؤسسة بصفتها السنغافورية النقد سلطة من مّرخصة شركة هي PayPal Pte. Ltd.
+.2019
+PayPal RT000063:ar_EG(ar-EG):1.11.2:de3c91570f8a9
+3/18/26, 6:40 AMالبريد - yousef msm1 - Outlook
+https://outlook.live.com/mail/0/inbox/id/AQQkADAwATY3ZmYAZS1lZQBiZC1kMzE0LTAwAi0wMAoAEAA0eVDnPOB%2BQbqLyX7HX…
+3/3
+--- Page 23 ---
+Outlook
+OVH US LLC إلى مدفوعات فوضت قد
+من>service@intl.paypal.com <service@intl.paypal.com
+التاريخًمسا 12:36 18/03/26 األربعاء
+إلى>yousef aldamrdash <yousefmsm@hotmail.com
+،yousef aldamrdash ًمرحب
+بمبلغ مدفوعات فوضت لقد
+US$‪2.17 USD‬ إلى OVH US
+LLC.
+المعاملة إدارة أو استعراض
+،كاملة المعاملة بيانات الستعراض .طلبك OVH US LLC تعالج حتى معلقة معاملة المشتريات هذه ستظهر
+يستغرق قد المعاملة هذه ظهور أن اعتبارك في خذ .PayPal على حسابك إلى الدخول تسجيل يرجى
+.PayPal الستخدامك ًشكر .لحظات
+المعاملة تعريف رمز
+3FS57183DB307153E
+المعاملة تاريخ
+2026/‏03/‏18
+التاجر
+OVH US LLC
+التاجر إلى تعليمات
+.تعليمات أي تدخل لم
+الفاتورة تعريف رمز
+TPAL1736437U-7710870
+الوصف
+الوحدة سعر
+الكمية
+المبلغ
+5/3/26, 3:08 PMقد فوضت مدفوعات إلى OVH US LLC - yousef msm1 - Outlook
+about:blank
+1/3
+--- Page 24 ---
+‬US$‪2.17 USD
+1
+‬US$‪2.17 USD
+الفرعي اإلجمالي‬US$‪2.17 USD
+اإلجمالي‬US$‪2.17 USD
+yousefmsm@hotmail.com من صادرة
+من أكبر النهائي المبلغ وكان المعاملة التاجر أكمل إذا .النهائي الدفع مبلغ هو أعاله الوارد المبلغ يكون ال قد
+إيصالك ذلك سيكون ذلك وبخالف .النهائي الدفع مبلغ يبين ًإضافي ًإيصا إليك فسنرسل أعاله الوارد المبلغ
+.النهائي
+)اإلجمالي( المستخدمة التمويل مصادر
+Mastercard-8381
+‬‪1,095.89 KZT₸
+العمالت تحويل
+KZT = 0.002 USD 1 :العمالت لتحويل PayPal سعر
+.العمالت تحويل رسم يشمل السعر هذا
+معاملتك الستكمال ساعة 72 عن تزيد مدة التاجر استغرق إذا ذلك ومع ،ًفور المعامالت التجار معظم يعالج
+هذا استعراض يمكنك .أعاله الصرف سعر من ًبد المعاملة استكمال وقت الساري الصرف سعر فسنطبق
+.حسابك في المعاملة بيانات في النهائي المعاملة ومبلغ السعر
+المعاملة إدارة أو استعراض
+المعاملة؟ هذه في مشكلة تواجه هل
+."النزاعات حل مركز" في منازعة لرفع المعاملة تاريخ من ًبدء ًيوم 180 أمامك
+التطبيقات | الحماية | و التصال المساعدة
+ًدائم تتضمن PayPal من المرسلة اإللكترونية الرسائل بأن ًعلم نحيطك .الحتيالية اإللكترونية الرسائل منع على PayPal تحرص
+الحتيالي التصيد تحديد كيفية على تع ّف .الكامل اسمك
+.واتصال مساعدة على انقر معنا للتواصل .اإللكترونية الرسالة هذه على الرد عدم يرجى
+المزيد معرفة اإللكترونية؟ الرسالة هذه تلقيت َل ًمتأكد ألست
+.محفوظة الحقوق جميع .PayPal 2026-1999 © النشر حقوق
+5/3/26, 3:08 PMقد فوضت مدفوعات إلى OVH US LLC - yousef msm1 - Outlook
+about:blank
+2/3
+--- Page 25 ---
+لعام الدفع خدمات قانون بموجب رئيسية دفع مؤسسة بصفتها السنغافورية النقد سلطة من مّرخصة شركة هي PayPal Pte. Ltd.
+.2019
+PayPal RT000063:ar_EG(ar-EG):1.11.2:6d19f5bc22a3f
+5/3/26, 3:08 PMقد فوضت مدفوعات إلى OVH US LLC - yousef msm1 - Outlook
+about:blank
+3/3
+--- Page 26 ---
+Outlook
+OVH US LLC إلى مدفوعات فوضت قد
+من>service@intl.paypal.com <service@intl.paypal.com
+التاريخًصباح 12:23 02/04/26 الخميس
+إلى>yousef aldamrdash <yousefmsm@hotmail.com
+،yousef aldamrdash ًمرحب
+بمبلغ مدفوعات فوضت لقد
+US$‪13.40 USD‬ إلى OVH US
+LLC.
+المعاملة إدارة أو استعراض
+،كاملة المعاملة بيانات الستعراض .طلبك OVH US LLC تعالج حتى معلقة معاملة المشتريات هذه ستظهر
+يستغرق قد المعاملة هذه ظهور أن اعتبارك في خذ .PayPal على حسابك إلى الدخول تسجيل يرجى
+.PayPal الستخدامك ًشكر .لحظات
+المعاملة تعريف رمز
+9S963667DJ2855431
+المعاملة تاريخ
+2026/‏04/‏01
+التاجر
+OVH US LLC
+التاجر إلى تعليمات
+.تعليمات أي تدخل لم
+الفاتورة تعريف رمز
+TPAL1753742U-7774291
+الوصف
+الوحدة سعر
+الكمية
+المبلغ
+5/3/26, 3:03 PMقد فوضت مدفوعات إلى OVH US LLC - yousef msm1 - Outlook
+about:blank
+1/2
+--- Page 27 ---
+‬US$‪13.40 USD
+1
+‬US$‪13.40 USD
+الفرعي اإلجمالي‬US$‪13.40 USD
+اإلجمالي‬US$‪13.40 USD
+yousefmsm@hotmail.com من صادرة
+من أكبر النهائي المبلغ وكان المعاملة التاجر أكمل إذا .النهائي الدفع مبلغ هو أعاله الوارد المبلغ يكون ال قد
+إيصالك ذلك سيكون ذلك وبخالف .النهائي الدفع مبلغ يبين ًإضافي ًإيصا إليك فسنرسل أعاله الوارد المبلغ
+.النهائي
+)اإلجمالي( المستخدمة التمويل مصادر
+Visa-2103
+‬US$‪13.40 USD
+المعاملة إدارة أو استعراض
+المعاملة؟ هذه في مشكلة تواجه هل
+."النزاعات حل مركز" في منازعة لرفع المعاملة تاريخ من ًبدء ًيوم 180 أمامك
+التطبيقات | الحماية | و التصال المساعدة
+ًدائم تتضمن PayPal من المرسلة اإللكترونية الرسائل بأن ًعلم نحيطك .الحتيالية اإللكترونية الرسائل منع على PayPal تحرص
+الحتيالي التصيد تحديد كيفية على تع ّف .الكامل اسمك
+.واتصال مساعدة على انقر معنا للتواصل .اإللكترونية الرسالة هذه على الرد عدم يرجى
+المزيد معرفة اإللكترونية؟ الرسالة هذه تلقيت َل ًمتأكد ألست
+.محفوظة الحقوق جميع .PayPal 2026-1999 © النشر حقوق
+لعام الدفع خدمات قانون بموجب رئيسية دفع مؤسسة بصفتها السنغافورية النقد سلطة من مّرخصة شركة هي PayPal Pte. Ltd.
+.2019
+PayPal RT000063:ar_EG(ar-EG):1.11.2:e854a8428bf87
+5/3/26, 3:03 PMقد فوضت مدفوعات إلى OVH US LLC - yousef msm1 - Outlook
+about:blank
+2/2
+--- Page 28 ---
+Outlook
+OVH US LLC إلى مدفوعات فوضت قد
+من>service@intl.paypal.com <service@intl.paypal.com
+التاريخًصباح 01:14 02/05/26 السبت
+إلى>yousef aldamrdash <yousefmsm@hotmail.com
+،yousef aldamrdash ًمرحب
+بمبلغ مدفوعات فوضت لقد
+US$‪13.40 USD‬ إلى OVH US
+LLC.
+المعاملة إدارة أو استعراض
+،كاملة المعاملة بيانات الستعراض .طلبك OVH US LLC تعالج حتى معلقة معاملة المشتريات هذه ستظهر
+يستغرق قد المعاملة هذه ظهور أن اعتبارك في خذ .PayPal على حسابك إلى الدخول تسجيل يرجى
+.PayPal الستخدامك ًشكر .لحظات
+المعاملة تعريف رمز
+8CB29044MF021710L
+المعاملة تاريخ
+2026/‏05/‏01
+التاجر
+OVH US LLC
+التاجر إلى تعليمات
+.تعليمات أي تدخل لم
+الفاتورة تعريف رمز
+TPAL1802383U-7883795
+الوصف
+الوحدة سعر
+الكمية
+المبلغ
+5/3/26, 3:01 PMالبريد - yousef msm1 - Outlook
+https://outlook.live.com/mail/
+1/3
+--- Page 29 ---
+‬US$‪13.40 USD
+1
+‬US$‪13.40 USD
+الفرعي اإلجمالي‬US$‪13.40 USD
+اإلجمالي‬US$‪13.40 USD
+yousefmsm@hotmail.com من صادرة
+من أكبر النهائي المبلغ وكان المعاملة التاجر أكمل إذا .النهائي الدفع مبلغ هو أعاله الوارد المبلغ يكون ال قد
+إيصالك ذلك سيكون ذلك وبخالف .النهائي الدفع مبلغ يبين ًإضافي ًإيصا إليك فسنرسل أعاله الوارد المبلغ
+.النهائي
+)اإلجمالي( المستخدمة التمويل مصادر
+Mastercard-8381
+‬‪6,473.58 KZT₸
+العمالت تحويل
+KZT = 0.0021 USD 1 :العمالت لتحويل PayPal سعر
+.العمالت تحويل رسم يشمل السعر هذا
+معاملتك الستكمال ساعة 72 عن تزيد مدة التاجر استغرق إذا ذلك ومع ،ًفور المعامالت التجار معظم يعالج
+هذا استعراض يمكنك .أعاله الصرف سعر من ًبد المعاملة استكمال وقت الساري الصرف سعر فسنطبق
+.حسابك في المعاملة بيانات في النهائي المعاملة ومبلغ السعر
+المعاملة إدارة أو استعراض
+المعاملة؟ هذه في مشكلة تواجه هل
+."النزاعات حل مركز" في منازعة لرفع المعاملة تاريخ من ًبدء ًيوم 180 أمامك
+التطبيقات | الحماية | و التصال المساعدة
+ًدائم تتضمن PayPal من المرسلة اإللكترونية الرسائل بأن ًعلم نحيطك .الحتيالية اإللكترونية الرسائل منع على PayPal تحرص
+الحتيالي التصيد تحديد كيفية على تع ّف .الكامل اسمك
+.واتصال مساعدة على انقر معنا للتواصل .اإللكترونية الرسالة هذه على الرد عدم يرجى
+المزيد معرفة اإللكترونية؟ الرسالة هذه تلقيت َل ًمتأكد ألست
+.محفوظة الحقوق جميع .PayPal 2026-1999 © النشر حقوق
+5/3/26, 3:01 PMالبريد - yousef msm1 - Outlook
+https://outlook.live.com/mail/
+2/3
+--- Page 30 ---
+لعام الدفع خدمات قانون بموجب رئيسية دفع مؤسسة بصفتها السنغافورية النقد سلطة من مّرخصة شركة هي PayPal Pte. Ltd.
+.2019
+PayPal RT000063:ar_EG(ar-EG):1.11.2:60a34e0a68a7d
+5/3/26, 3:01 PMالبريد - yousef msm1 - Outlook
+https://outlook.live.com/mail/
+3/3
+--- Page 31 ---
+Profile → Billing → Orders → Details
+← Back to List
+Order ID 195666893
+Feb 25, 2026, 4:21 PM EST
+Product
+Items
+Duration
+Amount
+Charged
+Status
+Domain Registration
+for icpchue.com
+ICANN fee
+1
+1 year
+$14.98 $11.28
+$0.20
+$11.28
+$0.20
+Subtotal
+$11.48
+$11.48
+Print
+Print
+Download
+Download
+Resend Receipt
+Supplier
+Namecheap, Inc.
+4600 East Washington Street., Suite 305
+Phoenix, AZ 85034
+USA
+namecheap.com
+support@namecheap.com
+Customer
+Business Duck
+elstat2
+Contact us
+BusinessDuck1 
+
+
+3/18/26, 7:56 AM
+Order Details
+https://ap.www.namecheap.com/profile/billing/order/details/195666893/Order?printPage=1
+1/3
+--- Page 32 ---
+new damyita , damyita 0034517
+EG
++20 102-825-0064
+yousefmsm@hotmail.com
+Payment Details
+Payment Method
+Card Payment
+**** **** **** 5909
+Payment Reference
+67dfb971-cfab-48e3-8478-a0da64b7e378
+Transaction ID
+238272869
+Charged Amount
+$11.48
+Need help?
+We're always here for you.
+Chat with a Live Person
+We make registering, hosting, and managing domains for yourself or others easy and
+affordable, because the internet needs people.
+About Namecheap 
+Read our blog 
+Join Our Newsletter & Marketing Communication
+We'll send you news and offers.
+3/18/26, 7:56 AM
+Order Details
+https://ap.www.namecheap.com/profile/billing/order/details/195666893/Order?printPage=1
+2/3
+--- Page 33 ---
+;
+you@yours.com
+Join
+The entirety of this site is protected by copyright © 2000–2026 Namecheap, Inc.
+4600 East Washington Street, Suite 305, Phoenix, AZ 85034, USA
+Terms and Conditions
+Privacy Policy
+UDRP
+Domain Registration Data Disclosure Policy
+Cookie Preferences
+WE SUPPORT
+We are an ICANN-accredited registrar.
+Serving customers since 2001.
+Payment Options
+3/18/26, 7:56 AM
+Order Details
+https://ap.www.namecheap.com/profile/billing/order/details/195666893/Order?printPage=1
+3/3

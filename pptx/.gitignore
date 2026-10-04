@@ -1,0 +1,12 @@
+.build/node_modules
+.build/render-*
+.build/contact-*
+.build/*-check
+.build/lo-render
+.build/*.inspect.*
+.build/*.validation.json
+.build/**/*.pptx
+.build/**/*.inspect.*
+.build/**/*.validation.json
+.build/bataa-pitch-deck-candidate.pptx
+.build/evidence-*

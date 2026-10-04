@@ -1,0 +1,47 @@
+#,Event,Start,End,Status,Owner,Notes
+1,Promotion campaign,2026-08-29,2026-09-03,Pending,Yousef,Social media
+2,Application form open,2026-09-05,2026-09-10,Pending,,
+3,Screening / interviews,2026-09-12,2026-09-17,Pending,,
+4,Results announced,2026-09-18,,Pending,,
+5,Orientation Day,2026-09-26,2026-10-01,Pending,,
+6,Application form reopen,2026-09-26,2026-10-01,Pending,,1 Week After Orientation Day
+7,Intro Session,09/10/2026 8:30PM,,Pending,,
+8,"Basics: Variables, Data Types & Conditions",16/10/2026 8:30PM,,Pending,,
+9,"Loops: For, While & Nested Loops",23/10/2026 8:30PM,,Pending,,
+10,Arrays & Built-in Functions,30/10/2026 8:30PM,,Pending,,
+11,Strings,06/11/2026 8:30PM,,Pending,,
+12,Midterm break,2026-11-07,2026-11-12,Pending,,Estimated
+13,Functions,13/11/2026 8:30PM,,Pending,,
+14,Complexity (Big-O),20/11/2026 8:30PM,,Pending,,
+15,Contests,2026-11-21,2026-11-26,Pending,,
+16,Progress Check,,,Pending,TA,
+17,STL: Vector & Pair,27/11/2026 8:30PM,,Pending,,
+18,"STL: Stack, Queue & Deque",04/12/2026 8:30PM,,Pending,,
+19,STL: Set & Map,11/12/2026 8:30PM,,Pending,,
+20,STL: Priority Queue & Structs,18/12/2026 8:30PM,,Pending,,
+21,Finals break,2026-12-20,2027-01-21,Pending,,Estimated
+22,Warm up Contest,2026-01-29,,Pending,,
+23,Ad hoc: Frequency Array & Cumulative (Prefix) Array,05/02/2027 8:30PM,,Pending,,
+24,Ad hoc: Two Pointers & Sliding Window,12/02/2027 8:30PM,,Pending,,
+25,Application form open,2027-02-13,2027-02-18,Pending,,
+26,Binary Search,19/02/2027 8:30PM,,Pending,,
+27,Greedy Algorithm,26/02/2027 8:30PM,,Pending,,
+28,Recursion Basics & Recursive Brute Force,05/03/2027 8:30PM,,Pending,,
+29,Diagnostic review of all topics so far,2027-03-06,2027-03-11,Pending,,identify weak points
+30,Backtracking,12/03/2027 8:30PM,,Pending,,
+31,Iterative brute force & bitmask,19/03/2027 8:30PM,,Pending,,
+32,Math I,26/03/2027 8:30PM,,Pending,,
+33,Math II,02/04/2027 8:30PM,,Pending,,
+34,DP I,09/04/2027 8:30PM,,Pending,,
+35,Progress Check,2027-04-10,2027-04-15,Pending,,
+36,Midterm break,2027-04-17,2027-04-22,Pending,,Estimated
+37,DP II,23/04/2027 8:30PM,,Pending,,
+38,Graph I,30/04/2027 8:30PM,,Pending,,
+39,Team formation & internal trials,2027-04-24,2027-05-06,Pending,,
+40,Team Selection Contest,2027-05-08,2027-05-13,Pending,,
+41,Official teams announced,2027-05-15,,Pending,,
+42,Eid break,2027-05-16,2027-05-19,Pending,,Estimated
+43,Finals break,2027-05-22,2027-06-18,Pending,,Estimated
+44,Weekly contests,2027-06-22,2027-07-27,Pending,,
+45,Full Simulation,2027-08-01,,Pending,,
+46,ECPC,2027-08-15,,Pending,,Estimated

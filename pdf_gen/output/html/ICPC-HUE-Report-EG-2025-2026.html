@@ -1,0 +1,1145 @@
+<!doctype html>
+<html lang="ar-EG" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <title>تقرير مجتمع ICPC HUE — موسم 2025/2026</title>
+  <style>
+    @page { size: A4 portrait; margin: 0; }
+
+    :root {
+      --accent: #E19D1B;
+      --accent-dark: #A8720F;
+      --card: #FBF3E3;
+      --border: #E8DCC4;
+      --head: #141414;
+      --body: #383838;
+      --muted: #7A7A7A;
+      --line: #ECECEC;
+      --font-head: 'Noto Kufi Arabic', 'Noto Sans Arabic', sans-serif;
+      --font-body: 'Noto Sans Arabic', 'Noto Kufi Arabic', sans-serif;
+    }
+
+    * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+    body {
+      margin: 0; padding: 0;
+      font-family: var(--font-body);
+      color: var(--body);
+      font-size: 11px;
+      line-height: 1.8;
+      background: #F0EDE6;
+    }
+    @media print { body { background: transparent; } }
+
+    .page {
+      width: 210mm; height: 297mm;
+      background: #fff;
+      padding: 13mm 15mm 11mm 15mm;
+      position: relative;
+      page-break-after: always;
+      overflow: hidden;
+      display: flex; flex-direction: column;
+    }
+    .page:last-child { page-break-after: auto; }
+    
+    /* latin fragments (urls, names of contests) keep LTR order */
+    .ltr { direction: ltr; unicode-bidi: isolate; display: inline-block; }
+
+    /* header / footer */
+    .top {
+      display: flex; justify-content: space-between; align-items: center;
+      padding-bottom: 8px; border-bottom: 1px solid var(--line); margin-bottom: 14px;
+    }
+    .brand { display: flex; align-items: center; gap: 8px; }
+    .brand img { height: 28px; }
+    .brand-txt { font-family: var(--font-head); font-size: 9px; font-weight: 700; color: var(--head); line-height: 1.4; }
+    .brand-txt span { color: var(--accent-dark); font-weight: 600; }
+    .pill {
+      background: var(--card); border: 1px solid var(--border); border-radius: 20px;
+      padding: 2px 10px; font-size: 8.5px; font-weight: 700; color: var(--accent-dark);
+      font-family: var(--font-head);
+    }
+    .foot {
+      margin-top: auto; padding-top: 6px; border-top: 1px solid var(--line);
+      display: flex; justify-content: space-between; font-size: 8px; color: var(--muted);
+    }
+
+    /* titles */
+    .kicker {
+      display: flex; align-items: center; gap: 8px;
+      font-family: var(--font-head); font-size: 9.5px; font-weight: 700; color: var(--accent-dark);
+    }
+    .kicker::before { content: ""; width: 20px; height: 3px; background: var(--accent); border-radius: 2px; }
+    h1 {
+      font-family: var(--font-head); font-size: 23px; font-weight: 800; color: var(--head);
+      margin: 2px 0 4px 0; line-height: 1.5;
+    }
+    h2 {
+      font-family: var(--font-head); font-size: 13px; font-weight: 700; color: var(--head);
+      margin: 0 0 4px 0; line-height: 1.5;
+    }
+    .lead { font-size: 11px; color: #4A4A4A; margin: 0 0 12px 0; }
+    p { margin: 0 0 6px 0; }
+
+    /* cards & grids */
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 11px 14px; }
+    .card-w { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 11px 14px; }
+    .card-dark { background: #1A1A1A; color: #EEE; border-radius: 12px; padding: 12px 15px; }
+    .card-dark h2 { color: var(--accent); }
+    .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+    .g3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 10px; }
+    .g4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 9px; margin-bottom: 10px; }
+
+    .stat { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 9px 11px; }
+    .stat b {
+      display: block; font-family: var(--font-head); font-size: 21px; font-weight: 800;
+      color: var(--head); line-height: 1.3; direction: ltr; text-align: right;
+    }
+    .stat span { font-size: 9px; color: var(--accent-dark); font-weight: 700; display: block; line-height: 1.5; }
+    .stat small { font-size: 8.5px; color: var(--muted); display: block; line-height: 1.5; }
+
+    ul.clean { margin: 0; padding: 0 16px 0 0; }
+    ul.clean li { margin-bottom: 3px; }
+    ul.clean li::marker { color: var(--accent); }
+
+    /* path / flow */
+    .flow { display: flex; align-items: stretch; gap: 6px; margin: 4px 0 10px 0; }
+    .flow .st {
+      flex: 1; text-align: center; background: #fff; border: 1px solid var(--border); border-radius: 10px;
+      padding: 6px 4px; font-size: 8.5px; color: var(--muted); line-height: 1.5;
+    }
+    .flow .st b { display: block; font-family: var(--font-head); font-size: 12px; color: var(--head); }
+    .flow .st.on { background: var(--accent); border-color: var(--accent-dark); color: #222; }
+    .flow .arr { align-self: center; color: var(--accent-dark); font-size: 13px; font-weight: 800; }
+
+    /* timeline */
+    .tl { position: relative; margin: 0; padding: 0; list-style: none; }
+    .tl::before { content: ""; position: absolute; right: 74px; top: 4px; bottom: 4px; width: 2px; background: var(--border); }
+    .tl li { display: flex; gap: 14px; margin-bottom: 7px; position: relative; }
+    .tl .d {
+      width: 66px; flex-shrink: 0; font-family: var(--font-head); font-size: 8.8px; font-weight: 700;
+      color: var(--accent-dark); line-height: 1.5; padding-top: 1px;
+    }
+    .tl li::after {
+      content: ""; position: absolute; right: 70px; top: 5px; width: 10px; height: 10px;
+      border-radius: 50%; background: #fff; border: 2px solid var(--accent);
+    }
+    .tl li.hl::after { background: var(--accent); }
+    .tl .c { flex: 1; padding-right: 8px; font-size: 9.8px; line-height: 1.65; }
+    .tl .c b { font-family: var(--font-head); color: var(--head); font-size: 10.3px; }
+
+    /* photos */
+    .ph { border-radius: 10px; overflow: hidden; border: 1px solid var(--border); background: #F4EADA; }
+    .ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .cap { font-size: 8.3px; color: var(--muted); margin-top: 2px; line-height: 1.5; }
+
+    /* table */
+    table.t { width: 100%; border-collapse: separate; border-spacing: 0; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; font-size: 9.3px; }
+    table.t th { background: var(--card); color: var(--head); font-family: var(--font-head); font-weight: 700; text-align: right; padding: 5px 9px; border-bottom: 1px solid var(--border); }
+    table.t td { padding: 4.5px 9px; border-bottom: 1px solid #F0E8DA; vertical-align: top; line-height: 1.6; }
+    table.t tr:last-child td { border-bottom: none; }
+    table.t tr:nth-child(even) td { background: #FDFAF5; }
+    table.t td.n { white-space: nowrap; font-weight: 600; color: var(--accent-dark); }
+
+    /* requests */
+    .req { display: flex; gap: 9px; align-items: flex-start; background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 7px 10px; }
+    .req .i {
+      width: 22px; height: 22px; flex-shrink: 0; border-radius: 6px; background: var(--accent);
+      color: #111; font-family: var(--font-head); font-weight: 800; font-size: 11px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .req b { font-family: var(--font-head); color: var(--head); font-size: 10.2px; display: block; line-height: 1.5; }
+    .req div { font-size: 9.3px; line-height: 1.6; }
+
+    .note { font-size: 8.3px; color: var(--muted); line-height: 1.6; }
+    .code {
+      direction: ltr; text-align: left; font-family: 'DejaVu Sans Mono', monospace; font-size: 8.8px;
+      background: #1A1A1A; color: #F2D9A6; border-radius: 8px; padding: 7px 10px; line-height: 1.55; margin-top: 6px;
+    }
+    .s { font-size: 10.3px; line-height: 1.8; }
+    .ct { font-family: var(--font-head); color: var(--head); font-size: 11px; font-weight: 700; display: block; line-height: 1.6; margin-bottom: 2px; }
+    .sec { margin: 4px 0 6px 0; }
+    .num { font-family: var(--font-head); font-weight: 800; color: var(--accent-dark); }
+    .zf > :not(.top):not(.foot) { zoom: 1.16; }
+    .zg > :not(.top):not(.foot) { zoom: 1.1; }
+    .ledger .sheet-table td { padding: 4.6px 5px; }
+    .zj > :not(.top):not(.foot) { zoom: 1.42; }
+    .tl.loose li { margin-bottom: 13px; }
+    .sess table.t td { padding: 6.2px 9px; }
+    .zh > :not(.top):not(.foot) { zoom: 1.32; }
+    .zi > :not(.top):not(.foot) { zoom: 1.24; }
+    .shot { border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
+    .shot img { width: 100%; display: block; }
+    /* spreadsheet ledger (copied from the 2025-2027 report, RTL) */
+    .sheet-card { background: #fff; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+    .sheet-title-bar { background: #FAF6EE; color: var(--accent-dark); font-family: var(--font-head); font-weight: 800; font-size: 9px; padding: 4px 8px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+    .sheet-table { width: 100%; border-collapse: collapse; font-size: 8.6px; line-height: 1.45; }
+    .sheet-table th { background: #F5F1E8; color: #7A7062; font-weight: 700; font-size: 8px; padding: 3px 5px; border-bottom: 1px solid #DFD8CC; border-left: 1px solid #DFD8CC; text-align: right; }
+    .sheet-table th:last-child { border-left: none; text-align: left; }
+    .sheet-table td { padding: 2.6px 5px; border-bottom: 1px solid #ECE7DE; border-left: 1px solid #ECE7DE; color: var(--body); vertical-align: middle; }
+    .sheet-table td:last-child { border-left: none; }
+    .sheet-table td.col-idx { font-family: 'DejaVu Sans Mono', monospace; font-size: 7.6px; font-weight: 700; color: #8C8275; background: #F7F4EC; text-align: center; width: 20px; }
+    .sheet-table td.col-date { font-size: 8px; color: #6B6255; text-align: left; white-space: nowrap; }
+    .sheet-table tr:nth-child(even) td:not(.col-idx) { background: #FAF8F4; }
+    .sheet-table tr.row-contest td { background: #FEF7E8 !important; color: #8C5D08 !important; font-weight: 700; }
+    .sheet-table tr.row-contest td.col-idx { background: #FDE8B5 !important; color: #784E04 !important; }
+    .sheet-table tr.row-break td { background: #F3F0EA !important; color: #8A8175 !important; font-style: italic; }
+    .tag-accent { display: inline-block; background: var(--accent); color: #000; font-weight: 700; font-size: 8.5px; padding: 1px 6px; border-radius: 4px; margin-right: 4px; }
+    .pl { font-family: var(--font-head); font-weight: 700; color: var(--accent-dark); }
+    .ok { font-family: var(--font-head); font-weight: 700; color: #2E7D4F; }
+  </style>
+</head>
+<body>
+<section class="page" style="padding:0; background:#0A0A0A;">
+  <div style="position:absolute; inset:0;">
+    <img src="../../report/ecpc_qulifcatio/photo_2026-09-23_12-32-07.jpg" alt="وفد جامعة حورس في تصفيات ECPC في إسكندرية"
+         style="width:100%; height:100%; object-fit:cover; object-position:center 35%; filter:brightness(0.72);">
+  </div>
+  <div style="position:absolute; top:0; left:0; right:0; height:25%; background:linear-gradient(to bottom, rgba(0,0,0,.6), transparent);"></div>
+  <div style="position:absolute; bottom:0; left:0; right:0; height:62%; background:linear-gradient(to top, rgba(0,0,0,.93) 0%, rgba(0,0,0,.6) 55%, transparent 100%);"></div>
+
+  <div style="position:absolute; top:0; left:0; right:0; display:flex; justify-content:space-between; align-items:center; padding:16px 22px;">
+    <div style="display:flex; align-items:center; gap:9px;">
+      <img src="../../report/assets/horus_logo.png" style="height:30px; filter:brightness(1.3);" alt="شعار جامعة حورس">
+      <div style="font-family:var(--font-head); font-size:9px; font-weight:700; color:rgba(255,255,255,.88); line-height:1.5;">
+        جامعة حورس — مصر<br><span style="color:#E19D1B;">كلية الذكاء الاصطناعي</span>
+      </div>
+    </div>
+    <div style="font-family:var(--font-head); font-size:8.5px; font-weight:700; color:#E19D1B; border:1px solid rgba(225,157,27,.45); background:rgba(225,157,27,.15); border-radius:20px; padding:3px 12px;">
+      أكتوبر 2026
+    </div>
+  </div>
+
+  <div style="position:absolute; bottom:0; left:0; right:0; padding:0 26px 20px 26px;">
+    <div class="kicker" style="color:#E19D1B; margin-bottom:6px;">تقرير مقدَّم للإشراف الأكاديمي</div>
+    <h1 style="color:#fff; font-size:31px; line-height:1.45; margin:0 0 4px 0;">
+      مجتمع <span class="ltr">ICPC HUE</span><br>حصاد موسم 2025/2026
+    </h1>
+    <p style="font-size:12px; color:rgba(255,255,255,.78); margin:0 0 16px 0; max-width:470px;">
+      مجتمع طلابي بيدرّب طلاب جامعة حورس على البرمجة التنافسية ويجهّزهم لمسابقة <span class="ltr">ICPC</span> العالمية.
+      في موسم واحد: 16 فريق في تصفيات <span class="ltr">ECPC</span>، واستضفنا أول مسابقة برمجة تنافسية في إقليم دمياط، ومنصة تدريب كاملة بناها طلابنا. ودي الحاجات اللي محتاجينها عشان نكمّل.
+    </p>
+
+    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:16px;">
+      <div style="background:rgba(225,157,27,.16); border:1px solid rgba(225,157,27,.45); border-radius:10px; padding:7px 10px;">
+        <div style="font-family:var(--font-head); font-size:19px; font-weight:800; color:#F0B52A; line-height:1.3;">16</div>
+        <div style="font-size:8.5px; color:rgba(255,255,255,.75); line-height:1.5;">فريق مثّلوا حورس في <span class="ltr">ECPC</span></div>
+      </div>
+      <div style="background:rgba(225,157,27,.16); border:1px solid rgba(225,157,27,.45); border-radius:10px; padding:7px 10px;">
+        <div style="font-family:var(--font-head); font-size:19px; font-weight:800; color:#F0B52A; line-height:1.3;">+800</div>
+        <div style="font-size:8.5px; color:rgba(255,255,255,.75); line-height:1.5;">طالب متسجّل على منصة <span class="ltr">icpchue.com</span></div>
+      </div>
+      <div style="background:rgba(225,157,27,.16); border:1px solid rgba(225,157,27,.45); border-radius:10px; padding:7px 10px;">
+        <div style="font-family:var(--font-head); font-size:19px; font-weight:800; color:#F0B52A; line-height:1.3;">650</div>
+        <div style="font-size:8.5px; color:rgba(255,255,255,.75); line-height:1.5;">مسألة متقسّمة على 3 مستويات</div>
+      </div>
+      <div style="background:rgba(225,157,27,.16); border:1px solid rgba(225,157,27,.45); border-radius:10px; padding:7px 10px;">
+        <div style="font-family:var(--font-head); font-size:19px; font-weight:800; color:#F0B52A; line-height:1.3;">+290</div>
+        <div style="font-size:8.5px; color:rgba(255,255,255,.75); line-height:1.5;">تحديث برمجي على المنصة</div>
+      </div>
+    </div>
+
+    <div style="border-top:1px solid rgba(255,255,255,.15); padding-top:9px; display:flex; justify-content:space-between; font-size:8.3px; color:rgba(255,255,255,.5);">
+      <span>وفد جامعة حورس في تصفيات <span class="ltr">ECPC</span> — الأكاديمية العربية للعلوم والتكنولوجيا، إسكندرية، أغسطس 2026</span>
+      <span>صفحة 1 من 19</span>
+    </div>
+  </div>
+</section>
+
+<section class="page zi">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt">مجتمع <span class="ltr">ICPC HUE</span><br><span>جامعة حورس — مصر</span></div></div>
+    <div class="pill">01 · إحنا مين</div>
+  </div>
+
+  <div class="kicker">تعريف بالمجتمع</div>
+  <h1>من نحن، ولماذا يستحق هذا العمل الدعم</h1>
+  <p class="lead">
+    <span class="ltr">ICPC HUE</span> مجتمع طلابي بدأ في كلية الذكاء الاصطناعي، وبيشتغل على مستوى جامعة حورس كلها بكل كلياتها.
+    بندرّب الطلاب طول موسم كامل (سنة دراسية) عشان يشاركوا في مسابقة <span class="ltr">ICPC</span>.</p>
+  <p class="s">وفكرة المجتمع مش جديدة: بعد ما مؤسسة <span class="ltr">ECPC</span> في مصر طلبت من كل جامعة تكوّن فريق طلابي يدرّب طلابها، بقى تقريبًا لكل جامعة مشاركة مجتمع زينا. وإحنا مجتمع جامعة حورس، شغالين من نوفمبر 2025، وعايزين يبقى لحورس مكان ثابت وسط الجامعات دي.
+  </p>
+
+
+  <h2>يعني إيه مسابقة ICPC؟</h2>
+  <p class="s">دي أكبر وأقدم مسابقة برمجة جامعية في العالم. الطلاب بيتنافسوا في فرق من 3 أفراد من نفس الجامعة، على جهاز واحد، عشان يحلوا مجموعة مسائل برمجية في 5 ساعات. الفريق اللي يحل مسائل أكتر في وقت أقل هو اللي يكسب. والفريق بيتأهل عبر المراحل دي:</p>
+  <div class="flow">
+    <div class="st"><b>تصفيات الجامعة</b>فرق نفس الجامعة بتتنافس الأول</div>
+    <div class="arr">←</div>
+    <div class="st on"><b class="ltr">ECPC</b>المسابقة المصرية، بتتعمل في الصيف في أغسطس</div>
+    <div class="arr">←</div>
+    <div class="st"><b class="ltr">ACPC</b>الدول العربية وأفريقيا</div>
+    <div class="arr">←</div>
+    <div class="st"><b>نهائيات العالم</b><span class="ltr">ICPC World Finals</span></div>
+  </div>
+
+  <div class="card" style="margin-bottom:10px;">
+    <h2>بنذاكر إيه؟ «حل المشكلات» <span class="ltr">Problem Solving</span></h2>
+    <div style="display:flex; gap:14px; align-items:center;">
+      <div style="flex:1.3;">
+        <p class="s">بناخد مسألة منطقية ونحوّلها لبرنامج صح وسريع. مثال بسيط: معاك 4 عِصيّ بأطوال مختلفة، تقدر تعمل بيهم مربع؟
+          لو اديناك الأطوال <b>8 6 11 12</b> يبقى الإجابة لأ، عشان الأضلاع مش متساوية. ولو اديناك <b>8 8 8 8</b> يبقى الإجابة أيوه.</p>
+        <p class="s" style="margin:0;">ومع التقدّم المسائل بتصعب ومحتاجة خوارزميات وهياكل بيانات زي <span class="ltr">STL</span> والبحث الثنائي والبرمجة الديناميكية والرسوم البيانية، ولازم الحل يشتغل في جزء من الثانية على مدخلات ضخمة.</p>
+      </div>
+      <div style="flex:1;">
+        <div class="code" style="font-size:9.5px; margin:0;">// المدخل: 8 8 8 8<br>read a, b, c, d<br>print(a == b &amp;&amp; b == c &amp;&amp; c == d)<br>// المخرج: true</div>
+      </div>
+    </div>
+  </div>
+
+  <h2>ليه هي مهمة؟</h2>
+  <div class="g2" style="margin-bottom:0;">
+    <div class="card-w">
+      <span class="ct">للطالب</span>
+      <ul class="clean s">
+        <li><b>مصفاة للشركات:</b> المسابقة بتبيّن مين بيعرف يبرمج بجد وفاهم المواضيع الصعبة.</li>
+        <li><b>طريق للشغل:</b> إنترفيوهات التوظيف في شركات زي <span class="ltr">Noon</span> وشركات <span class="ltr">FAANG</span> العالمية مبنية على مسائل <span class="ltr">Problem Solving</span>، واللي مش بيتدرّب عليها صعب يعدّيها.</li>
+        <li><b>سي في أقوى:</b> المشاركة والشغل في اللجان خبرة حقيقية بتتكتب في الـ <span class="ltr">CV</span>.</li>
+      </ul>
+    </div>
+    <div class="card-w">
+      <span class="ct">للجامعة</span>
+      <ul class="clean s">
+        <li><b>اسم حورس في النتايج:</b> اسم الجامعة بيظهر في ترتيب المسابقة قدام كل جامعات مصر.</li>
+        <li><b>خريجين مطلوبين:</b> طلاب عندهم أساس قوي في البرمجة والتفكير المنطقي، وده اللي سوق العمل بيدوّر عليه.</li>
+        <li><b>نشاط مستمر:</b> متسابقين النهارده هم مدرّبين بكره، فالخبرة بتتنقل من دفعة للتانية جوه الجامعة.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="foot"><span>مجتمع <span class="ltr">ICPC HUE</span> — جامعة حورس</span><span>صفحة 2 من 19</span></div>
+</section>
+
+<section class="page zf">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt">مجتمع <span class="ltr">ICPC HUE</span><br><span>جامعة حورس — مصر</span></div></div>
+    <div class="pill">02 · بنشتغل إزاي</div>
+  </div>
+
+  <div class="kicker">نظام ثابت بيتكرر كل موسم</div>
+  <h1>كيف نُدرّب، وكيف ننظّم أنفسنا</h1>
+  <p class="lead">عندنا خطة ثابتة كل سنة، الطالب بيبدأ فيها من الصفر ويوصل في آخرها لفريق جاهز لتصفيات <span class="ltr">ECPC</span>.</p>
+
+  <h2>دورة التدريب الأسبوعية</h2>
+  <div class="flow" style="margin-bottom:6px;">
+    <div class="st on"><b>سيشن الشرح</b>أونلاين أو أوفلاين</div>
+    <div class="arr">←</div>
+    <div class="st"><b>شيت المسائل</b>على المنصة بعد كل سيشن</div>
+    <div class="arr">←</div>
+    <div class="st"><b>متابعة المنتور</b>سجل يومي ومراجعة كل أسبوع</div>
+    <div class="arr">←</div>
+    <div class="st"><b><span class="ltr">Up Solve</span></b>بنحل الصعب مع بعض ونتبادل الخبرة</div>
+  </div>
+  <p class="s">ممكن السيشنات توصل لاتنين في الأسبوع وقت الضغط. والتدريب بيكمل طول الترم الأول والتاني وبعدين الصيف، والمواضيع بتتغير حسب المرحلة ومستوى الطالب، مع مسابقات تدريبية كل فترة وبعدها مسابقات اختيار لتكوين الفرق.</p>
+
+  <div class="g2">
+    <div class="card">
+      <h2>أهدافنا</h2>
+      <ul class="clean s">
+        <li>ندرّب الطلاب المسجّلين معانا طول الموسم لحد ما يوصلوا للمسابقة جاهزين.</li>
+        <li>نساعدهم يوصلوا لفرص شغل ويبنوا سي في من خلال النشاطات.</li>
+        <li>نبني أدوات تدريب خاصة بجامعة حورس مش موجودة في جامعات تانية.</li>
+        <li>نزوّد عدد فرق حورس اللي بتتأهل لمراحل <span class="ltr">ECPC</span> المتقدمة كل سنة.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>مستويات التدريب</h2>
+      <ul class="clean s">
+        <li><b>المستوى 0:</b> أساسيات لغة البرمجة للي بيبدأ من الصفر.</li>
+        <li><b>المستوى 1:</b> بداية البرمجة التنافسية: <span class="ltr">STL</span> والبحث الثنائي والمؤشرين.</li>
+        <li><b>المستوى 2:</b> خوارزميات وهياكل بيانات متقدمة على مستوى المسابقات.</li>
+        <li>الطلاب بيتوزّعوا على مجموعات حسب مستواهم وتقدّمهم.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>4 لجان، والعضو بيختار لجنته بنفسه</h2>
+  <p class="s">مش بنجبر أي عضو على لجنة معيّنة. كل طالب بيختار الدور اللي يناسب مهاراته، فبيلتزم بيه أكتر.</p>
+  <div class="g2" style="gap:8px;">
+    <div class="card-w"><span class="ct">1 · المدرّبين · <span class="ltr">Instructors</span></span><div class="s">بيشرحوا السيشنات الأسبوعية، ويحلوا المسائل خطوة بخطوة، ويجهّزوا الشيتات. لازم يكون عندهم فهم عميق وأمانة علمية وصبر على المبتدئين.</div></div>
+    <div class="card-w"><span class="ct">2 · المنتورز · <span class="ltr">Mentors</span></span><div class="s">كل منتور بيتابع مجموعة صغيرة على طول، ويكلّم الطالب لما يتأخر، ويتابع تقدّمه وحالته عشان ما يبطّلش حل.</div></div>
+    <div class="card-w"><span class="ct">3 · الميديا · <span class="ltr">Media</span></span><div class="s">بريزنتيشنز وفيديوهات (<span class="ltr">Premiere</span> و<span class="ltr">After Effects</span>) وبوستات بتوثّق إنجازات الطلاب وبتجيب أعضاء جداد.</div></div>
+    <div class="card-w"><span class="ct">4 · اللجنة التنظيمية · <span class="ltr">Organizing Committee</span></span><div class="s">حجز المعامل مع إدارة الجامعة، وتنظيم الفعاليات والمسابقات الأوفلاين، والطباعة والمستلزمات. فيها دلوقتي 11 عضو.</div></div>
+  </div>
+
+  <div class="card-dark" style="margin-bottom:0;">
+    <h2>كوّنّا اللجان إزاي: على مرحلتين</h2>
+    <div class="g2" style="margin:0; gap:14px;">
+      <div class="s" style="color:#DDD;"><b style="color:#F0B52A;">المرحلة الأولى: النواة التقنية.</b> عملنا إنترفيوهات مع أحسن 5 فرق في تصفيات <span class="ltr">ECPC</span> (4 من الذكاء الاصطناعي وواحد من الهندسة). كل مرشح ذاكر موضوع زي <span class="ltr">STL</span> في 5 أيام وبعدين شرحه للمجتمع، بإشراف م. فاطمة مجدي و م. سارة لطفي و م. رأفت محمد.</div>
+      <div class="s" style="color:#DDD;"><b style="color:#F0B52A;">المرحلة التانية: حملة «<span class="ltr">Hire Up</span>».</b> فتحنا التقديم لكل طلاب حورس من خلال بوابة <span class="ltr">icpchue.com/job</span> للميديا والتنظيم، وجالنا 50 متقدم.</div>
+    </div>
+  </div>
+
+  <div class="foot"><span>المصدر: تقرير المجتمع، سبتمبر 2026</span><span>صفحة 3 من 19</span></div>
+</section>
+
+<section class="page zi">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt">مجتمع <span class="ltr">ICPC HUE</span><br><span>جامعة حورس — مصر</span></div></div>
+    <div class="pill">03 · حصاد الموسم (1/2)</div>
+  </div>
+
+  <div class="kicker">نوفمبر 2025 – مارس 2026</div>
+  <h1>ما أنجزناه خلال الموسم الماضي: البداية</h1>
+  <p class="lead">أهم محطات الموسم بالترتيب، من أول إعلان في نوفمبر 2025 لحد اليوم التعريفي في مارس 2026.</p>
+
+  <div class="g4">
+    <div class="stat"><b>+500</b><span>طالب سجّلوا في التدريب</span><small>خلال الموسم</small></div>
+    <div class="stat"><b>21</b><span>طالب كمّلوا التدريب</span><small>لحد آخر الموسم في 7 فرق</small></div>
+    <div class="stat"><b>16</b><span>فريق مثّلوا حورس</span><small>في تصفيات ECPC 2026</small></div>
+    <div class="stat"><b>+22</b><span>ساعة شرح متسجّلة</span><small>موجودة على المنصة</small></div>
+  </div>
+
+  <ul class="tl loose" style="margin-top:8px;">
+    <li class="hl"><div class="d">26 – 28 نوفمبر 2025</div><div class="c"><b>إعلان المجتمع وفتح التسجيل:</b> أول مجتمع للبرمجة التنافسية في كلية الذكاء الاصطناعي. أكتر من 300 طالب سجّلوا في الأيام الأولى، والمنصة اتفتحت 28 نوفمبر.</div></li>
+    <li><div class="d">7 ديسمبر</div><div class="c"><b>السيشن الافتتاحية لايف</b> بحضور أكتر من 160 طالب، وقفلنا الفورم بعد ما الطلبات عدّت 250 طلب.</div></li>
+    <li class="hl"><div class="d">8 – 12 ديسمبر</div><div class="c"><b>معسكر القبول:</b> سيشن البداية (8 ديسمبر على تيليجرام)، والشروط و<span class="ltr">Control Flow</span> (9)، و<span class="ltr">IF / ELSE &amp; SWITCH</span> (10)، ومراجعة وحل مسائل (11)، وامتحان القبول (12 ديسمبر).</div></li>
+    <li><div class="d">14 ديسمبر</div><div class="c"><b>فيديو استعراض المنصة</b> بعد آخر تحديث، يشرح للطالب يستخدمها إزاي.</div></li>
+    <li><div class="d">20 – 26 ديسمبر</div><div class="c"><b>المعسكر الشتوي:</b> سيشن 20 ديسمبر، ونزول الشيت الأول وفيديو شرح التسليم (24 ديسمبر)، وتشغيل لوحة الصدارة، ورفع تسجيلات السيشنات الأربعة على المنصة (26 ديسمبر).</div></li>
+    <li class="hl"><div class="d">1 – 2 يناير 2026</div><div class="c"><b>معسكر <span class="ltr">Programming 1</span>:</b> مراجعة كاملة للمنهج ولايف حل مسائل، ورفعنا التسجيل قبل امتحان الكلية يوم 3 يناير.</div></li>
+    <li><div class="d">3 يناير</div><div class="c"><b>الإعلان الرسمي عن المنصة التعليمية</b> بفيديو تعريفي: مُقيِّم فوري، والمدخل والمخرج جنب بعض، ومكتبة السيشنات، ولوحات الصدارة.</div></li>
+    <li><div class="d">26 يناير</div><div class="c"><b>رجوع الفريق بعد الامتحانات</b> والإعلان عن المعسكر الشتوي في الإجازة.</div></li>
+    <li class="hl"><div class="d">فبراير 2026</div><div class="c"><b>تسجيل الفريق رسميًا</b> في رعاية الطلاب تحت إشراف د. بسمة مصطفى ود. ياسر العوضي. ومنهج الـ 650 مسألة اكتمل وإضافة <span class="ltr">Verdict Helper</span> نزلت (9 فبراير)، وسجّلنا <span class="ltr">icpchue.com</span> (25 فبراير).</div></li>
+    <li><div class="d">لحد 6 مارس</div><div class="c"><b>17 ساعة لايف</b> في المستوى 0: أنواع البيانات، والتكرار، والمصفوفات، والدوال.</div></li>
+    <li class="hl"><div class="d">12 مارس 2026</div><div class="c"><b>اليوم التعريفي</b> في قاعة H403 بكلية الذكاء الاصطناعي، أول فعالية أوفلاين رسمية لينا (التفاصيل صفحة 7).</div></li>
+  </ul>
+
+  <div class="foot"><span>المصادر: بوستات صفحة <span class="ltr">facebook.com/icpchue</span>، وتقارير المجتمع اللي قبل كده، وسجل تطوير المنصة</span><span>صفحة 4 من 19</span></div>
+</section>
+
+<section class="page zf">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt">مجتمع <span class="ltr">ICPC HUE</span><br><span>جامعة حورس — مصر</span></div></div>
+    <div class="pill">04 · حصاد الموسم (2/2)</div>
+  </div>
+
+  <div class="kicker">مارس – أكتوبر 2026</div>
+  <h1>ما أنجزناه خلال الموسم الماضي: من التدريب إلى المنافسة</h1>
+  <p class="lead">من تكوين الفرق لحد تصفيات <span class="ltr">ECPC</span>، وبعدها التجهيز للموسم الجديد.</p>
+
+  <ul class="tl" style="margin-top:4px;">
+    <li><div class="d">14 – 15 مارس</div><div class="c"><b>تسجيل بخطوة واحدة</b> على <span class="ltr">icpchue.com/register</span> بدل الفورم، وبداية <b>تحدّي التيشيرت</b> لصاحب المركز الأول في لوحة الصدارة.</div></li>
+    <li><div class="d">2 – 4 أبريل</div><div class="c"><b>شرح مسابقة <span class="ltr">ECPC</span></b> ومراحلها وشروطها ورسومها، وتكريم مصطفى كمال بطل شهر مارس (3 أبريل)، ولايف للإجابة عن الأسئلة (4 أبريل).</div></li>
+    <li class="hl"><div class="d">7 أبريل</div><div class="c"><b>أول مسابقة لـ <span class="ltr">ICPC HUE</span></b> لتكوين الفرق في معمل E425 بكلية الهندسة: إبراهيم مطر، ثم أحمد وليد، ثم نهى كمال.</div></li>
+    <li><div class="d">10 أبريل</div><div class="c"><b>سيشن <span class="ltr">Functions</span> لايف،</b> ورفع سيشنات <span class="ltr">Functions</span> و<span class="ltr">Recursion</span> على المنصة.</div></li>
+    <li class="hl"><div class="d">14 – 30 أبريل</div><div class="c"><b>مسابقة تكوين الفرق التانية</b> في قاعة A209 (14 أبريل)، وقفل تسجيل <span class="ltr">ECPC</span> يوم 30 أبريل بـ 7 فرق: 4 من المستوى الأول و3 من التاني.</div></li>
+    <li><div class="d">مايو 2026</div><div class="c"><b>اكتمال سيشنات مسار المبتدئين:</b> البيانات والشروط، والتكرار، والمصفوفات، والنصوص، والدوال، والاستدعاء الذاتي.</div></li>
+    <li class="hl"><div class="d">12 مايو</div><div class="c"><b>تصفيات <span class="ltr">ECPC</span> المحلية في الكلية</b> تحت رعاية أ.د. إبراهيم صابر رئيس مجلس أمناء الجامعة، بمشاركة 6 فرق.</div></li>
+    <li><div class="d">صيف 2026</div><div class="c"><b>تدريب المستوى 1</b> بسيشنات <span class="ltr">Time Complexity</span> و<span class="ltr">STL 1</span> على المنصة، وشهر مراجعة مكثفة للموضوعات المتقدمة قبل التصفيات.</div></li>
+    <li class="hl"><div class="d">26 يوليو – 9 أغسطس</div><div class="c"><b>استضافة مسابقة <span class="ltr">DCC</span></b> من تنظيم <span class="ltr">ACPC DU</span>: تسجيل لحد 29 يوليو، وجولة أونلاين 31 يوليو، ونهائي في الكلية 6 أغسطس، وإعلان الفايزين 9 أغسطس.</div></li>
+    <li class="hl"><div class="d">17 – 25 أغسطس</div><div class="c"><b>تصفيات <span class="ltr">ECPC</span>:</b> إعلان فرقنا (17)، والسفر لإسكندرية (18)، و16 فريق مثّلوا حورس لأول مرة (24)، وبوست رحلة التصفيات (25).</div></li>
+    <li><div class="d">23 – 27 أغسطس</div><div class="c"><b>صفحة أسئلة شائعة بالعربي</b> عن <span class="ltr">ICPC</span> على المنصة، وبوابة التطوّع <span class="ltr">icpchue.com/job</span>.</div></li>
+    <li><div class="d">سبتمبر 2026</div><div class="c"><b>تجهيز الموسم الجديد:</b> مقابلات أفضل 5 فرق لاختيار المدرّبين والمنتورز، ولوحة المنتورز (2 سبتمبر)، وسجل المذاكرة اليومي (8 سبتمبر)، ونقل السيشنات ليوتيوب.</div></li>
+    <li><div class="d">23 – 24 سبتمبر</div><div class="c"><b>تكريم Board موسم 2025/2026،</b> وحملة «<span class="ltr">Hire Up</span>» للانضمام لفريق موسم 2027 وجالها 50 متقدم.</div></li>
+    <li class="hl"><div class="d">2 أكتوبر 2026</div><div class="c"><b>فتح تسجيل المستوى 0</b> للموسم الجديد على المنصة.</div></li>
+  </ul>
+
+  <div class="foot"><span>المصادر: بوستات صفحة <span class="ltr">facebook.com/icpchue</span>، وتقارير المجتمع اللي قبل كده، وسجل تطوير المنصة</span><span>صفحة 5 من 19</span></div>
+</section>
+
+<section class="page zf sess">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt">مجتمع <span class="ltr">ICPC HUE</span><br><span>جامعة حورس — مصر</span></div></div>
+    <div class="pill">05 · السيشنات</div>
+  </div>
+
+  <div class="kicker">ديسمبر 2025 – أغسطس 2026</div>
+  <h1>الـ 14 سيشن التي شرحناها في الموسم</h1>
+  <p class="lead">كل سيشن باليوم اللي اتشرحت فيه والمحتوى اللي اتقدّم فيها. التواريخ من إعلانات قناة تيليجرام وصفحة فيسبوك، وتاريخ نزول التسجيل على المنصة.</p>
+
+  <div class="g4">
+    <div class="stat"><b>14</b><span>سيشن شرح</span><small>من 8 ديسمبر 2025 لحد أغسطس 2026</small></div>
+    <div class="stat"><b>12</b><span>سيشن متسجّلة</span><small>على المنصة في 3 معسكرات</small></div>
+    <div class="stat"><b>+17</b><span>ساعة لايف</span><small>للمستوى 0 لحد 6 مارس 2026</small></div>
+    <div class="stat"><b>+22</b><span>ساعة شرح متسجّلة</span><small>موجودة للطلاب في أي وقت</small></div>
+  </div>
+
+  <table class="t" style="margin-bottom:8px;">
+    <tr><th style="width:4%;">#</th><th style="width:19%;">اليوم</th><th style="width:22%;">السيشن</th><th>المحتوى</th></tr>
+    <tr><td class="n">1</td><td class="n">الاثنين 8 ديسمبر 2025</td><td><b class="ltr">Data Types &amp; I/O</b></td><td>أول سيشن في معسكر القبول: الإدخال والإخراج، والعمليات الحسابية، وأنواع البيانات. لايف 10 بالليل.</td></tr>
+    <tr><td class="n">2</td><td class="n">الثلاثاء 9 ديسمبر</td><td><b class="ltr">Condition &amp; Control Flow</b></td><td><span class="ltr">if / else</span>، والمقارنات والـ <span class="ltr">logical operators</span>، و<span class="ltr">switch / break / continue</span>، مع تطبيقات من المسابقات.</td></tr>
+    <tr><td class="n">3</td><td class="n">الأربعاء 10 ديسمبر</td><td><b class="ltr">IF / ELSE &amp; SWITCH</b></td><td>إزاي البرنامج ياخد قرار ويختار المسار الصح، و<span class="ltr">switch case</span> للحالات المتعددة.</td></tr>
+    <tr><td class="n">4</td><td class="n">الخميس 11 ديسمبر</td><td><b class="ltr">Revision + Problem Solving</b></td><td>مراجعة أول 3 سيشنات وحل 3 مسائل من <span class="ltr">Codeforces</span>، قبل امتحان القبول يوم الجمعة 12 ديسمبر.</td></tr>
+    <tr><td class="n">5</td><td class="n">السبت 20 ديسمبر</td><td><b class="ltr">Time &amp; Space Complexity</b></td><td>أول سيشن في المعسكر الشتوي: حل 6 مسائل من <span class="ltr">Sheet 1</span> و<span class="ltr">Sheet 2</span>، وشرح التعقيد وإزاي تختار الحل الأسرع.</td></tr>
+    <tr><td class="n">6</td><td class="n">الخميس 1 يناير 2026</td><td><b class="ltr">Programming 1: Full Revision</b></td><td>شرح منهج <span class="ltr">Programming 1</span> كامل في سيشن متسجّلة، قبل امتحان الكلية يوم 3 يناير.</td></tr>
+    <tr><td class="n">7</td><td class="n">الخميس 1 يناير (بالليل)</td><td><b class="ltr">Programming 1: Exam Training</b></td><td>لايف حل أسئلة: أفكار الامتحانات، والتريكات اللي بتقابل الطالب وهو بيكتب الكود.</td></tr>
+    <tr><td class="n">8</td><td class="n">الجمعة 2 يناير</td><td><b>تكملة <span class="ltr">Exam Training</span></b></td><td>لايف الساعة 1 الظهر تكملة لبث اليوم اللي قبله، يوم قبل الامتحان.</td></tr>
+    <tr><td class="n">9</td><td class="n">الجمعة 10 أبريل</td><td><b class="ltr">Functions</b></td><td>نص ساعة أسئلة عن <span class="ltr">ECPC</span>، وبعدها شرح الـ <span class="ltr">Functions</span> مع مراجعة على اللي فات. لايف 8:30 بالليل.</td></tr>
+    <tr><td class="n">10</td><td class="n">أبريل (نزلت 29 أبريل)</td><td><b class="ltr">Recursion</b></td><td>الاستدعاء الذاتي، والـ <span class="ltr">base case</span>، وحل مسائل بطريقة <span class="ltr">recursive</span>.</td></tr>
+    <tr><td class="n">11</td><td class="n">مايو 2026</td><td><b class="ltr">Arrays &amp; Ad-Hocs</b></td><td>المصفوفات <span class="ltr">1D</span> و<span class="ltr">2D</span>، وطريقة التفكير في مسائل الـ <span class="ltr">ad-hoc</span>.</td></tr>
+    <tr><td class="n">12</td><td class="n">مايو 2026</td><td><b class="ltr">Complexity</b></td><td><span class="ltr">Big-O</span>، وإزاي تقدّر وقت تشغيل الحل من الـ <span class="ltr">constraints</span> قبل ما تكتبه.</td></tr>
+    <tr><td class="n">13</td><td class="n">مايو 2026</td><td><b class="ltr">Contest #3</b></td><td>مسابقة لايف تحت ضغط الوقت، وبعدها مراجعة الحلول مع الطلاب.</td></tr>
+    <tr><td class="n">14</td><td class="n">أغسطس (نزلت 3 أغسطس)</td><td><b class="ltr">STL 1</b></td><td>أول سيشن في المستوى 1: <span class="ltr">vector</span> و<span class="ltr">pair</span> و<span class="ltr">set</span> و<span class="ltr">map</span>، في التجهيز لتصفيات <span class="ltr">ECPC</span>.</td></tr>
+  </table>
+
+  <div class="card" style="margin-bottom:0;">
+    <p class="s" style="margin:0;"><b>وكمان:</b> لايفات المستوى 0 للدفعة الجديدة في فبراير ومارس 2026 على جروب التدريب (أنواع البيانات، والتكرار، والمصفوفات، والدوال)، ولايف أسئلة <span class="ltr">ECPC</span> يوم 4 أبريل. سيشنات 11 و12 و13 اتشرحت على جروب التدريب ونزلت على المنصة قبل يونيو 2026.</p>
+  </div>
+
+  <div class="foot"><span>المصادر: قناة <span class="ltr">t.me/ICPCHUE</span>، وصفحة <span class="ltr">facebook.com/icpchue</span>، وسجل تطوير المنصة</span><span>صفحة 6 من 19</span></div>
+</section>
+
+<section class="page zf">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt">مجتمع <span class="ltr">ICPC HUE</span><br><span>جامعة حورس — مصر</span></div></div>
+    <div class="pill">06 · فعاليات جوه الجامعة</div>
+  </div>
+
+  <div class="kicker">على أرض الواقع</div>
+  <h1>اليوم التعريفي، ومسابقات تكوين الفرق، والتصفيات المحلية</h1>
+  <p class="lead">تلات محطات أوفلاين جوه جامعة حورس حوّلت التدريب الأونلاين لمجتمع حقيقي وفرق جاهزة.</p>
+
+  <div class="card" style="margin-bottom:9px;">
+    <h2>1 · اليوم التعريفي · الخميس 12 مارس 2026 · 12 – 2 الضهر · قاعة H403</h2>
+    <div style="display:flex; gap:10px;">
+      <div style="flex:1.1;">
+        <p class="s">أول فعالية أوفلاين رسمية لينا في كلية الذكاء الاصطناعي. شرحنا فيها يعني إيه <span class="ltr">ICPC HUE</span>، والطالب يستخدم <span class="ltr">Codeforces</span> ومنصتنا إزاي، مع قصص ونصايح من أبطال <span class="ltr">ACPC DU</span>:</p>
+        <p class="s" style="font-weight:600; color:var(--head); margin-bottom:4px;">م. عاصم جادو · م. حسام حسن · م. بلال البابلي · م. عمر بدر · م. عبده سليم</p>
+        <p class="s" style="margin:0;">برعاية د. بسمة مصطفى ود. ياسر العوضي، وإشراف م. فاطمة مجدي و م. رأفت محمد، وتنظيم فريق <span class="ltr">AXIS</span>. واتوزّعت تيشيرتات المجتمع وستيكرات إنجازات المنصة.</p>
+      </div>
+      <div style="flex:1;">
+        <div class="ph" style="height:38mm;"><img src="../../report/assets/events/orientation_group.jpg" alt="صورة جماعية في اليوم التعريفي"></div>
+        <div class="cap">الحضور والمتحدثين في آخر اليوم التعريفي.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-w" style="margin-bottom:9px;">
+    <h2>2 · مسابقتين تكوين الفرق · التلات 7 و14 أبريل 2026</h2>
+    <div style="display:flex; gap:10px;">
+      <div style="flex:1;">
+        <div class="ph" style="height:34mm;"><img src="../../report/assets/events/contest1_lab.jpg" alt="الطلاب في معمل المسابقة"></div>
+        <div class="cap">أول مسابقة لـ <span class="ltr">ICPC HUE</span>، معمل E425 في كلية الهندسة.</div>
+      </div>
+      <div style="flex:1.1;">
+        <p class="s">مسابقتين مدة كل واحدة 3 ساعات لكل طلاب الجامعة، اللي لوحده يلاقي زمايله والفريق الجاهز يختبر انسجامه. الأولى في معمل E425 والتانية في قاعة A209.</p>
+        <table class="t">
+          <tr><td class="n">المركز الأول</td><td>إبراهيم مطر</td></tr>
+          <tr><td class="n">المركز التاني</td><td>أحمد وليد</td></tr>
+          <tr><td class="n">المركز التالت</td><td>نهى كمال</td></tr>
+        </table>
+        <p class="note" style="margin:4px 0 0 0;">وقبلهم كان فيه لايف للرد على أسئلة <span class="ltr">ECPC</span> (4 أبريل)، والتسجيل الرسمي اتقفل يوم 30 أبريل.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:0;">
+    <h2>3 · تصفيات <span class="ltr">ECPC</span> المحلية · التلات 12 مايو 2026</h2>
+    <div style="display:flex; gap:10px;">
+      <div style="flex:1.1;">
+        <p class="s">اتعملت في كلية الذكاء الاصطناعي <b>تحت رعاية أ.د. إبراهيم صابر رئيس مجلس أمناء الجامعة</b>، وبدعم وتوجيهات أ.د. حسام الدين مصطفى عميد الكلية، وإشراف د. بسمة مصطفى منسق برنامج الأمن السيبراني ود. ياسر العوضي منسق برنامجي الروبوتات والأنظمة الذكية.</p>
+        <p class="s" style="margin:0;">اتنافس فيها <b>6 فرق</b> كل فريق 3 طلاب، بدعم من م. أنس الهريجي و م. عبده سليم منسقين <span class="ltr">ACPC</span> دمياط.</p>
+      </div>
+      <div style="flex:1;">
+        <div class="ph" style="height:36mm;"><img src="../../report/assets/events/localq_group.jpg" alt="صورة التصفيات المحلية مع أعضاء هيئة التدريس"></div>
+        <div class="cap">المشاركين مع أعضاء هيئة التدريس في التصفيات المحلية.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot"><span>المصدر: بوستات صفحتنا (8 و31 مارس، 6 و9 و12 أبريل، 15 مايو 2026)</span><span>صفحة 7 من 19</span></div>
+</section>
+
+<section class="page zf">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt">مجتمع <span class="ltr">ICPC HUE</span><br><span>جامعة حورس — مصر</span></div></div>
+    <div class="pill">07 · مسابقة DCC والشراكات</div>
+  </div>
+
+  <div class="kicker">أول مسابقة برمجة تنافسية في إقليم دمياط</div>
+  <h1>مسابقة <span class="ltr">DCC</span> 2026: البداية الحقيقية للبرمجة التنافسية في دمياط</h1>
+  <p class="lead"><span class="ltr">DCC</span> (Damietta Competitive Contest) هي أول مسابقة برمجة تنافسية في إقليم دمياط. اللي صمّمها ونظّمها بالكامل هو مجتمع <span class="ltr">ACPC Club</span> جامعة دمياط (<span class="ltr">ACPC DU</span>)، وجامعة حورس استضافتها في كلية الذكاء الاصطناعي، ومجتمعنا ساعد في الميديا وإدارة يوم المسابقة والموقع. الهدف: أول خطوة حقيقية للبرمجة التنافسية في المنطقة، وتجهيز الطلاب لـ <span class="ltr">ECPC</span>.</p>
+
+  <div class="ph" style="height:58mm; margin-bottom:3px;"><img src="../../report/assets/events/dcc_group.jpg" alt="صورة جماعية لمتسابقين DCC" style="object-position:center 40%;"></div>
+  <div class="cap" style="margin-bottom:8px;">أكتر من 100 متسابق من 5 مجتمعات في نهائي <span class="ltr">DCC</span> اللي استضافته كلية الذكاء الاصطناعي بجامعة حورس.</div>
+
+  <div class="g4">
+    <div class="stat" style="padding:6px 9px;"><b style="font-size:18px;">5</b><span>مجتمعات جامعية</span><small>MNU · HUE · DELTA · DU · NDETI</small></div>
+    <div class="stat" style="padding:6px 9px;"><b style="font-size:18px;">+100</b><span>متسابق</span></div>
+    <div class="stat" style="padding:6px 9px;"><b style="font-size:18px;">9,000</b><span>جنيه جوايز</span><small>لأول 5 فرق، وكوبونات CSkilled للكل</small></div>
+    <div class="stat" style="padding:6px 9px;"><b style="font-size:18px;">التاسع</b><span>مركز فريقنا</span><small>في الجولة الأونلاين</small></div>
+  </div>
+
+  <div style="display:flex; gap:10px; margin-bottom:9px;">
+    <div style="flex:1.15;">
+      <table class="t">
+        <tr><td class="n">26 يوليو</td><td>فتحنا التسجيل على <span class="ltr">dcchub.xyz</span> مع حملة تشويقية بقصة «جوهرة الألفية».</td></tr>
+        <tr><td class="n">29 يوليو</td><td>قفلنا التسجيل.</td></tr>
+        <tr><td class="n">31 يوليو</td><td>الجولة الأولى أونلاين.</td></tr>
+        <tr><td class="n">6 أغسطس</td><td>النهائي أوفلاين وش لوش في كلية الذكاء الاصطناعي بجامعة حورس.</td></tr>
+        <tr><td class="n">الجوائز</td><td>3,000 وبعدها 2,100 وبعدها 1,500 وبعدها 1,200 و1,200 جنيه.</td></tr>
+      </table>
+      <p class="note" style="margin:5px 0 0 0;"><b>دورنا:</b> استضفنا المسابقة في الكلية، وعملنا التغطية الإعلامية، وساعدنا في إدارة يوم المسابقة، وطوّرنا الموقع الرسمي <span class="ltr">dcchub.xyz</span> (يوسف محمد). والاستضافة كانت بدعم أ.د. حسام الدين مصطفى عميد الكلية، وإشراف د. بسمة مصطفى ود. ياسر العوضي، وكان معانا م. فاطمة مجدي و م. سارة لطفي و م. رأفت محمد.</p>
+    </div>
+    <div style="flex:1;">
+      <div class="ph" style="height:40mm;"><img src="../../report/assets/events/dcc_winners.jpg" alt="تكريم الفايزين في DCC"></div>
+      <div class="cap">تكريم الفرق الفايزة في نهائي <span class="ltr">DCC</span>.</div>
+    </div>
+  </div>
+
+  <h2>شراكات مع مجتمعات جامعات تانية</h2>
+  <div class="g3" style="margin-bottom:0;">
+    <div class="card" style="display:flex; gap:9px; align-items:flex-start;"><img src="../../report/assets/logo_damietta_cropped.png" alt="" style="width:32px; height:32px; object-fit:contain; border-radius:6px; background:#fff;"><div><span class="ct">ACPC Club جامعة دمياط</span><div class="s">هم اللي نظّموا <span class="ltr">DCC</span>، وشاركونا في اليوم التعريفي والتصفيات المحلية.</div></div></div>
+    <div class="card" style="display:flex; gap:9px; align-items:flex-start;"><img src="../../report/assets/logo_psu_cropped.jpg" alt="" style="width:32px; height:32px; object-fit:contain; border-radius:6px; background:#fff;"><div><span class="ct">ICPC جامعة بورسعيد</span><div class="s">مجتمع واحد من فرقه خد برونزية <span class="ltr">ECPC</span>، وبيدعم فرقنا المتقدمة بخبرته.</div></div></div>
+    <div class="card" style="display:flex; gap:9px; align-items:flex-start;"><img src="../../report/assets/logo_assiut_cropped.png" alt="" style="width:32px; height:32px; object-fit:contain; border-radius:6px; background:#fff;"><div><span class="ct">ICPC جامعة أسيوط</span><div class="s">من أكبر المجتمعات في مصر، وساعدونا في خارطة الطريق وتدريب المدرّبين.</div></div></div>
+  </div>
+
+  <div class="foot"><span>المصدر: منشورات صفحتنا (26 يوليو، 5 و9 و16 أغسطس 2026)</span><span>صفحة 8 من 19</span></div>
+</section>
+
+<section class="page zf">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt">مجتمع <span class="ltr">ICPC HUE</span><br><span>جامعة حورس — مصر</span></div></div>
+    <div class="pill">08 · تصفيات ECPC</div>
+  </div>
+
+  <div class="kicker">أول مشاركة لجامعة حورس</div>
+  <h1>16 فريقًا في تصفيات <span class="ltr">ECPC</span> 2026 بالإسكندرية</h1>
+  <p class="lead">لأول مرة جامعة حورس يمثّلها 16 فريق في تصفيات <span class="ltr">ECPC</span> في الأكاديمية العربية للعلوم والتكنولوجيا والنقل البحري، ومنهم الفرق اللي <span class="ltr">ICPC HUE</span> درّبها طول الموسم.</p>
+
+  <div class="ph" style="height:56mm; margin-bottom:3px;"><img src="../../report/assets/events/ecpc_field.jpg" alt="وفد جامعة حورس في حرم الأكاديمية العربية" style="object-position:center 55%;"></div>
+  <div class="cap" style="margin-bottom:8px;">وفد جامعة حورس ومعاه علم الجامعة في حرم الأكاديمية العربية في إسكندرية.</div>
+
+  <div style="display:grid; grid-template-columns:repeat(5,1fr); gap:6px; margin-bottom:3px;">
+    <div class="ph" style="height:30mm;"><img src="../../report/assets/events/team_card_1.jpg" alt="فريق UNIT01"></div>
+    <div class="ph" style="height:30mm;"><img src="../../report/assets/events/team_card_2.jpg" alt="فريق ENTROPY"></div>
+    <div class="ph" style="height:30mm;"><img src="../../report/assets/events/team_card_3.jpg" alt="فريق TOUCH BUG"></div>
+    <div class="ph" style="height:30mm;"><img src="../../report/assets/events/team_card_4.jpg" alt="فريق INFINITE LOOPS"></div>
+    <div class="ph" style="height:30mm;"><img src="../../report/assets/events/team_card_5.jpg" alt="فريق A_S_M"></div>
+  </div>
+  <div class="cap" style="margin-bottom:8px;">من كروت تعريف فرقنا اللي نزّلناها يوم 17 أغسطس: <span class="ltr">UNIT01 · ENTROPY · TOUCH BUG · INFINITE LOOPS · A_S_M</span>.</div>
+
+  <div style="display:flex; gap:10px; margin-bottom:9px;">
+    <div style="flex:1.25;">
+      <table class="t">
+        <tr><td class="n">قبلها بشهر</td><td>راجعنا الموضوعات المتقدمة بشكل مكثف، وخلّصنا التسجيل الرسمي.</td></tr>
+        <tr><td class="n">التجهيز</td><td>طلبنا الباص، وحجزنا سكن للطلاب في إسكندرية، ونظّمنا جدول الرحلة كله.</td></tr>
+        <tr><td class="n">18 أغسطس</td><td>سافرنا من جامعة حورس لإسكندرية، وعملنا نشاطات جماعية للفرق.</td></tr>
+        <tr><td class="n">اليوم اللي بعده</td><td>مسابقة تجريبية، وجرّبنا الأجهزة وبيئة المسابقة، واستلمنا تيشيرتات الفرق.</td></tr>
+        <tr><td class="n">يوم التصفيات</td><td>المسابقة الرسمية: 12 مسألة في 5 ساعات.</td></tr>
+      </table>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:4px;">
+      <div class="ph" style="height:27mm;"><img src="../../report/assets/events/ecpc_bus.jpg" alt="الوفد في الباص"></div>
+      <div class="ph" style="height:27mm;"><img src="../../report/assets/events/ecpc_team.jpg" alt="فريق من حورس جوه قاعة المسابقة"></div>
+      <div class="cap" style="margin:0;">في الطريق لإسكندرية، وواحد من فرقنا جوه قاعة المسابقة.</div>
+    </div>
+  </div>
+
+  <div class="g3" style="margin-bottom:8px;">
+    <div class="stat"><b>12</b><span>مسألة في 5 ساعات</span></div>
+    <div class="stat"><b>3</b><span>مسائل حلّتها أغلب فرقنا</span></div>
+    <div class="stat" style="background:var(--accent); border-color:var(--accent-dark);"><b>4</b><span style="color:#222;">مسائل لأعلى فريق</span><small style="color:#333;">كان ناقصه مسألة واحدة ويتأهل</small></div>
+  </div>
+
+  <div class="card-dark" style="margin-bottom:0;">
+    <p class="s" style="color:#DDD; margin:0;"><b style="color:var(--accent);">النتيجة دي معناها إيه؟</b>
+      أغلب فرقنا بدأت البرمجة التنافسية من الصفر الموسم ده، وأعلى فريق كان ناقصه مسألة واحدة بس ويتأهل للمرحلة اللي بعدها. ده بيأكد إن المنهج شغّال، والخطوة الجاية إننا نبدأ المسابقات التجريبية بنظام الخمس ساعات بدري عشان نتأهل في 2027.</p>
+  </div>
+
+  <div class="foot"><span>المصادر: منشورات صفحتنا (17 و24 و25 أغسطس 2026) وتقرير سبتمبر 2026</span><span>صفحة 9 من 19</span></div>
+</section>
+
+<section class="page zf">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt">مجتمع <span class="ltr">ICPC HUE</span><br><span>جامعة حورس — مصر</span></div></div>
+    <div class="pill">09 · المنصة (1/4): بيئة الحل</div>
+  </div>
+
+  <div class="kicker">ليه احتجنا منصة خاصة بينا؟</div>
+  <h1>منصة <span class="ltr">icpchue.com</span>: حلّ لمشكلات عاشها كل طالب</h1>
+  <p class="lead">
+    <span class="pl">المشكلة:</span> في أغلب المجتمعات السيشن بتتسجّل وتنزل بعد أسبوع، والطالب بيتنقّل بين يوتيوب وجروبات تيليجرام وموقع <span class="ltr">Codeforces</span> الزحمة، والمدرّب مش عارف مين حل ومين وقف.
+    <span class="ok">الحل:</span> منصة واحدة فيها الشرح والمسائل والمحرّر والتقييم والمتابعة، طلاب المجتمع طوّروها 100%، وكودها مفتوح المصدر على <span class="ltr">GitHub</span>. ومش عارفين جامعة مصرية تانية عندها منصة تدريب خاصة بيها بالشكل ده.
+  </p>
+
+  <div class="g4">
+    <div class="stat"><b>+800</b><span>طالب مسجّل</span><small>من كلية الذكاء الاصطناعي</small></div>
+    <div class="stat"><b>+50</b><span>طالب نشط يوميًا</span><small>بيحلّوا على المنصة</small></div>
+    <div class="stat"><b>650</b><span>مسألة في 3 مستويات</span><small>منهج كامل لموسم واحد</small></div>
+    <div class="stat"><b>263</b><span>متدرّب في لوحة المنتورز</span><small>154 منهم نشطين (أكتوبر 2026)</small></div>
+  </div>
+
+  <div style="display:flex; gap:10px; margin-bottom:10px; align-items:center;">
+    <div style="flex:1.1;"><div class="shot"><img src="../../report/assets/site/dashboard.jpg" alt="لوحة الطالب"></div><div class="cap">لوحة الطالب: أول حاجة بيشوفها لما يدخل.</div></div>
+    <div style="flex:1;">
+      <h2>لوحة الطالب</h2>
+      <ul class="clean s">
+        <li><span class="pl">الطالب مش عارف وقف فين:</span> الشيت الحالي ونسبة إنجازه وزرار «كمّل الحل» في أول الصفحة.</li>
+        <li><span class="pl">محدش بياخد باله من الانقطاع:</span> خريطة التسليمات في آخر 3 شهور، وعدّاد الأيام المتتالية.</li>
+        <li><span class="pl">التقدّم متفرّق بين مواقع:</span> اللي اتحل على المنصة وتصنيف <span class="ltr">Codeforces</span> في مكان واحد.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>صفحة حل المسألة: كل حاجة في شاشة واحدة</h2>
+  <div style="display:flex; gap:10px; margin-bottom:0;">
+    <div style="flex:1.1;"><div class="shot"><img src="../../report/assets/site/problem.jpg" alt="صفحة حل مسألة"></div><div class="cap">مسألة «<span class="ltr">Area of a Circle</span>» من الشيت الأول: النص والأمثلة على اليمين، والمحرّر على الشمال.</div></div>
+    <div style="flex:1;">
+      <ul class="clean s">
+        <li><span class="pl">التنقّل بيضيّع التركيز:</span> نص المسألة ومحرّر بمستوى <span class="ltr">VS Code</span> في نفس الشاشة، بيدعم <span class="ltr">C++</span> و<span class="ltr">Python</span> و<span class="ltr">Java</span> و<span class="ltr">C</span>.</li>
+        <li><span class="pl">طابور التقييم بيأخّر:</span> مُقيِّم <span class="ltr">Judge0</span> على سيرفر المجتمع بيشغّل الكود على طول ويدّي <span class="ltr">AC / WA / TLE / RE</span>.</li>
+        <li><span class="pl">«Wrong Answer» من غير تفسير:</span> المدخل والمخرج المتوقع ومخرج الطالب جنب بعض، فيفهم غلطته بنفسه.</li>
+        <li><span class="pl">الكود بيضيع بين الأجهزة:</span> حفظ تلقائي لكل محاولة في حساب الطالب.</li>
+        <li><span class="pl">المبتدئ بيتوه في الإنجليزي:</span> تلميحات وشرح بالعربي جوه الصفحة.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="foot"><span>مجتمع <span class="ltr">ICPC HUE</span> — جامعة حورس</span><span>صفحة 10 من 19</span></div>
+</section>
+
+<section class="page zf">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt">مجتمع <span class="ltr">ICPC HUE</span><br><span>جامعة حورس — مصر</span></div></div>
+    <div class="pill">10 · المنصة (2/4): المنهج والسيشنات</div>
+  </div>
+
+  <div class="kicker">طريق واضح من أول سطر كود</div>
+  <h1>650 مسألة مرتّبة، وكل السيشنات في مكان واحد</h1>
+  <p class="lead">
+    <span class="pl">المشكلة:</span> الطالب الجديد مش عارف يبدأ منين، ولا يحل إيه بعد كل سيشن، ومسائل الإنترنت كتير ومش مترتّبة، فبيوقف بعد كام أسبوع.
+    <span class="ok">الحل:</span> منهج متقسّم لمستويات، وكل مستوى لشيتات، وكل شيت مربوط بسيشن شرح، وخارطة طريق بتوضّح الطالب واقف فين في أي وقت.
+  </p>
+
+  <div class="g2" style="gap:8px; margin-bottom:6px;">
+    <div><div class="shot"><img src="../../report/assets/site/dashboard_sheets.jpg" alt="مستويات المنهج"></div><div class="cap">التلات مستويات: المبتدئين، والمستوى 1، والمستوى 2 المتقدم.</div></div>
+    <div><div class="shot"><img src="../../report/assets/site/dashboard_sheets_level-0_sheet-a.jpg" alt="مسائل الشيت الأول"></div><div class="cap">شيت «أنواع البيانات والشروط»: 26 مسألة وشريط تقدّم الطالب.</div></div>
+  </div>
+
+  <table class="t" style="margin-bottom:9px;">
+    <tr><th style="width:20%;">المستوى</th><th style="width:15%;">المسائل</th><th>الموضوعات (خارطة الطريق اتعملت بالتعاون مع مجتمع <span class="ltr">ICPC</span> أسيوط)</th></tr>
+    <tr><td>المستوى 0: المبتدئين</td><td class="n">249 في 10 شيتات</td><td>أنواع البيانات والشروط، والتكرار، والمصفوفات، والنصوص، والدوال، والرياضيات والهندسة، والاستدعاء الذاتي، ومسائل عامة بتلات درجات صعوبة.</td></tr>
+    <tr><td>المستوى 1: المتوسط</td><td class="n">226 في 8 شيتات</td><td>التعقيد الزمني، وحاويات <span class="ltr">STL</span> والترتيب، والبحث الثنائي والمؤشرين، والنافذة المنزلقة، و<span class="ltr">Bitmask</span>، ونظرية الأعداد، والمجموع التراكمي.</td></tr>
+    <tr><td>المستوى 2: المتقدم</td><td class="n">171 مسألة</td><td>هياكل بيانات وخوارزميات متقدمة على مستوى المسابقات.</td></tr>
+  </table>
+
+  <div class="g2" style="gap:8px; margin-bottom:8px;">
+    <div><div class="shot"><img src="../../report/assets/site/dashboard_roadmap.jpg" alt="خارطة الطريق"></div><div class="cap">خارطة الطريق: تقدّم الطالب في كل موضوع.</div></div>
+    <div><div class="shot"><img src="../../report/assets/site/dashboard_sessions_level1_stl1.jpg" alt="سيشن STL"></div><div class="cap">سيشن <span class="ltr">STL 1</span>: الفيديو جوه المنصة ومعاه وصف الموضوع.</div></div>
+  </div>
+
+  <div class="g2" style="gap:8px; margin-bottom:0;">
+    <div class="card" style="padding:9px 11px;"><span class="ct">السيشن اللي بتفوت كانت بتضيع</span><div class="s">الطالب اللي فاتته سيشن كان بيستنى أسبوع لحد ما تنزل على جروب. دلوقتي فيه <b>12 سيشن متسجّلة</b> في 3 معسكرات جوه المنصة، ومعاها الشيت بتاعها في نفس اليوم.</div></div>
+    <div class="card" style="padding:9px 11px;"><span class="ct">الفيديو كان تقيل على النت الضعيف</span><div class="s">في سبتمبر 2026 نقلنا كل السيشنات على يوتيوب (غير مدرجة) وبنشغّلها من جوه المنصة، فبقت تشتغل بسرعة على أي اتصال.</div></div>
+  </div>
+
+  <div class="foot"><span>مجتمع <span class="ltr">ICPC HUE</span> — جامعة حورس</span><span>صفحة 11 من 19</span></div>
+</section>
+
+<section class="page zf">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt">مجتمع <span class="ltr">ICPC HUE</span><br><span>جامعة حورس — مصر</span></div></div>
+    <div class="pill">11 · المنصة (3/4): لوحة الصدارة والإنجازات</div>
+  </div>
+
+  <div class="kicker">نخلّي الطالب يكمّل</div>
+  <h1>لوحة الصدارة والإنجازات: التدريب كأنه لعبة</h1>
+  <p class="lead">
+    <span class="pl">المشكلة:</span> أصعب حاجة في البرمجة التنافسية هي الاستمرار. سجّل معانا أكتر من 500 طالب، وكمّل 21 بس لحد التصفيات، وأغلب اللي وقفوا فقدوا الحماس في أول كام أسبوع.
+    <span class="ok">الحل:</span> طبقة تحفيز كاملة: ترتيب بيتحدّث مع كل مسألة، وشارات الطالب بيكسبها، وجوايز حقيقية على أرض الواقع.
+  </p>
+
+  <div class="shot" style="margin-bottom:3px;"><img src="../../report/assets/site/dashboard_leaderboard.jpg" alt="لوحة الصدارة"></div>
+  <div class="cap" style="margin-bottom:8px;">لوحة الصدارة: ترتيب الطلاب بعدد المسائل المحلولة والمقبولة في شيتات التدريب، وتبويب تاني لتصنيف <span class="ltr">Codeforces</span> (الأسامي مخفية).</div>
+
+  <div class="g2" style="gap:8px; margin-bottom:8px;">
+    <div><div class="shot"><img src="../../report/assets/site/dashboard_achievements.jpg" alt="الإنجازات"></div><div class="cap">الإنجازات: شارة الترحيب، وإنهاء المستوى 0، وحل الشيت الأول، وتصنيف +500.</div></div>
+    <div><div class="shot"><img src="../../report/assets/site/dashboard.jpg" alt="السلسلة اليومية وخريطة الالتزام"></div><div class="cap">السلسلة اليومية وخريطة الالتزام في لوحة الطالب.</div></div>
+  </div>
+
+  <div class="g2" style="gap:8px; margin-bottom:0;">
+    <div class="card" style="padding:9px 11px;"><span class="ct">الطالب مش عارف مستواه وسط زمايله</span><div class="s">فيه لوحتين صدارة: على شيتات المنصة، وعلى تصنيف <span class="ltr">Codeforces</span> العالمي. ومن 24 ديسمبر 2025 بننشر كل أسبوع مين اللي في الصدارة.</div></div>
+    <div class="card" style="padding:9px 11px;"><span class="ct">المنافسة من غير جايزة بتبرد بسرعة</span><div class="s">من 15 مارس 2026: صاحب المركز الأول بياخد تيشيرت <span class="ltr">ICPC HUE</span>. وكسبه مصطفى كمال بطل شهر مارس (3 أبريل).</div></div>
+    <div class="card" style="padding:9px 11px;"><span class="ct">الإنجاز الرقمي محدش بيشوفه</span><div class="s">كل إنجاز الطالب بيفتحه بياخده ستيكر يلزقه على اللابتوب، وأول دفعة اتوزّعت في اليوم التعريفي 12 مارس.</div></div>
+    <div class="card" style="padding:9px 11px;"><span class="ct">الانقطاع بيبدأ بيوم واحد</span><div class="s">عدّاد للأيام المتتالية وخريطة التزام بتبيّن أي انقطاع، فالطالب يرجع قبل ما يتأخر.</div></div>
+  </div>
+
+  <div class="foot"><span>مجتمع <span class="ltr">ICPC HUE</span> — جامعة حورس</span><span>صفحة 12 من 19</span></div>
+</section>
+
+<section class="page zf">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt">مجتمع <span class="ltr">ICPC HUE</span><br><span>جامعة حورس — مصر</span></div></div>
+    <div class="pill">12 · المنصة (4/4): نظام المنتورز</div>
+  </div>
+
+  <div class="kicker">من «حليت ولا لأ؟» لمتابعة بالأرقام</div>
+  <h1>مركز تحكّم المنتورز: نعرف أين يقف كل طالب</h1>
+  <p class="lead">
+    <span class="pl">المشكلة:</span> في الموسم الأول كان المنتور بيسأل في الجروب «حليت ولا لأ؟»، ومكانش بيكتشف إن طالب وقف غير بعد أسابيع، ولا يعرف الحل من الطالب ولا منقول.
+    <span class="ok">الحل:</span> في سبتمبر 2026 ضفنا لوحة للمنتورز والمدرّبين بتجمع بيانات كل طالب الحقيقية: حل إيه، وإمتى، وحاول كام مرة، وذاكر قد إيه.
+  </p>
+
+  <div class="g4">
+    <div class="stat"><b>263</b><span>متدرّب مسجّل</span><small>في لوحة المنتورز</small></div>
+    <div class="stat"><b>154</b><span>نشطين</span><small>نشطين الأسبوع ده</small></div>
+    <div class="stat"><b>109</b><span>مش نشطين</span><small>غايبين أكتر من 7 أيام، فالمنتور بيتواصل معاهم</small></div>
+    <div class="stat"><b>3</b><span>تنبيهات نزاهة</span><small>للمراجعة اليدوية</small></div>
+  </div>
+
+  <div class="shot" style="margin-bottom:3px;"><img src="../../report/assets/site/dashboard_mentor.jpg" alt="مركز تحكّم المنتورز"></div>
+  <div class="cap" style="margin-bottom:8px;">مركز تحكّم المنتورز: بحث وفلترة حسب المستوى والنشاط، وكارت لكل متدرّب فيه تقدّمه في المنهج (الأسماء مخفية).</div>
+
+  <div class="g2" style="gap:8px; margin-bottom:8px;">
+    <div><div class="shot"><img src="../../report/assets/site/dashboard_mentor_8251269.jpg" alt="ملف متدرّب"></div><div class="cap">ملف متدرّب: 185 مسألة محلولة، و371 تسليم، و21 ساعة مذاكرة، وخريطة نشاط سنوية.</div></div>
+    <div><div class="shot"><img src="../../report/assets/site/dashboard_discipline.jpg" alt="سجل المذاكرة اليومي"></div><div class="cap">سجل المذاكرة اليومي: الطالب بيكتب عمل إيه، والمنتور بيضيف ملاحظاته.</div></div>
+  </div>
+
+  <div class="g3" style="gap:8px; margin-bottom:0;">
+    <div class="card" style="padding:8px 11px;"><span class="ct">محدش كان يعرف الطالب ذاكر قد إيه</span><div class="s">سجل يومي لساعات المذاكرة واللي اتعمل والمصادر، بدأ يوم 8 سبتمبر 2026، واليوم الحالي بس اللي ينفع يتعدّل.</div></div>
+    <div class="card" style="padding:8px 11px;"><span class="ct">المراجعة كانت بالتخمين</span><div class="s">المدرّب بيشوف كود الطالب ونتيجة كل محاولة، فسيشن المراجعة بتتبني على الأخطاء اللي بتتكرر فعلًا.</div></div>
+    <div class="card" style="padding:8px 11px;"><span class="ct">الحلول المنقولة</span><div class="s">تنبيه تلقائي لو الحل اتقبل في أقل من 15 ثانية أو لو فيه لصق كود كتير، عشان يكون التقدّم حقيقي.</div></div>
+  </div>
+
+  <div class="foot"><span>مجتمع <span class="ltr">ICPC HUE</span> — جامعة حورس (بيانات الطلاب مخفية)</span><span>صفحة 13 من 19</span></div>
+</section>
+
+<section class="page zf">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt">مجتمع <span class="ltr">ICPC HUE</span><br><span>جامعة حورس — مصر</span></div></div>
+    <div class="pill">13 · المنصة: التطوير والبنية التقنية</div>
+  </div>
+
+  <div class="kicker">شغل هندسي مستمر</div>
+  <h1>منصة تتطور كل أسبوع، ببنية تقنية احترافية</h1>
+  <p class="lead"><span class="pl">المشكلة:</span> منصة بيستخدمها مئات الطلاب كل يوم لازم متقفش وقت المسابقات، ومتعرّضش بياناتهم للخطر، وتتغير بسرعة كل ما يظهر احتياج جديد. <span class="ok">الحل:</span> تطوير مستمر من نوفمبر 2025 حسب ملاحظات الطلاب والمدرّبين والمنتورز، على بنية تقنية احترافية.</p>
+
+  <div class="g4">
+    <div class="stat"><b>+290</b><span>تحديث برمجي</span><small>(commits) من ساعة ما نشرنا الكود في مارس 2026</small></div>
+    <div class="stat"><b>~49K</b><span>سطر كود</span><small>TypeScript</small></div>
+    <div class="stat"><b>92</b><span>واجهة برمجية API</span><small>بتخدم المنصة</small></div>
+    <div class="stat"><b>1</b><span>إضافة متصفح منشورة</span><small>Verdict Helper على متجر Chrome</small></div>
+  </div>
+
+  <div style="display:flex; gap:12px; margin-bottom:10px;">
+    <div style="flex:1.35;">
+      <h2>رحلة تطوير المنصة</h2>
+      <table class="t">
+        <tr><td class="n">27–30 نوفمبر 2025</td><td>الهوية البصرية، ونظام تسجيل خاص بالتحقق.</td></tr>
+        <tr><td class="n">10 و25 ديسمبر</td><td>لوحة تحكم الطالب، وبعدها محرك تشغيل الكود بتاعنا.</td></tr>
+        <tr><td class="n">5 و11 يناير 2026</td><td>تأمين المنصة، وواجهة جديدة شغالة كويس على الموبايل.</td></tr>
+        <tr><td class="n">9 فبراير</td><td>الإصدار 3.0: منهج الـ 650 مسألة، وإطلاق إضافة <span class="ltr">Verdict Helper</span>.</td></tr>
+        <tr><td class="n">16 مارس</td><td>نشرنا المنصة مفتوحة المصدر، وبعدها المحرّر الجديد والتحليلات.</td></tr>
+        <tr><td class="n">22 أبريل</td><td>نظام تسجيل الفرق لمسابقة <span class="ltr">ECPC</span>.</td></tr>
+        <tr><td class="n">يونيو</td><td>مزامنة تلقائية للمسائل اللي اتحلت على <span class="ltr">Codeforces</span>.</td></tr>
+        <tr><td class="n">23 و27 أغسطس</td><td>صفحة أسئلة شائعة بالعربي عن <span class="ltr">ICPC</span>، وبوابة التطوع <span class="ltr">/job</span>.</td></tr>
+        <tr><td class="n">2 – 22 سبتمبر</td><td>لوحة المنتورز وسجل المذاكرة، ونقلنا الـ 12 سيشن على يوتيوب، ومُقيِّم خاص بينا على <span class="ltr">Azure</span>.</td></tr>
+        <tr><td class="n">2 أكتوبر</td><td>تسجيل جديد بكود تحقق للمستويين 0 و1 لموسم 2026/2027.</td></tr>
+      </table>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:8px;">
+      <h2 style="margin-bottom:0;">الوصول والانتشار</h2>
+      <div class="card" style="padding:9px 11px;"><span class="ct">زيارات المنصة (Cloudflare، مايو 2026)</span><div class="s">4.13 ألف زائر و179 ألف طلب في 30 يوم، و1.24 ألف زائر في 7 أيام، و224 زائر في يوم واحد.</div></div>
+      <div class="card" style="padding:9px 11px;"><span class="ct">فيسبوك (1 فبراير – 1 مايو 2026)</span><div class="s">46.3 ألف مشاهدة بزيادة 428.9%، و70.1% منها من برّه متابعين الصفحة.</div></div>
+      <div class="card" style="padding:9px 11px;"><span class="ct">لينكدإن ويوتيوب (ديسمبر 2025)</span><div class="s">تحديثات المشروع وصلت لـ 4,002 عضو بـ 6,789 ظهور، و1,910 مشاهدة للفيديوهات بأكتر من 10 ساعات مشاهدة.</div></div>
+      <div class="card-w" style="padding:9px 11px;"><span class="ct">أمان بيانات الطلاب</span><div class="s">تشفير البيانات الشخصية، وصلاحيات على مستوى كل جدول، وحماية من الهجمات المتكررة، وتسجيل بالإيميل الجامعي، وصفحتين للشروط والخصوصية.</div></div>
+    </div>
+  </div>
+
+  <h2>البنية التقنية للمنصة</h2>
+  <div class="g3" style="gap:8px; margin-bottom:0;">
+    <div class="card" style="padding:9px 11px;"><span class="ct">الواجهة والخادم</span><div class="s"><span class="ltr">Next.js</span> و<span class="ltr">TypeScript</span>، بقاعدة بيانات <span class="ltr">PostgreSQL</span> على <span class="ltr">Supabase</span>، وتطبيق ويب يتثبّت على الموبايل.</div></div>
+    <div class="card" style="padding:9px 11px;"><span class="ct">تشغيل الكود وتقييمه</span><div class="s">مُقيِّم <span class="ltr">Judge0</span> مستضاف على سيرفر خاص بينا على <span class="ltr">Azure</span>، وبيدعم <span class="ltr">C++17</span> و<span class="ltr">C</span> و<span class="ltr">Python</span> و<span class="ltr">Java</span>.</div></div>
+    <div class="card" style="padding:9px 11px;"><span class="ct">الربط مع Codeforces</span><div class="s">خدمة وسيطة بتاعتنا وإضافة <span class="ltr">Verdict Helper</span> عشان نزامن المسائل المحلولة وكل المحاولات تلقائيًا.</div></div>
+    <div class="card-w" style="padding:9px 11px;"><span class="ct">الحماية والأداء</span><div class="s">حماية <span class="ltr">Cloudflare</span>، وتشفير <span class="ltr">SSL</span> لكل البيانات، وتسجيل للأخطاء عشان نتابع المشاكل أول ما تحصل.</div></div>
+    <div class="card-w" style="padding:9px 11px;"><span class="ct">مفتوحة المصدر</span><div class="s">الكود كله منشور على <span class="ltr">GitHub</span> برخصة <span class="ltr">AGPL-3.0</span>، وأي طالب يقدر يراجعه أو يساهم فيه.</div></div>
+    <div class="card-dark" style="padding:9px 11px;"><span class="ct" style="color:#F0B52A;">جاهزة للتوسّع</span><div class="s" style="color:#DDD;">اتصممت عشان تخدم جامعات تانية، وهدفنا الجاي إنها تبقى متاحة لكل الجامعات المصرية باسم حورس.</div></div>
+  </div>
+
+  <div class="foot"><span>المصادر: سجل تطوير المنصة، وتحليلات Cloudflare وفيسبوك ولينكدإن، ومستودع المنصة على GitHub</span><span>صفحة 14 من 19</span></div>
+</section>
+
+<section class="page zf">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt">مجتمع <span class="ltr">ICPC HUE</span><br><span>جامعة حورس — مصر</span></div></div>
+    <div class="pill">14 · خارطة الموسم</div>
+  </div>
+
+  <div class="kicker">الخارطة السنوية</div>
+  <h1>طريق <span class="ltr">ICPC</span> 2026/2027: مراحل الموسم</h1>
+  <p class="lead">منهج من 7 مراحل بياخد الطالب من أساسيات البرمجة لحد اختيار الفرق والمنافسة في <span class="ltr">ECPC</span>.</p>
+
+  <div style="background:#fff; border-radius:12px; padding:4px 0; margin:2px 0 12px 0; text-align:center;">
+    <img src="../../report/assets/roadmap_curve_cropped.jpg" alt="مراحل طريق ICPC السبع" style="height:330px; max-width:100%; object-fit:contain; display:block; margin:0 auto;">
+  </div>
+
+  <table class="t">
+    <tr><th style="width:26%;">المرحلة</th><th style="width:26%;">الفترة</th><th>المحتوى التقني والمحطات الرئيسية</th></tr>
+    <tr><td><b>المرحلة 1: الاستقطاب والتعريف</b></td><td class="n">29 أغسطس – 9 أكتوبر 2026</td><td>حملة التسويق في الجامعة، وفورم التقديم، والمقابلات، واليوم التعريفي، والسيشن الافتتاحية.</td></tr>
+    <tr><td><b>المرحلة 2: أساسيات البرمجة</b></td><td class="n">16 أكتوبر – 26 نوفمبر 2026</td><td>المتغيرات، والتكرار، والمصفوفات، والنصوص، والدوال، والتعقيد الزمني (<span class="ltr">Big-O</span>)، ومسابقات تدريبية أسبوعية.</td></tr>
+    <tr><td><b>المرحلة 3: <span class="ltr">STL</span> ونقطة الشتاء</b></td><td class="n">27 نوفمبر 2026 – 29 يناير 2027</td><td><span class="ltr">vector</span> و<span class="ltr">stack</span> و<span class="ltr">queue</span> و<span class="ltr">set</span> و<span class="ltr">map</span> و<span class="ltr">priority_queue</span>؛ <span class="tag-accent">مسابقة الإحماء: 29 يناير 2027</span></td></tr>
+    <tr><td><b>المرحلة 4: تقنيات حل المسائل</b></td><td class="n">5 فبراير – 19 مارس 2027</td><td>مصفوفات التكرار، والمؤشرين، والبحث الثنائي، والخوارزميات الجشعة، والاستدعاء الذاتي، والتراجع.</td></tr>
+    <tr><td><b>المرحلة 5: الخوارزميات المتقدمة</b></td><td class="n">26 مارس – 30 أبريل 2027</td><td>الرياضيات 1 و2، والبرمجة الديناميكية 1 و2، وخوارزميات الرسوم البيانية 1.</td></tr>
+    <tr><td><b>المرحلة 6: تكوين الفرق والاختيار</b></td><td class="n">24 أبريل – 18 يونيو 2027</td><td>تجارب الفرق الداخلية، ومسابقة الاختيار الرسمية (<span class="ltr">TSC</span>)، وإعلان الفرق المعتمدة.</td></tr>
+    <tr><td><b>المرحلة 7: التجهيز النهائي لـ <span class="ltr">ECPC</span></b></td><td class="n">22 يونيو – 15 أغسطس 2027</td><td>مسابقات أسبوعية مكثفة بنظام 5 ساعات، ومحاكاة كاملة للمسابقة، والهدف <span class="ltr">ECPC</span> 2027.</td></tr>
+  </table>
+  <p class="note" style="margin-top:6px;">* لو مفيش حاجة تانية مذكورة، السيشنات التقنية بتكون يوم الجمعة الساعة 8:30 مساءً. والمواعيد التقديرية ممكن تتغير حسب التقويم الأكاديمي الرسمي لجامعة حورس.</p>
+
+  <div class="foot"><span>مجتمع <span class="ltr">ICPC HUE</span> — جامعة حورس</span><span>صفحة 15 من 19</span></div>
+</section>
+
+<section class="page zf ledger">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt">مجتمع <span class="ltr">ICPC HUE</span><br><span>جامعة حورس — مصر</span></div></div>
+    <div class="pill">15 · الجدول التفصيلي</div>
+  </div>
+
+  <div class="kicker">الجدول التشغيلي الكامل</div>
+  <h1>منهج موسم 2026/2027 ومحطاته</h1>
+  <p class="lead">جدول فيه كل الـ 46 محطة على مدار السنة الدراسية، عشان الإشراف الأكاديمي يراجعه ونتابع بيه التنفيذ.</p>
+
+  <div style="background:#FAF7F2; border:1px solid var(--border); border-radius:8px; padding:6px 12px; margin-bottom:9px; display:flex; align-items:center; justify-content:space-between;">
+    <div style="font-size:9.6px; color:var(--head); font-weight:600;"><b>الجدول الأكاديمي 2026/2027:</b> تدرّج منظّم على الترم الأول والتاني والصيف.</div>
+    <div style="font-family:var(--font-head); font-size:9px; font-weight:700; color:var(--accent-dark); background:rgba(225,157,27,.12); padding:1px 8px; border-radius:4px;">46 محطة مجدولة</div>
+  </div>
+
+  <div class="g3" style="align-items:start; gap:8px;">
+    <div class="sheet-card">
+      <div class="sheet-title-bar"><span>جدول 1: الترم الأول (الأساسيات و STL)</span></div>
+      <table class="sheet-table">
+        <tr><th style="text-align:center;">#</th><th>المحطة / الموضوع</th><th>التاريخ</th></tr>
+        <tr><td class="col-idx">01</td><td>حملة التسويق</td><td class="col-date">29 أغسطس – 3 سبتمبر</td></tr>
+        <tr><td class="col-idx">02</td><td>فتح التقديم</td><td class="col-date">5 – 10 سبتمبر</td></tr>
+        <tr><td class="col-idx">03</td><td>الفرز والمقابلات</td><td class="col-date">12 – 17 سبتمبر</td></tr>
+        <tr><td class="col-idx">04</td><td>إعلان النتائج</td><td class="col-date">18 سبتمبر</td></tr>
+        <tr><td class="col-idx">05</td><td>اليوم التعريفي</td><td class="col-date">26 سبتمبر – 1 أكتوبر</td></tr>
+        <tr><td class="col-idx">06</td><td>إعادة فتح التسجيل</td><td class="col-date">26 سبتمبر – 1 أكتوبر</td></tr>
+        <tr><td class="col-idx">07</td><td>السيشن الافتتاحية</td><td class="col-date">9 أكتوبر (8:30 م)</td></tr>
+        <tr><td class="col-idx">08</td><td>الأساسيات والشروط</td><td class="col-date">16 أكتوبر</td></tr>
+        <tr><td class="col-idx">09</td><td>التكرار والتكرار المتداخل</td><td class="col-date">23 أكتوبر</td></tr>
+        <tr><td class="col-idx">10</td><td>المصفوفات والدوال 1</td><td class="col-date">30 أكتوبر</td></tr>
+        <tr><td class="col-idx">11</td><td>النصوص والحروف</td><td class="col-date">6 نوفمبر</td></tr>
+        <tr class="row-break"><td class="col-idx">12</td><td>إجازة امتحانات الميدتيرم</td><td class="col-date">7 – 12 نوفمبر</td></tr>
+        <tr><td class="col-idx">13</td><td>الدوال 2</td><td class="col-date">13 نوفمبر</td></tr>
+        <tr><td class="col-idx">14</td><td>التعقيد الزمني (Big-O)</td><td class="col-date">20 نوفمبر</td></tr>
+        <tr class="row-contest"><td class="col-idx">15</td><td>مسابقات تدريبية</td><td class="col-date">21 – 26 نوفمبر</td></tr>
+        <tr><td class="col-idx">16</td><td>متابعة التقدّم</td><td class="col-date">أواخر نوفمبر</td></tr>
+        <tr><td class="col-idx">17</td><td>STL: Vector و Pair</td><td class="col-date">27 نوفمبر</td></tr>
+        <tr><td class="col-idx">18</td><td>STL: Stack و Queue</td><td class="col-date">4 ديسمبر</td></tr>
+        <tr><td class="col-idx">19</td><td>STL: Set و Map</td><td class="col-date">11 ديسمبر</td></tr>
+        <tr><td class="col-idx">20</td><td>STL: Priority Queue</td><td class="col-date">18 ديسمبر</td></tr>
+        <tr class="row-break"><td class="col-idx">21</td><td>إجازة امتحانات الترم</td><td class="col-date">20 ديسمبر – 21 يناير</td></tr>
+        <tr class="row-contest"><td class="col-idx">22</td><td>مسابقة الإحماء 2027</td><td class="col-date">29 يناير 2027</td></tr>
+      </table>
+    </div>
+
+    <div class="sheet-card">
+      <div class="sheet-title-bar"><span>جدول 2: الترم التاني (الخوارزميات الأساسية)</span></div>
+      <table class="sheet-table">
+        <tr><th style="text-align:center;">#</th><th>المحطة / الموضوع</th><th>التاريخ</th></tr>
+        <tr><td class="col-idx">23</td><td>المجموع التراكمي ومصفوفة التكرار</td><td class="col-date">5 فبراير</td></tr>
+        <tr><td class="col-idx">24</td><td>المؤشران والنافذة المنزلقة</td><td class="col-date">12 فبراير</td></tr>
+        <tr><td class="col-idx">25</td><td>إعادة فتح التسجيل للترم التاني</td><td class="col-date">13 – 18 فبراير</td></tr>
+        <tr><td class="col-idx">26</td><td>البحث الثنائي</td><td class="col-date">19 فبراير</td></tr>
+        <tr><td class="col-idx">27</td><td>الخوارزميات الجشعة</td><td class="col-date">26 فبراير</td></tr>
+        <tr><td class="col-idx">28</td><td>الاستدعاء الذاتي والقوة الغاشمة</td><td class="col-date">5 مارس</td></tr>
+        <tr><td class="col-idx">29</td><td>تقييم تشخيصي</td><td class="col-date">6 – 11 مارس</td></tr>
+        <tr><td class="col-idx">30</td><td>التراجع (Backtracking)</td><td class="col-date">12 مارس</td></tr>
+        <tr><td class="col-idx">31</td><td>Bitmask والبحث في الحالات</td><td class="col-date">19 مارس</td></tr>
+        <tr><td class="col-idx">32</td><td>نظرية الأعداد والرياضيات 1</td><td class="col-date">26 مارس</td></tr>
+        <tr><td class="col-idx">33</td><td>التوافيق والرياضيات 2</td><td class="col-date">2 أبريل</td></tr>
+        <tr><td class="col-idx">34</td><td>البرمجة الديناميكية 1</td><td class="col-date">9 أبريل</td></tr>
+        <tr><td class="col-idx">35</td><td>تقييم الأداء</td><td class="col-date">10 – 15 أبريل</td></tr>
+        <tr class="row-break"><td class="col-idx">36</td><td>إجازة ميدتيرم الترم التاني</td><td class="col-date">17 – 22 أبريل</td></tr>
+        <tr><td class="col-idx">37</td><td>البرمجة الديناميكية 2</td><td class="col-date">23 أبريل</td></tr>
+        <tr><td class="col-idx">38</td><td>الرسوم البيانية (BFS/DFS)</td><td class="col-date">30 أبريل</td></tr>
+      </table>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:8px;">
+      <div class="sheet-card">
+        <div class="sheet-title-bar"><span>جدول 3: الصيف (الاختيار و ECPC)</span></div>
+        <table class="sheet-table">
+          <tr><th style="text-align:center;">#</th><th>المحطة / الموضوع</th><th>التاريخ</th></tr>
+          <tr><td class="col-idx">39</td><td>تجارب الفرق</td><td class="col-date">24 أبريل – 6 مايو</td></tr>
+          <tr class="row-contest"><td class="col-idx">40</td><td>مسابقة الاختيار الرسمية</td><td class="col-date">8 مايو</td></tr>
+          <tr><td class="col-idx">41</td><td>إعلان الفرق المعتمدة</td><td class="col-date">15 مايو</td></tr>
+          <tr class="row-break"><td class="col-idx">42</td><td>إجازة عيد الأضحى</td><td class="col-date">16 – 19 مايو</td></tr>
+          <tr class="row-break"><td class="col-idx">43</td><td>إجازة امتحانات نهاية العام</td><td class="col-date">22 مايو – 18 يونيو</td></tr>
+          <tr class="row-contest"><td class="col-idx">44</td><td>محاكاة أسبوعية 5 ساعات</td><td class="col-date">22 يونيو – 27 يوليو</td></tr>
+          <tr class="row-contest"><td class="col-idx">45</td><td>المحاكاة الكاملة</td><td class="col-date">1 أغسطس</td></tr>
+          <tr class="row-contest" style="border-right:3px solid var(--accent);"><td class="col-idx" style="font-weight:900;">46</td><td style="font-weight:800; color:var(--accent-dark);">الهدف: ECPC 2027</td><td class="col-date" style="font-weight:800; color:var(--accent-dark);">15 أغسطس 2027</td></tr>
+        </table>
+      </div>
+      <div class="sheet-card">
+        <div class="sheet-title-bar" style="background:#F3EFE6;"><span>ملخص الجدول ومؤشرات الأداء</span></div>
+        <table class="sheet-table">
+          <tr><td style="font-weight:700; width:52%; background:#FAF7F2;">إجمالي المحطات</td><td style="text-align:left; font-weight:800; color:var(--accent-dark);">46 محطة</td></tr>
+          <tr><td style="font-weight:700; background:#FAF7F2;">مدة الجدول</td><td style="text-align:left;">34 أسبوع دراسي</td></tr>
+          <tr><td style="font-weight:700; background:#FAF7F2;">التدريب المباشر</td><td style="text-align:left;">+120 ساعة</td></tr>
+          <tr><td style="font-weight:700; background:#FAF7F2;">مسابقات المحاكاة</td><td style="text-align:left;">8 مسابقات بوقت</td></tr>
+          <tr><td style="font-weight:700; background:#FAF7F2;">طريقة التنفيذ</td><td style="text-align:left;">المعامل + المنصة</td></tr>
+          <tr><td style="font-weight:700; background:#FAF7F2;">الهدف الأساسي</td><td style="text-align:left; font-weight:800; color:var(--accent-dark);">نهائيات ECPC</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:8px; background:#FAF7F2; border:1px solid var(--border); border-radius:8px; padding:7px 12px; display:flex; align-items:center; gap:12px;">
+    <div style="background:var(--card); color:var(--accent-dark); font-family:var(--font-head); font-size:8.5px; font-weight:800; padding:2px 8px; border-radius:5px; border:1px solid var(--border); white-space:nowrap;">ملاحظة المتابعة</div>
+    <div style="font-size:9.2px; line-height:1.6;">كل المحتوى التقني بيتراجع قبل ما يتقدّم، وبنتابع الحضور وتسليمات المنصة ونتائج المسابقات على طول.</div>
+  </div>
+
+  <div class="foot"><span>مجتمع <span class="ltr">ICPC HUE</span> — جامعة حورس</span><span>صفحة 16 من 19</span></div>
+</section>
+
+<section class="page zj">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt">مجتمع <span class="ltr">ICPC HUE</span><br><span>جامعة حورس — مصر</span></div></div>
+    <div class="pill">16 · اللي محتاجينه</div>
+  </div>
+
+  <div class="kicker">طلبات الدعم لموسم 2026/2027</div>
+  <h1>7 طلبات محدّدة تساعدنا على مضاعفة النتيجة</h1>
+  <p class="lead">التدريب والمنصة والمتابعة فريق المجتمع بيعملهم بالكامل. اللي محتاجينه من الجامعة تسهيلات محدّدة مش هنقدر نوفّرها بنفسنا. لكل طلب: الوضع الحالي، وإحنا طالبين إيه بالظبط، والنتيجة المتوقعة.</p>
+
+  <div class="g2" style="gap:8px; margin-bottom:8px;">
+    <div class="req"><div class="i">1</div><div><b>قاعة أو معمل ثابت للسيشنات</b>
+      <span class="pl">الآن:</span> كل أسبوع بندوّر على مكان فاضي، فسيشنات بتتلغي أو بتتحوّل أونلاين.<br>
+      <span class="pl">نطلب:</span> قاعة أو معمل محجوز لينا ساعتين في الأسبوع في معاد ثابت طول الترم.<br>
+      <span class="ok">النتيجة:</span> الطالب يعرف هيحضر فين وإمتى، فيلتزم.</div></div>
+    <div class="req"><div class="i">2</div><div><b>تجهيز معمل للمسابقات</b>
+      <span class="pl">الآن:</span> أجهزة المعامل مفيهاش بيئات برمجة، فبنطلب من الطلاب يجيبوا اللابتوب.<br>
+      <span class="pl">نطلب:</span> تثبيت <span class="ltr">C++</span> و<span class="ltr">Python</span> ومحرّر كود، وفتح موقعي <span class="ltr">icpchue.com</span> و<span class="ltr">Codeforces</span> على شبكة الجامعة.<br>
+      <span class="ok">النتيجة:</span> مسابقات جوه الجامعة بنفس ظروف <span class="ltr">ECPC</span>.</div></div>
+    <div class="req"><div class="i">3</div><div><b>أذونات حضور للفعاليات</b>
+      <span class="pl">الآن:</span> الفعاليات والمسابقات بتتعارض مع المحاضرات والسكاشن، فالطالب بيضطر يختار بينهم.<br>
+      <span class="pl">نطلب:</span> إذن غياب رسمي للطلاب المشاركين في الفعاليات المعتمدة، بقائمة أسماء نبعتها قبلها.<br>
+      <span class="ok">النتيجة:</span> الطالب يشارك من غير ما يخسر حضوره الأكاديمي.</div></div>
+    <div class="req"><div class="i">4</div><div><b>5 دقائق للتعريف في المحاضرات</b>
+      <span class="pl">الآن:</span> طلاب كتير مش بيعرفوا إن فيه مجتمع أو مسابقة غير متأخر.<br>
+      <span class="pl">نطلب:</span> موافقة الدكاترة على 5 دقائق في أول محاضرة واحدة لكل دفعة، مرة في أول كل ترم.<br>
+      <span class="ok">النتيجة:</span> المعلومة توصل لكل الطلاب، مش لمتابعين صفحتنا بس.</div></div>
+    <div class="req"><div class="i">5</div><div><b>تنسيق مع صفحة الكلية الرسمية</b>
+      <span class="pl">الآن:</span> إعلانات نشاطاتنا ساعات بتتنشر متأخرة أو بتفاصيل محتاجة تصحيح.<br>
+      <span class="pl">نطلب:</span> مسؤول تواصل في الكلية نبعتله الإعلان والتفاصيل بعد مراجعتها قبل الفعالية بأسبوع.<br>
+      <span class="ok">النتيجة:</span> إعلان رسمي في معاده وبمعلومات صحيحة.</div></div>
+    <div class="req"><div class="i">6</div><div><b>تقدير رسمي للطلاب</b>
+      <span class="pl">الآن:</span> المتسابقين وأعضاء اللجان بيشتغلوا طول السنة من غير أي تقدير من الجامعة.<br>
+      <span class="pl">نطلب:</span> شهادات معتمدة من رئاسة الجامعة، أو درجات أنشطة، أو مراعاة الغياب ليهم.<br>
+      <span class="ok">النتيجة:</span> الطلاب يكمّلوا، وغيرهم يشوف إن المجهود متقدّر.</div></div>
+    <div class="req" style="grid-column:1 / -1; margin-bottom:0;"><div class="i">7</div><div><b>ميزانية للنشاط</b>
+      <span class="pl">الآن:</span> مفيش ميزانية مخصّصة للمجتمع.<br>
+      <span class="pl">نطلب:</span> دعم لأربع بنود: (1) رسوم اشتراك فرق <span class="ltr">ECPC</span>، 1,500 جنيه للفريق، زي ما بتعمل جامعات تانية زي دمياط. (2) المطبوعات والشهادات والتيشيرتات وجوائز المسابقات الداخلية. (3) الضيافة في الفعاليات. (4) استضافة المنصة والدومين بتاعها.<br>
+      <span class="ok">النتيجة:</span> عدد أكبر من الفرق في <span class="ltr">ECPC</span>، وفعاليات بمستوى يليق باسم الجامعة.</div></div>
+  </div>
+
+  <div class="foot"><span>شكرًا لدعمكم. مع بعض هنرفع اسم جامعة حورس في <span class="ltr">ECPC</span> و<span class="ltr">ACPC</span> و<span class="ltr">ICPC</span>.</span><span>صفحة 17 من 19</span></div>
+</section>
+
+<section class="page zh">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt">مجتمع <span class="ltr">ICPC HUE</span><br><span>جامعة حورس — مصر</span></div></div>
+    <div class="pill">17 · الفريق</div>
+  </div>
+
+  <div class="kicker">الناس اللي ورا <span class="ltr">ICPC HUE</span></div>
+  <h1>فريق العمل والإشراف الأكاديمي</h1>
+  <p class="lead">كل اللي في التقرير ده معمول بإيد الناس دي. من الإشراف الأكاديمي، للقيادة، للمدرّبين والمنتورز، لحد اللجنة التنظيمية اللي بتشيل يوم كل فعالية.</p>
+
+  <div class="card" style="margin-bottom:10px;">
+    <h2>الإشراف الأكاديمي والدعم</h2>
+    <div class="g2" style="gap:8px; margin:0;">
+      <div class="card-w" style="padding:8px 10px;"><span class="ct">أ.د. حسام الدين مصطفى</span><div class="s">عميد كلية الذكاء الاصطناعي، ودعم اليوم التعريفي والتصفيات المحلية و<span class="ltr">DCC</span>.</div></div>
+      <div class="card-w" style="padding:8px 10px;"><span class="ct">د. ياسر العوضي</span><div class="s">منسق برنامجي الروبوتات والأنظمة الذكية، ومشرف على المجتمع من تسجيله الرسمي.</div></div>
+    </div>
+    <p class="s" style="margin:8px 0 0 0;"><b>المهندسين المشرفين:</b> م. فاطمة مجدي · م. سارة لطفي · م. رأفت محمد. تابعوا الفعاليات، وحضروا مقابلات اختيار المدرّبين والمنتورز.</p>
+  </div>
+
+  <div class="g2" style="gap:10px; margin-bottom:10px;">
+    <div class="card-w">
+      <h2>القيادة</h2>
+      <table class="t">
+        <tr><td><b>عبد الرحمن محسن الشحات</b></td><td class="n">المؤسس</td></tr>
+        <tr><td><b>يوسف محمد صلاح الدين</b></td><td class="n">شريك مؤسس ومطوّر المنصة</td></tr>
+        <tr><td><b>أحمد وليد</b></td><td class="n"><span class="ltr">Tech Lead</span></td></tr>
+      </table>
+    </div>
+    <div class="card-w">
+      <h2>المدرّبين · <span class="ltr">Instructors</span></h2>
+      <table class="t">
+        <tr><td><b>أحمد وليد</b></td><td class="n"><span class="ltr">Lead Instructor</span></td></tr>
+        <tr><td><b>إبراهيم مطر</b></td><td class="n"><span class="ltr">Co-Lead Instructor</span></td></tr>
+        <tr><td><b>عمر الشيال</b></td><td class="n"><span class="ltr">Instructor</span></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="g2" style="gap:10px; margin-bottom:10px;">
+    <div class="card-w">
+      <h2>المنتورز · <span class="ltr">Mentors</span></h2>
+      <p class="s" style="margin:0;">نهى كمال · عمر الشيال · عبد الله شطا · يوسف محمد</p>
+      <p class="note" style="margin:4px 0 0 0;">كل منتور ماسك مجموعة صغيرة وبيتابعها كل أسبوع من لوحة المنتورز.</p>
+    </div>
+    <div class="card-w">
+      <h2>الميديا · <span class="ltr">Media</span></h2>
+      <p class="s" style="margin:0;">يوسف محمد</p>
+      <p class="note" style="margin:4px 0 0 0;">التصوير والفيديوهات والبوستات، ومعاه أعضاء جداد من حملة <span class="ltr">Hire Up</span>.</p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:0;">
+    <h2>اللجنة التنظيمية (OC) · 11 عضو</h2>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:5px 12px;" class="s">
+      <div>عبد الرحمن محمد القصاص</div><div>سلمى أشرف الخولاني</div><div>مصطفى كمال</div>
+      <div>نورين سامح الشناوي</div><div>إياد</div><div>عمر أحمد الزهار</div>
+      <div>علياء أسعد</div><div>مي صابر قطب</div><div>حنين هاني عادل</div>
+      <div>كريم عصام سلامة</div><div>أحمد السيد إبراهيم</div>
+    </div>
+  </div>
+
+  <div class="foot"><span>مجتمع <span class="ltr">ICPC HUE</span> — جامعة حورس</span><span>صفحة 18 من 19</span></div>
+</section>
+
+<section class="page zj">
+  <div class="top">
+    <div class="brand"><img src="../../report/assets/horus_logo.png" alt=""><div class="brand-txt">مجتمع <span class="ltr">ICPC HUE</span><br><span>جامعة حورس — مصر</span></div></div>
+    <div class="pill">18 · تواصل معانا</div>
+  </div>
+
+  <div class="kicker">قنواتنا الرسمية</div>
+  <h1>تواصلوا مع <span class="ltr">ICPC HUE</span></h1>
+  <p class="lead">امسح أي كود من دول بالموبايل، وهتوصل على طول للمنصة أو لصفحاتنا. كل الفعاليات والنتايج والصور اللي في التقرير متنشرة هناك بتواريخها.</p>
+
+  <div class="card-dark" style="display:flex; gap:16px; align-items:center; margin-bottom:12px;">
+    <div style="background:#fff; padding:6px; border-radius:10px;"><img src="../../report/assets/qr/qr_website.png" alt="رمز QR لموقع icpchue.com" style="width:34mm; height:34mm; display:block;"></div>
+    <div style="flex:1;">
+      <div class="kicker" style="color:var(--accent);">منصة التدريب الرسمية</div>
+      <div style="font-family:var(--font-head); font-size:22px; font-weight:800; color:#fff; line-height:1.5;" class="ltr">icpchue.com</div>
+      <p class="s" style="color:#DDD; margin:0;">المنصة اللي بيتدرّب عليها طلابنا كل يوم: 650 مسألة، ومكتبة السيشنات، ولوحة الصدارة، ولوحة المنتورز. التسجيل بالإيميل الجامعي.</p>
+    </div>
+  </div>
+
+  <div class="g3" style="gap:10px; margin-bottom:12px;">
+    <div class="card-w" style="text-align:center;">
+      <img src="../../report/assets/qr/qr_facebook.png" alt="رمز QR لصفحة فيسبوك" style="width:30mm; height:30mm; display:block; margin:0 auto 6px;">
+      <span class="ct">فيسبوك</span>
+      <div class="s ltr">facebook.com/icpchue</div>
+      <div class="note">الإعلانات والصور ونتايج المسابقات</div>
+    </div>
+    <div class="card-w" style="text-align:center;">
+      <img src="../../report/assets/qr/qr_linkedin.png" alt="رمز QR لصفحة لينكدإن" style="width:30mm; height:30mm; display:block; margin:0 auto 6px;">
+      <span class="ct">لينكدإن</span>
+      <div class="s ltr">linkedin.com/company/icpchue</div>
+      <div class="note">أخبار المشروع للمهتمين بالمجال</div>
+    </div>
+    <div class="card-w" style="text-align:center;">
+      <img src="../../report/assets/qr/qr_telegram.png" alt="رمز QR لقناة تيليجرام" style="width:30mm; height:30mm; display:block; margin:0 auto 6px;">
+      <span class="ct">تيليجرام</span>
+      <div class="s ltr">t.me/ICPCHUE</div>
+      <div class="note">لينكات السيشنات والتواصل اليومي مع الطلاب</div>
+    </div>
+  </div>
+
+  <div class="card" style="text-align:center; margin-bottom:0;">
+    <div style="font-family:var(--font-head); font-size:14px; font-weight:800; color:var(--head); line-height:1.6;">مجتمع البرمجة التنافسية في جامعة حورس</div>
+    <div class="s" style="color:var(--muted);">كلية الذكاء الاصطناعي · جامعة حورس — مصر</div>
+    <p class="s" style="margin:6px 0 0 0;">هدفنا إن يبقى في حورس تقليد ثابت في البرمجة التنافسية، وإن اسم الجامعة يعلى في مسابقات <span class="ltr">ECPC</span> و<span class="ltr">ACPC</span>، وإننا نطلّع مهندسين برمجيات مصريين على أعلى مستوى. شكرًا على وقتكم ودعمكم.</p>
+  </div>
+
+  <div class="foot"><span>شكرًا لدعمكم. مع بعض هنرفع اسم جامعة حورس في <span class="ltr">ECPC</span> و<span class="ltr">ACPC</span> و<span class="ltr">ICPC</span>.</span><span>صفحة 19 من 19</span></div>
+</section>
+
+</body>
+</html>
